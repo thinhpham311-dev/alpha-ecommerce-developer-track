@@ -1,4 +1,10 @@
 @theme {
+
+    /* FONTS */
+    --font-body: "Nunito", system-ui, sans-serif;
+    --font-heading: "Lora", serif;
+    --font-display: "Trirong", serif;
+    
     /* COLORS */
     --color-primary: #1C2431;
     --color-secondary: #6B7280;
