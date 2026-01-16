@@ -1,0 +1,17 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "tailwindcss";
+
+@layer utilities {
+    .font-body {
+        font-family: "Nunito", system-ui, sans-serif;
+    }
+
+    .font-heading {
+        font-family: "Lora", serif;
+    }
+
+    .font-display {
+        font-family: "Trirong", serif;
+    }
+}

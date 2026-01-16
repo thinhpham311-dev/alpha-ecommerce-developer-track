@@ -1,0 +1,28 @@
+@theme {
+    /* COLORS */
+    --color-primary: #1C2431;
+    --color-secondary: #6B7280;
+    --color-accent: #E8BF8A;
+    --color-background: #F9F9F9;
+    --color-border: #D1D5DB;
+
+    /* FONT SIZES */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+
+    /* SPACING */
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-6: 24px;
+    --spacing-8: 32px;
+    --spacing-10: 40px;
+}
