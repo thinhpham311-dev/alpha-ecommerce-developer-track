@@ -2,16 +2,15 @@
 @import "./variables.css";
 @import "tailwindcss";
 
+@layer base {
+    @import "./fonts.css";
+    @import "./base.css";
+}
+
+@layer components {
+    @import "./components.css";
+}
+
 @layer utilities {
-    .font-body {
-        font-family: "Nunito", system-ui, sans-serif;
-    }
-
-    .font-heading {
-        font-family: "Lora", serif;
-    }
-
-    .font-display {
-        font-family: "Trirong", serif;
-    }
+    @import "./variables.css";
 }
