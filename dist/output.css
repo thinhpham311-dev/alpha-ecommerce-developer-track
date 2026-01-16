@@ -1,116 +1,22 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
-@font-face {
-  font-family: "Trirong";
-  src: url("../public/fonts/Trirong/woff2/Trirong-Light.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Trirong";
-  src: url("../public/fonts/Trirong/woff2/Trirong-Regular.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Trirong";
-  src: url("../public/fonts/Trirong/woff2/Trirong-Medium.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Trirong";
-  src: url("../public/fonts/Trirong/woff2/Trirong-Bold.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lora";
-  src: url("../public/fonts/Lora/woff2/Lora-Regular.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lora";
-  src: url("../public/fonts/Lora/woff2/Lora-Medium.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lora";
-  src: url("../public/fonts/Lora/woff2/Lora-SemiBold.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lora";
-  src: url("../public/fonts/Lora/woff2/Lora-Bold.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: url("../public/fonts/Nunito/woff2/Nunito-Light.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: url("../public/fonts/Nunito/woff2/Nunito-Regular.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: url("../public/fonts/Nunito/woff2/Nunito-Medium.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: url("../public/fonts/Nunito/woff2/Nunito-SemiBold.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: url("../public/fonts/Nunito/woff2/Nunito-Bold.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-:root, :host {
-  --color-primary: #1C2431;
-  --color-secondary: #6B7280;
-  --color-background: #F9F9F9;
-  --text-base: 1rem;
-  --text-4xl: 2.25rem;
-  --spacing-3: 12px;
-  --spacing-4: 16px;
-  --spacing-6: 24px;
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
-  --color-white: #fff;
-  --text-base--line-height: calc(1.5 / 1);
-  --text-4xl--line-height: calc(2.5 / 2.25);
-  --default-font-family: var(--font-sans);
-  --default-mono-font-family: var(--font-mono);
-}
 @layer theme, base, components, utilities;
-@layer theme;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-7xl: 80rem;
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --font-body: "Nunito", system-ui, sans-serif;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+  }
+}
 @layer base {
   *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
@@ -260,44 +166,136 @@
   }
 }
 @layer utilities {
-  .mb-4 {
-    margin-bottom: var(--spacing-4);
-  }
-  .bg-background {
-    background-color: var(--color-background);
-  }
-  .px-6 {
-    padding-inline: var(--spacing-6);
-  }
-  .py-3 {
-    padding-block: var(--spacing-3);
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-base {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
-  }
-  .text-primary {
-    color: var(--color-primary);
-  }
-  .text-secondary {
-    color: var(--color-secondary);
-  }
-  .text-white {
-    color: var(--color-white);
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
   }
 }
-@layer utilities {
-  .font-body {
-    font-family: "Nunito", system-ui, sans-serif;
+@layer base {
+  @font-face {
+    font-family: "Trirong";
+    src: url("../public/fonts/Trirong/woff2/Trirong-Light.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
   }
-  .font-heading {
-    font-family: "Lora", serif;
+  @font-face {
+    font-family: "Trirong";
+    src: url("../public/fonts/Trirong/woff2/Trirong-Regular.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
   }
-  .font-display {
-    font-family: "Trirong", serif;
+  @font-face {
+    font-family: "Trirong";
+    src: url("../public/fonts/Trirong/woff2/Trirong-Medium.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Trirong";
+    src: url("../public/fonts/Trirong/woff2/Trirong-Bold.woff2") format("woff2"), url("../public/fonts/Trirong/woff/Trirong-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Lora";
+    src: url("../public/fonts/Lora/woff2/Lora-Regular.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Lora";
+    src: url("../public/fonts/Lora/woff2/Lora-Medium.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Lora";
+    src: url("../public/fonts/Lora/woff2/Lora-SemiBold.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Lora";
+    src: url("../public/fonts/Lora/woff2/Lora-Bold.woff2") format("woff2"), url("../public/fonts/Lora/woff/Lora-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Nunito";
+    src: url("../public/fonts/Nunito/woff2/Nunito-Light.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Nunito";
+    src: url("../public/fonts/Nunito/woff2/Nunito-Regular.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Nunito";
+    src: url("../public/fonts/Nunito/woff2/Nunito-Medium.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Nunito";
+    src: url("../public/fonts/Nunito/woff2/Nunito-SemiBold.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Nunito";
+    src: url("../public/fonts/Nunito/woff2/Nunito-Bold.woff2") format("woff2"), url("../public/fonts/Nunito/woff/Nunito-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @layer base {
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: calc(var(--spacing) * 0);
+      font-family: var(--font-body);
+    }
+    .page-width {
+      margin-inline: auto;
+      max-width: var(--container-7xl);
+      padding-inline: var(--spacing-4);
+    }
   }
 }
+@layer components {
+  @layer components {
+    .shopify-section {
+      position: sticky;
+      top: calc(var(--spacing) * 0);
+      z-index: 50;
+      background-color: var(--color-white);
+    }
+    .secret_header-whole {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-block: var(--spacing-3);
+      img {
+        margin-inline: auto;
+        display: block;
+        max-width: 160px;
+      }
+    }
+  }
+}
+@layer utilities;
