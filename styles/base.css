@@ -1,0 +1,17 @@
+@layer base {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        @apply m-0 font-body  ;
+  
+    }
+
+    .page-width {
+        @apply max-w-7xl mx-auto px-4;
+    }
+}
