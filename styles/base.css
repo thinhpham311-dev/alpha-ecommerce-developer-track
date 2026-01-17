@@ -1,17 +1,15 @@
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+  body {
+    @apply font-nunito m-0;
+  }
 
-    body {
-        @apply m-0 font-nunito  ;
-  
-    }
-
-    .page-width {
-        @apply max-w-7xl mx-auto px-4;
-    }
+  .page-width {
+    @apply mx-auto max-w-7xl px-4;
+  }
 }
