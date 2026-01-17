@@ -11,6 +11,7 @@
   --color-background: #f9f9f9;
   --color-background-2nd: #f3eee0;
   --color-background-3rd: #fff7f8;
+  --color-card: #f7f7f7;
   --color-border: #d1d5db;
   --color-border-2nd: #d2d2d2;
 
@@ -22,8 +23,9 @@
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
   --text-3xl: 1.75rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
+  --text-4xl: 2rem;
+  --text-5xl: 2.25rem;
+  --text-6xl: 3rem;
 
   /* SPACING */
   --spacing-1: 4px;
@@ -36,7 +38,7 @@
 
   --radius-sm: 4px;
 
-    --animate-logo-scroll: logo_scroll 60s linear infinite;
+  --animate-logo-scroll: logo_scroll 60s linear infinite;
 }
 
 @keyframes logo_scroll {
