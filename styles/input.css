@@ -13,6 +13,7 @@
 @import './components/ingr-outer.css';
 @import './components/benefits.css';
 @import './components/expert.css';
+@import './components/stats.css';
 @layer utilities {
   .font-lora {
     font-family: var(--font-lora);

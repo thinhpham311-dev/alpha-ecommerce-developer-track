@@ -1,0 +1,11 @@
+@layer components{
+    .product_stats-outer{
+        @apply flex items-center;
+        &>div:nth-child(1){
+            @apply w-full;
+        }
+        &>div:nth-child(2){
+            @apply w-[70%];
+        }
+    }
+}
