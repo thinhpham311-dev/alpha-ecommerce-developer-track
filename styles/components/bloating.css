@@ -1,5 +1,5 @@
 @layer components {
-  .product_judge-outer.outer_why-bloating {
+  .outer_why-bloating {
     @apply pb-0;
 
     /* ---------- Why bloating grid ---------- */
@@ -26,10 +26,6 @@
     /* ---------- Assets ---------- */
     .product_why-note-img {
       @apply mx-auto w-full max-w-[920px];
-    }
-
-    .product_arrow-img {
-      @apply mx-auto my-6 block w-full max-w-[48px];
     }
   }
 }

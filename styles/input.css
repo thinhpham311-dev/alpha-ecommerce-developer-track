@@ -11,7 +11,7 @@
 @import './components/pli-outer.css';
 @import './components/outer-how-nothing.css';
 @import './components/ingr-outer.css';
-
+@import './components/benefits.css';
 @layer utilities {
   .font-lora {
     font-family: var(--font-lora);
