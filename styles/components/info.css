@@ -1,49 +1,55 @@
 @layer components {
   .product_judge-outer.pli_outer {
-    @apply -mt-4 py-0;
-    .product_judge-container {
-      @apply mx-auto mb-10 max-w-[800px];
-      .product-section_title {
-        @apply font-lora my-4 text-center text-4xl leading-[1.3] font-normal;
-        span {
-          @apply text-primary;
+    @apply px-0 py-[56px];
+  }
+  #info {
+    .product_judge-outer.pli_outer {
+      @apply -mt-4 py-0;
+    }
+  }
+  .product_judge-container {
+    @apply mx-auto mb-10 max-w-[800px];
+    .product-section_title {
+      @apply font-lora my-4 text-center text-4xl leading-[1.3] font-normal;
+      span {
+        @apply text-primary;
+      }
+    }
+  }
+  .pli_flex {
+    @apply flex items-center gap-[100px];
+    & > div {
+      @apply w-full;
+    }
+    & > * {
+      @apply my-2 text-lg leading-[1.3];
+    }
+    .pli_top-text {
+      ul {
+        @apply ml-0 pl-0;
+        li {
+          @apply text-primary font-nunito list-none pl-8 font-semibold;
+          background-image: url('https://trysculptique.com/cdn/shop/files/check-mark_17013456_2_1.png?v=1760702838');
+          background-size: 20px;
+          background-repeat: no-repeat;
         }
       }
     }
-    .pli_flex {
-      @apply flex items-center gap-[100px];
-      & > div {
-        @apply w-full;
-      }
-      & > * {
-        @apply my-2 text-lg leading-[1.3];
-      }
-      .pli_top-text {
-        ul {
-          @apply ml-0 pl-0;
-          li {
-            @apply text-primary font-nunito list-none pl-8 font-semibold;
-            background-image: url('https://trysculptique.com/cdn/shop/files/check-mark_17013456_2_1.png?v=1760702838');
-            background-size: 20px;
-            background-repeat: no-repeat;
-          }
-        }
-      }
 
-      .pli_bottom-text {
-        ul {
-          @apply ml-0 pl-0;
+    .pli_bottom-text {
+      ul {
+        @apply ml-0 pl-0;
 
-          li {
-            @apply text-accent font-nunito list-none pl-8 font-semibold;
-            background-image: url('https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839');
-            background-size: 20px;
-            background-repeat: no-repeat;
-          }
+        li {
+          @apply text-accent font-nunito list-none pl-8 font-semibold;
+          background-image: url('https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839');
+          background-size: 20px;
+          background-repeat: no-repeat;
         }
       }
     }
   }
+
   .top_padding {
     @apply mt-10;
   }

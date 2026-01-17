@@ -9,5 +9,8 @@
     .Mobile_only {
       @apply hidden;
     }
+    .reversed {
+      @apply flex-row-reverse;
+    }
   }
 }
