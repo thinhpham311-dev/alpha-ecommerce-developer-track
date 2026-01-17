@@ -5,6 +5,7 @@
 @import './components/header.css';
 @import './components/responsive.css';
 @import './components/product-introduce.css';
+@import './components/brands-list.css';
 
 @layer utilities {
   .font-lora {

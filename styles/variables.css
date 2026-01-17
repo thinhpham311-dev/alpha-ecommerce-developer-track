@@ -10,6 +10,7 @@
   --color-accent: #e8bf8a;
   --color-background: #f9f9f9;
   --color-background-2nd: #f3eee0;
+  --color-background-3rd: #fff7f8;
   --color-border: #d1d5db;
   --color-border-2nd: #d2d2d2;
 
@@ -34,4 +35,16 @@
   --spacing-10: 40px;
 
   --radius-sm: 4px;
+
+    --animate-logo-scroll: logo_scroll 60s linear infinite;
+}
+
+@keyframes logo_scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }

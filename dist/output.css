@@ -17,6 +17,8 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.75rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-semibold: 600;
@@ -33,6 +35,7 @@
     --font-trirong: 'Trirong', serif;
     --color-primary: #039869;
     --color-background-2nd: #f3eee0;
+    --color-background-3rd: #fff7f8;
     --color-border-2nd: #d2d2d2;
     --spacing-1: 4px;
     --spacing-2: 8px;
@@ -41,6 +44,7 @@
     --spacing-6: 24px;
     --spacing-8: 32px;
     --spacing-10: 40px;
+    --animate-logo-scroll: logo_scroll 60s linear infinite;
   }
 }
 @layer base {
@@ -295,6 +299,14 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+@keyframes logo_scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 @layer base {
   *, *::before, *::after {
@@ -787,6 +799,58 @@
           line-height: 1.3;
           --tw-tracking: var(--tracking-normal);
           letter-spacing: var(--tracking-normal);
+        }
+      }
+    }
+  }
+}
+@layer components {
+  .section_press_logos_outer {
+    position: relative;
+    margin-inline: auto;
+    .section_holder {
+      position: relative;
+      margin-inline: auto;
+      max-width: 100vw;
+      background-color: var(--color-background-3rd);
+      --tw-leading: var(--spacing-1);
+      line-height: var(--spacing-1);
+    }
+    .press_logos_wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      align-content: center;
+      justify-items: center;
+      column-gap: 70px;
+      row-gap: 20px;
+      padding: calc(var(--spacing) * 0);
+      padding-top: calc(var(--spacing) * 5);
+      padding-bottom: calc(var(--spacing) * 5);
+      text-align: center;
+      .title_wrap {
+        margin: calc(var(--spacing) * 0);
+        font-family: var(--font-trirong);
+        font-size: var(--text-2xl);
+        line-height: var(--tw-leading, var(--text-2xl--line-height));
+        --tw-tracking: var(--tracking-normal);
+        letter-spacing: var(--tracking-normal);
+        color: var(--color-black);
+      }
+      .auto_scrolling_logos {
+        width: 100%;
+        min-width: 1px;
+        overflow: hidden;
+        .logos_wrap {
+          display: flex;
+          width: fit-content;
+          animation: var(--animate-logo-scroll);
+          align-items: center;
+          img {
+            margin-inline: 50px;
+            display: block;
+            height: 30px;
+            width: auto;
+          }
         }
       }
     }
