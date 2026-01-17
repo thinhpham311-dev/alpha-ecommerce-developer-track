@@ -2,7 +2,7 @@
     .section_press_logos_outer{
         @apply relative mx-auto;
         .section_holder{
-            @apply relative max-w-[100vw] mx-auto leading-1 bg-background-3rd;
+            @apply relative max-w-[100vw] mx-auto leading-1 bg-background-2nd;
         }
                  .press_logos_wrapper{
                     @apply grid grid-cols-1 justify-items-center text-center p-0 pt-5 pb-5 gap-x-[70px] gap-y-[20px] content-center;
