@@ -2,6 +2,7 @@
 @import './fonts.css';
 @import './variables.css';
 @import './base.css';
+@import './components/common.css';
 @import './components/header.css';
 @import './components/responsive.css';
 @import './components/product-introduce.css';
@@ -9,6 +10,7 @@
 @import './components/bloating.css';
 @import './components/pli-outer.css';
 @import './components/outer-how-nothing.css';
+@import './components/ingr-outer.css';
 
 @layer utilities {
   .font-lora {

@@ -15,35 +15,4 @@
   li {
     @apply list-item;
   }
-  .shopify-section {
-    @apply z-50 bg-white;
-  }
-  .page-width {
-    @apply mx-auto max-w-[1340px] px-4;
-  }
-
-  .hided {
-    @apply hidden;
-  }
-
-  .product_primary-btn {
-    @apply font-nunito inline-block cursor-pointer rounded bg-black px-20 py-4 text-center text-lg leading-snug text-white no-underline transition-all duration-200;
-  }
- .product_judge-container {
-   @apply mx-auto mb-10 max-w-[800px];
-
-   .product-section_title {
-     @apply font-lora my-4 text-center text-4xl leading-[1.3] font-normal;
-
-     span {
-       @apply text-primary;
-     }
-   }
- }
-  .product_primary-btn-footer {
-    @apply mt-4 flex items-center justify-center gap-4 text-base leading-[1.3];
-    img {
-      @apply w-[24px];
-    }
-  }
 }

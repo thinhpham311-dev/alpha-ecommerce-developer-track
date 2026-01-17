@@ -2,23 +2,6 @@
   .product_judge-outer.outer_why-bloating {
     @apply pb-0;
 
-    /* ---------- Header / Intro ---------- */
-    .product_judge-container {
-      @apply mx-auto max-w-[800px];
-
-      .product-section_title {
-        @apply font-lora my-4 text-center text-4xl leading-[1.3] font-normal;
-
-        span {
-          @apply text-primary;
-        }
-      }
-
-      .product-section_text {
-        @apply my-4 text-center text-lg leading-[1.3];
-      }
-    }
-
     /* ---------- Why bloating grid ---------- */
     .product_why-bloating-grid {
       @apply mt-10 flex gap-4;
