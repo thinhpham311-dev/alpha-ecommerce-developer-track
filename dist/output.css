@@ -943,7 +943,7 @@
   }
 }
 @layer components {
-  .product_judge-outer.outer_why-bloating {
+  .outer_why-bloating {
     padding-bottom: calc(var(--spacing) * 0);
     .product_why-bloating-grid {
       margin-top: var(--spacing-10);
@@ -975,13 +975,6 @@
       margin-inline: auto;
       width: 100%;
       max-width: 920px;
-    }
-    .product_arrow-img {
-      margin-inline: auto;
-      margin-block: var(--spacing-6);
-      display: block;
-      width: 100%;
-      max-width: 48px;
     }
   }
 }
@@ -1243,6 +1236,26 @@
     margin-inline: auto;
     margin-top: var(--spacing-10);
     max-width: 580px;
+  }
+}
+@layer components {
+  .benefits {
+    background-color: var(--color-background-2nd);
+    .product_benefits-grid {
+      display: flex;
+      gap: var(--spacing-6);
+      & > div {
+        width: 100%;
+        text-align: center;
+      }
+      img {
+        margin-inline: auto;
+        margin-bottom: var(--spacing-4);
+        display: block;
+        height: var(--spacing-10);
+        max-width: var(--spacing-10);
+      }
+    }
   }
 }
 @layer utilities {

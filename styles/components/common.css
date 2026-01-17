@@ -14,6 +14,7 @@
   .product_judge-outer {
     @apply px-0 py-[56px];
   }
+
   .product_judge-container {
     @apply mx-auto mb-10 max-w-[800px];
 

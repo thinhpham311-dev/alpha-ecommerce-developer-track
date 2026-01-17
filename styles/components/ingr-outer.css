@@ -1,8 +1,8 @@
 @layer components {
   .product_lymphg-ingr-outer {
     @apply bg-background-2nd;
-    img{
-        @apply w-full;
+    img {
+      @apply w-full;
     }
   }
   .product_lymph-ingr-table {
@@ -27,13 +27,13 @@
       .product_lymph-ingr-content {
         @apply mt-3;
         p {
-          @apply leading-[1.3em] m-0 text-sm;
+          @apply m-0 text-sm leading-[1.3em];
         }
       }
     }
   }
 
-  .product_lymph-ingr-table-small{
-    @apply max-w-[580px] mt-10 mx-auto;
+  .product_lymph-ingr-table-small {
+    @apply mx-auto mt-10 max-w-[580px];
   }
 }
