@@ -6,6 +6,7 @@
 @import './components/responsive.css';
 @import './components/product-introduce.css';
 @import './components/brands-list.css';
+@import './components/bloating.css';
 
 @layer utilities {
   .font-lora {
