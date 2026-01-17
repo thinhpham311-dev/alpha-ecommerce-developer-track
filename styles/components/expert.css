@@ -1,0 +1,11 @@
+@layer components {
+  .product_expert-outer {
+    @apply bg-card flex overflow-hidden rounded-2xl;
+    & > div {
+      @apply w-full;
+      .product_expert-content {
+        @apply p-8;
+      }
+    }
+  }
+}

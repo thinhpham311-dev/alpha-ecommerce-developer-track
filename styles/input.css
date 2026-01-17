@@ -12,6 +12,7 @@
 @import './components/outer-how-nothing.css';
 @import './components/ingr-outer.css';
 @import './components/benefits.css';
+@import './components/expert.css';
 @layer utilities {
   .font-lora {
     font-family: var(--font-lora);
