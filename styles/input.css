@@ -8,6 +8,7 @@
 @import './components/brands-list.css';
 @import './components/bloating.css';
 @import './components/pli-outer.css';
+@import './components/outer-how-nothing.css';
 
 @layer utilities {
   .font-lora {
