@@ -38,6 +38,7 @@
     --font-trirong: 'Trirong', serif;
     --color-primary: #039869;
     --color-accent: #a60003;
+    --color-accent-2nd: #ffe3e3;
     --color-background-2nd: #f3eee0;
     --color-background-3rd: #fff7f8;
     --color-card: #f7f7f7;
@@ -312,7 +313,7 @@
 }
 @layer base {
   *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
   }
   body {
     margin: calc(var(--spacing) * 0);
@@ -967,14 +968,15 @@
     & > div {
       width: 100%;
     }
-    & > * {
-      margin-block: var(--spacing-2);
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-      --tw-leading: 1.3;
-      line-height: 1.3;
-    }
     .pli_top-text {
+      & > * {
+        margin-block: var(--spacing-2);
+        padding-inline: calc(var(--spacing) * 0);
+        font-size: var(--text-lg);
+        line-height: var(--tw-leading, var(--text-lg--line-height));
+        --tw-leading: 1.3em;
+        line-height: 1.3em;
+      }
       ul {
         margin-left: calc(var(--spacing) * 0);
         padding-left: calc(var(--spacing) * 0);
@@ -992,6 +994,44 @@
       }
     }
     .pli_bottom-text {
+      & > * {
+        margin-block: var(--spacing-2);
+        padding-inline: calc(var(--spacing) * 0);
+        font-size: var(--text-lg);
+        line-height: var(--tw-leading, var(--text-lg--line-height));
+        --tw-leading: 1.3em;
+        line-height: 1.3em;
+      }
+      ul {
+        margin-left: calc(var(--spacing) * 0);
+        padding-left: calc(var(--spacing) * 0);
+        li {
+          list-style-type: none;
+          padding-left: var(--spacing-8);
+          font-family: var(--font-nunito);
+          --tw-font-weight: var(--font-weight-semibold);
+          font-weight: var(--font-weight-semibold);
+          color: var(--color-accent);
+          background-image: url('https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839');
+          background-size: 20px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .pli_pink-text {
+      & > * {
+        margin-block: var(--spacing-2);
+        padding-inline: calc(var(--spacing) * 0);
+        font-size: var(--text-lg);
+        line-height: var(--tw-leading, var(--text-lg--line-height));
+        --tw-leading: 1.3em;
+        line-height: 1.3em;
+      }
+      margin-block: var(--spacing-6);
+      border-radius: var(--radius-lg);
+      background-color: var(--color-accent-2nd);
+      padding-inline: var(--spacing-4);
+      padding-block: var(--spacing-2);
       ul {
         margin-left: calc(var(--spacing) * 0);
         padding-left: calc(var(--spacing) * 0);
