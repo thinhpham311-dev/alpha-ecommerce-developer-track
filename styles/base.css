@@ -25,4 +25,8 @@
   .hided {
     @apply hidden;
   }
+
+  .product_judge-outer {
+    @apply py-[56px];
+  }
 }
