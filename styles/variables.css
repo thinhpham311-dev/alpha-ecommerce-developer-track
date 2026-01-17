@@ -5,11 +5,13 @@
   --font-trirong: 'Trirong', serif;
 
   /* COLORS */
-  --color-primary: #1c2431;
+  --color-primary: #039869;
   --color-secondary: #6b7280;
   --color-accent: #e8bf8a;
   --color-background: #f9f9f9;
+  --color-background-2nd: #f3eee0;
   --color-border: #d1d5db;
+  --color-border-2nd: #d2d2d2;
 
   /* FONT SIZES */
   --text-xs: 0.75rem;
@@ -18,7 +20,7 @@
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
+  --text-3xl: 1.75rem;
   --text-4xl: 2.25rem;
   --text-5xl: 3rem;
 
@@ -30,4 +32,6 @@
   --spacing-6: 24px;
   --spacing-8: 32px;
   --spacing-10: 40px;
+
+  --radius-sm: 4px;
 }

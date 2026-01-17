@@ -1,0 +1,13 @@
+/* components.css */
+@layer components {
+  @media screen and (max-width: 750px) {
+    .page-width {
+      @apply px-20 py-0;
+    }
+  }
+  @media only screen and (min-width: 678px) {
+    .Mobile_only {
+      @apply hidden;
+    }
+  }
+}
