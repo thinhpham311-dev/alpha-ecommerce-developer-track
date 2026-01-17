@@ -1,0 +1,25 @@
+@layer components{
+    .section_press_logos_outer{
+        @apply relative mx-auto;
+        .section_holder{
+            @apply relative max-w-[100vw] mx-auto leading-1 bg-background-3rd;
+        }
+                 .press_logos_wrapper{
+                    @apply grid grid-cols-1 justify-items-center text-center p-0 pt-5 pb-5 gap-x-[70px] gap-y-[20px] content-center;
+                    .title_wrap{
+                        @apply text-2xl tracking-normal text-black m-0 font-trirong;
+                    }
+                    .auto_scrolling_logos{
+                        @apply overflow-hidden min-w-[1px] w-full;
+                         .logos_wrap{
+                            @apply flex items-center w-fit animate-logo-scroll;
+                           
+                            img{
+                                @apply h-[30px] w-auto block mx-[50px] ;
+                            }
+                         }
+                    }
+                 }
+    }
+}
+
