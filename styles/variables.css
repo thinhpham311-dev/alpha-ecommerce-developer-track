@@ -1,9 +1,9 @@
 @theme {
 
     /* FONTS */
-    --font-body: "Nunito", system-ui, sans-serif;
-    --font-heading: "Lora", serif;
-    --font-display: "Trirong", serif;
+    --font-nunito: "Nunito", system-ui, sans-serif;
+    --font-lora: "Lora", serif;
+    --font-trirong: "Trirong", serif;
     
     /* COLORS */
     --color-primary: #1C2431;
