@@ -1,2 +1,5 @@
 /node_modules
  package-lock.json
+ prettier
+ .DS_Store
+ package-lock.json

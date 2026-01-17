@@ -1,12 +1,12 @@
-/* components.css */
 @layer components {
-  .shopify-section {
-    @apply sticky top-0 z-50 bg-white;
-  }
+  /* secret header */
   .secret_header-whole {
     @apply flex items-center justify-center py-3;
+
     img {
       @apply mx-auto block max-w-[160px];
     }
   }
+
+  /* end secret header */
 }

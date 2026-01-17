@@ -6,10 +6,23 @@
   }
 
   body {
-    @apply font-nunito m-0;
+    @apply font-nunito m-0 leading-[1.8] tracking-[0.06rem];
   }
 
+  ul {
+    @apply my-[1em] block list-disc ps-10;
+  }
+  li {
+    @apply list-item;
+  }
+  .shopify-section {
+    @apply z-50 bg-white;
+  }
   .page-width {
-    @apply mx-auto max-w-7xl px-4;
+    @apply mx-auto max-w-[1340px] px-4;
+  }
+
+  .hided {
+    @apply hidden;
   }
 }

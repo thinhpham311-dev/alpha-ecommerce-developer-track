@@ -2,7 +2,9 @@
 @import './fonts.css';
 @import './variables.css';
 @import './base.css';
-@import './components.css';
+@import './components/header.css';
+@import './components/responsive.css';
+@import './components/product-introduce.css';
 
 @layer utilities {
   .font-lora {
