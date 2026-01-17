@@ -1,16 +1,21 @@
+@import "tailwindcss";
 @import "./fonts.css";
 @import "./variables.css";
-@import "tailwindcss";
+@import "./base.css";
+@import "./components.css";
 
-@layer base {
-    @import "./fonts.css";
-    @import "./base.css";
-}
-
-@layer components {
-    @import "./components.css";
-}
 
 @layer utilities {
-    @import "./variables.css";
+
+     .font-lora {
+        font-family: var(--font-lora);
+    }
+
+    .font-nunito{
+        font-family: var(--font-nunito);
+    }
+
+      .font-trirong{
+        font-family: var(--font-trirong);
+    }
 }
