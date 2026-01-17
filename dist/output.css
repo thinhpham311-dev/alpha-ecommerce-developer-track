@@ -1301,10 +1301,10 @@
   .product_stats-outer {
     display: flex;
     align-items: center;
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       width: 100%;
     }
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       width: 70%;
     }
   }

@@ -19,15 +19,14 @@
     @apply mx-auto mb-10 max-w-[800px];
   }
 
-   .product_expert-content {
-       @apply p-8;
-   }
-.product_expert-media{
-
-    img{
-        @apply w-full h-full overflow-hidden rounded-xl object-cover;
+  .product_expert-content {
+    @apply p-8;
+  }
+  .product_expert-media {
+    img {
+      @apply h-full w-full overflow-hidden rounded-xl object-cover;
     }
-} 
+  }
 
   .product-section_title {
     @apply font-lora my-4 text-4xl leading-[1.3] font-normal;
