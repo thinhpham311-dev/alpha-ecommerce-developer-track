@@ -176,7 +176,7 @@
   /*end product introduce */
   .product-selector_atc,
   .product-selector_atc_champs {
-    @apply mt-3 w-full cursor-pointer rounded-lg bg-black p-3 text-center text-lg font-bold text-white transition-all duration-200;
+    @apply mt-3  cursor-pointer rounded-lg bg-black p-3 text-center text-lg font-bold text-white transition-all duration-200;
   }
   .product_atc-footer-line {
     @apply mt-4 flex items-center justify-center gap-4;
