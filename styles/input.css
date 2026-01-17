@@ -7,6 +7,7 @@
 @import './components/product-introduce.css';
 @import './components/brands-list.css';
 @import './components/bloating.css';
+@import './components/info.css';
 
 @layer utilities {
   .font-lora {

@@ -1,6 +1,6 @@
 @layer components {
-  .product_judge-outer {
-    @apply py-[56px];
+  .product_judge-outer.outer_why-bloating {
+    @apply pb-0;
 
     /* ---------- Header / Intro ---------- */
     .product_judge-container {
