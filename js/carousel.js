@@ -8,7 +8,7 @@ $(document).ready(function () {
     dots: true,
     infinite: false,
     speed: 300,
-    accessibility: false
+    accessibility: false,
   });
 
   $('.product_carousel-prev').on('click', () => $slider.slick('slickPrev'));

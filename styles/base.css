@@ -15,11 +15,11 @@
     @apply font-montserrat text-body m-0 tracking-[0.06rem];
   }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5{
-      @apply font-trirong;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-trirong;
+  }
 }
