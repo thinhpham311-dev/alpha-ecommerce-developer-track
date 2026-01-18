@@ -1,30 +1,710 @@
-@import 'tailwindcss';
-@import './fonts.css';
-@import './variables.css';
 @import './base.css';
-@import './components/common.css';
-@import './components/header.css';
-@import './components/responsive.css';
-@import './components/product-introduce.css';
-@import './components/brands-list.css';
-@import './components/bloating.css';
-@import './components/pli-outer.css';
-@import './components/outer-how-nothing.css';
-@import './components/ingr-outer.css';
-@import './components/benefits.css';
-@import './components/expert.css';
-@import './components/stats.css';
-@import './components/footer.css';
-@layer utilities {
-  .font-lora {
-    font-family: var(--font-lora);
+@import './variables.css';
+@import 'tailwindcss';
+@import './utilities.css';
+@import './fonts/montserrat.css';
+@import './fonts/lora.css';
+@import './fonts/nunito.css';
+
+@layer components {
+  .shopify-section {
+    @apply z-50 bg-white;
+    p {
+      @apply font-nunito;
+    }
   }
 
-  .font-nunito {
-    font-family: var(--font-nunito);
+  .page-width {
+    @apply mx-auto block max-w-[var(--max-w-page)] px-20;
   }
 
-  .font-trirong {
-    font-family: var(--font-trirong);
+  .hided {
+    @apply hidden;
+  }
+
+  .product_judge-outer {
+    @apply px-0 py-[56px];
+  }
+
+  .product_judge-container {
+    @apply mx-auto mb-10 max-w-[var(--max-w-judge)];
+  }
+
+  .product_expert-content {
+    @apply p-8;
+  }
+
+  .product_expert-media {
+    img {
+      @apply h-full w-full overflow-hidden rounded-xl object-cover;
+    }
+  }
+
+  .product-section_title {
+    @apply font-lora my-4 text-4xl leading-[1.3] font-normal;
+
+    span {
+      @apply text-primary;
+    }
+  }
+
+  .product_subtitle {
+    @apply text-secondary;
+  }
+
+  .product-text {
+    p {
+      @apply my-3 text-lg leading-[1.3em];
+    }
+  }
+
+  .product-section_text {
+    @apply my-4 text-center text-lg leading-[1.3];
+  }
+
+  .product_primary-btn-footer {
+    @apply mt-4 flex items-center justify-center gap-4 text-base leading-[1.3];
+
+    img {
+      @apply w-[24px];
+    }
+  }
+
+  .product_primary-btn {
+    @apply font-nunito p-button inline-block cursor-pointer rounded bg-black text-center text-lg leading-snug text-white no-underline transition-all duration-200;
+  }
+
+  .product_arrow-img {
+    @apply mx-auto my-6 block w-full max-w-[48px];
+  }
+
+  /* secret header */
+  .secret_header-whole {
+    @apply flex items-center justify-center py-3;
+
+    img {
+      @apply mx-auto block max-w-[160px];
+    }
+  }
+
+  /* end secret header */
+
+  @media screen and (max-width: 750px) {
+    .page-width {
+      @apply px-20 py-0;
+    }
+  }
+
+  @media only screen and (min-width: 678px) {
+    .Mobile_only {
+      @apply hidden;
+    }
+
+    .reversed {
+      @apply flex-row-reverse;
+    }
+  }
+
+  /* product introduce */
+  .main_section {
+    img {
+      @apply w-full;
+    }
+  }
+
+  .main_product-outer {
+    @apply py-[32px];
+  }
+
+  .active {
+    .product-selector_bubble_inn {
+      @apply bg-primary block h-[16px] w-[16px] rounded-full;
+    }
+  }
+
+  .main_product-container {
+    @apply gap-large flex;
+
+    & > div {
+      @apply w-full;
+    }
+
+    .main_product-images {
+      img {
+        @apply overflow-hidden rounded-[4px] object-cover;
+      }
+
+      .main_product-image {
+        @apply relative flex justify-center;
+
+        img {
+          @apply aspect-square overflow-hidden rounded-[4px] object-cover;
+        }
+
+        .main_product-nutrition-info {
+          @apply bg-white-2nd absolute bottom-8 z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-4 py-2 text-sm leading-[1.2em];
+
+          span {
+            @apply flex items-center;
+          }
+
+          img {
+            @apply w-[20px];
+          }
+        }
+
+        .main-product_badge {
+          @apply absolute top-4 right-4 block w-full max-w-[120px];
+        }
+      }
+
+      .main_product-2nd {
+        @apply my-4 grid grid-cols-2 gap-4;
+      }
+
+      .main_product-3rd {
+        @apply my-4 grid grid-cols-3 gap-4;
+      }
+    }
+  }
+
+  .main_product-reviews {
+    @apply mt-0 flex items-center gap-4;
+
+    img {
+      @apply block w-[100px];
+    }
+
+    p {
+      @apply font-nunito my-0 text-base leading-snug font-normal;
+    }
+  }
+
+  .main_product-title {
+    @apply font-lora my-4 text-3xl leading-[1.4em];
+  }
+
+  .main_product-features {
+    .main_product-feature-line {
+      @apply my-4 flex items-center gap-3;
+      p {
+        @apply text-base;
+      }
+      & > div:nth-child(1) {
+        @apply flex w-[10%] items-center;
+      }
+
+      & > div:nth-child(2) {
+        @apply w-full;
+      }
+    }
+  }
+
+  .product_selector-content {
+    @apply bg-background-2nd mt-6 mb-4 rounded-lg p-3;
+
+    .product-selector_outer {
+      @apply mt-0;
+
+      .product-selector_block {
+        @apply border-primary relative mb-3 cursor-pointer rounded-xl border;
+
+        .product-selector_head {
+          @apply flex items-center gap-3 rounded-xl bg-white p-4;
+
+          & > div:nth-child(1) {
+            @apply w-[32px];
+          }
+
+          & > div:nth-child(2) {
+            @apply w-full;
+          }
+
+          & > div:nth-child(3) {
+            @apply w-1/2 text-right;
+          }
+          .product-selector_title {
+            @apply text-base leading-snug font-semibold;
+          }
+          .product-selector_info {
+            @apply text-xs;
+          }
+          .product-selector_bubble {
+            @apply border-primary flex h-[26px] w-[26px] items-center justify-center rounded-full border-2;
+          }
+
+          .product-selector_price,
+          .product-selector_compare {
+            @apply block;
+          }
+        }
+
+        .product-selector_perks {
+          @apply overflow-hidden rounded-b-[10px];
+
+          .product-selector_perk_line {
+            @apply bg-primary flex items-center gap-2 border-b border-white px-2 py-1 opacity-60;
+
+            &:last-child {
+              @apply border-b-0;
+            }
+
+            & > div:nth-child(1) {
+              @apply w-[34px];
+            }
+
+            & > div:nth-child(2) {
+              @apply w-full;
+            }
+
+            p {
+              @apply text-xs leading-[1em] font-bold text-white;
+            }
+          }
+        }
+      }
+
+      .product-selector_badge {
+        @apply absolute -top-[20px] -right-[5px];
+      }
+
+      .active {
+        .product-selector_perks {
+          .product-selector_perk_line {
+            @apply opacity-100;
+          }
+        }
+      }
+    }
+  }
+
+  .col_pp_atc_usp_line {
+    @apply mt-4 flex items-center gap-2;
+
+    p {
+      @apply m-0 text-base leading-[1.3];
+    }
+
+    span.col_pp_delivery__Date {
+      @apply bg-primary font-nunito rounded px-2 py-1 text-white;
+    }
+
+    & > div:nth-child(1) {
+      @apply flex w-[5%] items-center;
+    }
+
+    & > div:nth-child(2) {
+      @apply w-full;
+    }
+  }
+
+  /*end product introduce */
+  .product-selector_atc,
+  .product-selector_atc_champs {
+    @apply mt-3 cursor-pointer rounded-lg bg-black p-3 text-center text-lg text-white transition-all duration-200;
+  }
+
+  .product_atc-footer-line {
+    @apply mt-4 flex items-center justify-center gap-4;
+
+    .product_atc-footer-inline {
+      @apply flex items-center justify-center gap-2;
+      p {
+        @apply text-base;
+      }
+      svg,
+      img {
+        @apply block h-[20px] w-[20px];
+      }
+
+      &:nth-child(1) {
+        @apply border-r border-black pr-4;
+      }
+    }
+  }
+
+  .product_payment-icons {
+    @apply mx-0 my-4 block;
+  }
+
+  .product_atc-icons {
+    .product_atc-icon-line {
+      @apply my-3 flex items-center gap-2;
+
+      & > div:nth-child(1) {
+        @apply flex w-[5%] items-center;
+      }
+
+      & > div:nth-child(2) {
+        @apply w-full;
+      }
+
+      p {
+        @apply m-0 text-base leading-[1.3];
+      }
+    }
+  }
+
+  .main_product-review {
+    @apply bg-background-2nd mt-6 rounded-xl p-3;
+
+    .main_product-review-meta {
+      @apply mb-2 flex items-center gap-4;
+
+      p {
+        @apply m-0 flex items-center gap-2 text-base leading-[1.3];
+
+        img {
+          @apply max-w-[120px];
+        }
+      }
+
+      span {
+        @apply flex items-center;
+      }
+
+      & > div:nth-child(1) {
+        @apply w-[15%];
+      }
+
+      & > div:nth-child(2) {
+        @apply w-full;
+      }
+
+      .main_product-review-stars {
+        @apply mt-1.5 block max-w-[100px];
+      }
+    }
+
+    .main_product-review-content {
+      p {
+        @apply mt-0 mb-2 text-base leading-[1.3] tracking-normal;
+      }
+
+      strong {
+        @apply font-semibold;
+      }
+    }
+  }
+
+  .product_tab-block_out {
+    @apply mt-4;
+
+    .product_tab-block {
+      @apply border-border-2nd mb-4 cursor-pointer rounded-[32px] border p-4;
+
+      .product_tab-thumb {
+        @apply flex items-center justify-between gap-3;
+
+        p {
+          @apply m-0 text-base leading-[1.3];
+        }
+
+        span {
+          @apply flex items-center;
+        }
+
+        img {
+          @apply block h-[24px] w-[24px] transition-all duration-200;
+        }
+      }
+
+      .product_tab-content {
+        @apply mt-4;
+
+        p {
+          @apply mt-0 mb-3 leading-[1.3] tracking-normal;
+        }
+      }
+    }
+  }
+
+  .section_press_logos_outer {
+    @apply relative mx-auto;
+
+    .section_holder {
+      @apply bg-background-2nd relative mx-auto max-w-[100vw] leading-1;
+    }
+
+    .press_logos_wrapper {
+      @apply grid grid-cols-1 content-center justify-items-center gap-x-[70px] gap-y-[20px] p-0 pt-5 pb-5 text-center;
+
+      .title_wrap {
+        @apply font-trirong m-0 text-2xl tracking-normal text-black;
+      }
+
+      .auto_scrolling_logos {
+        @apply w-full min-w-[1px] overflow-hidden;
+
+        .logos_wrap {
+          @apply animate-logo-scroll flex w-fit items-center;
+
+          img {
+            @apply mx-[50px] block h-[30px] w-auto;
+          }
+        }
+      }
+    }
+  }
+
+  .outer_why-bloating {
+    @apply pb-0;
+
+    /* ---------- Why bloating grid ---------- */
+    .product_why-bloating-grid {
+      @apply mt-10 flex gap-4;
+
+      > div {
+        @apply w-full overflow-hidden rounded-md;
+
+        img {
+          @apply min-h-[150px];
+        }
+
+        .product_why-bloat-cell-inn {
+          @apply bg-card min-h-[150px] p-4 text-center;
+
+          p {
+            @apply m-0 text-base leading-[1.3];
+          }
+        }
+      }
+    }
+
+    /* ---------- Assets ---------- */
+    .product_why-note-img {
+      @apply mx-auto w-full max-w-[920px];
+    }
+  }
+
+  .product_judge-outer.pli_outer {
+    @apply px-0 py-[56px];
+  }
+
+  #info {
+    .product_judge-outer.pli_outer {
+      @apply -mt-4 py-0;
+    }
+  }
+
+  .pli_flex {
+    @apply gap-big-large flex items-center;
+
+    & > div {
+      @apply w-full;
+    }
+
+    .pli_top-text {
+      & > * {
+        @apply my-2 px-0 text-lg leading-[1.3em];
+      }
+
+      ul {
+        @apply ml-0 pl-0;
+
+        li {
+          @apply text-primary font-nunito list-none pl-8 font-semibold;
+          background-image: url('https://trysculptique.com/cdn/shop/files/check-mark_17013456_2_1.png?v=1760702838');
+          background-size: 20px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .pli_bottom-text {
+      & > * {
+        @apply my-2 px-0 text-lg leading-[1.3em];
+      }
+
+      ul {
+        @apply ml-0 pl-0;
+
+        li {
+          @apply text-accent font-nunito list-none pl-8 font-semibold;
+          background-image: url('https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839');
+          background-size: 20px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .pli_pink-text {
+      & > * {
+        @apply my-2 px-0 text-lg leading-[1.3em];
+      }
+
+      @apply bg-accent-2nd my-6 rounded-lg px-4 py-2;
+
+      ul {
+        @apply ml-0 pl-0;
+
+        li {
+          @apply text-accent font-nunito list-none pl-8 font-semibold;
+          background-image: url('https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839');
+          background-size: 20px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  .top_padding {
+    @apply mt-10;
+  }
+
+  .outer_how-nothing {
+    @apply text-dark bg-background-2nd mb-[35px] py-[70px] text-lg font-bold;
+  }
+
+  .product_judge-outer.outer_how-nothing {
+    @apply pt-0;
+  }
+
+  .product_why-bloating-grid {
+    @apply mt-10 flex gap-6;
+
+    & > div {
+      @apply w-full;
+    }
+
+    .product_why-nothing-cell-inn {
+      @apply bg-card p-6 text-center;
+
+      h4 {
+        @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;
+      }
+
+      .product_why-nothing-pink {
+        @apply bg-accent-2nd mt-6 min-h-[180px] overflow-hidden rounded-md px-4 py-2;
+
+        .product_why-nothing-subtitle {
+          @apply m-0 flex items-center justify-center text-base leading-[1.3em] font-semibold;
+
+          img {
+            @apply max-w-[24px];
+          }
+        }
+
+        .product_why-nothing-text {
+          @apply mt-3 text-base leading-[1.3em];
+        }
+      }
+    }
+  }
+
+  .product_why-note-img {
+    @apply mx-auto w-full max-w-[920px];
+  }
+
+  .btn_container {
+    @apply mt-6 text-center;
+  }
+
+  .product_lymphg-ingr-outer {
+    @apply bg-background-2nd;
+
+    img {
+      @apply w-full;
+    }
+  }
+
+  .product_lymph-ingr-table {
+    @apply mt-10 grid grid-cols-4 overflow-hidden rounded-xl border border-black bg-white;
+
+    .product-lymph-ingredient {
+      @apply cursor-pointer border border-black p-6;
+
+      .product_lymph-ingr-subtitle {
+        @apply text-primary-2nd m-0 flex items-center justify-center gap-2 text-base;
+      }
+
+      .product_lymph-main-img {
+        @apply mx-auto my-3 block max-h-[80px] w-auto max-w-[120px];
+      }
+
+      .product_lymph-ingr-thumb {
+        @apply flex items-center justify-between gap-2;
+
+        h5 {
+          @apply m-0 text-base leading-[1.3] font-semibold;
+        }
+
+        img {
+          @apply ml-auto block w-[24px];
+        }
+      }
+
+      .product_lymph-ingr-content {
+        @apply mt-3;
+
+        p {
+          @apply m-0 text-sm leading-[1.3em];
+        }
+      }
+    }
+  }
+
+  .product_lymph-ingr-table-small {
+    @apply mx-auto mt-10 max-w-[580px];
+  }
+
+  .benefits {
+    @apply bg-background-2nd;
+
+    .product_benefits-grid {
+      @apply flex gap-6;
+
+      & > div {
+        @apply w-full text-center;
+      }
+
+      img {
+        @apply mx-auto mb-4 block h-10 max-w-10;
+      }
+    }
+  }
+
+  .product_expert-outer {
+    @apply bg-card flex overflow-hidden rounded-2xl;
+
+    & > div {
+      @apply w-full;
+    }
+  }
+
+  .product_stats-outer {
+    @apply flex items-center;
+
+    & > div:nth-child(1) {
+      @apply w-full;
+    }
+
+    & > div:nth-child(2) {
+      @apply w-[70%];
+    }
+  }
+
+  #footer {
+    .product_judge-outer {
+      @apply bg-background-2nd;
+    }
+  }
+
+  .product_text-image {
+    @apply gap-medium flex items-center justify-center;
+
+    & > div {
+      @apply w-full;
+    }
+  }
+
+  .product_textimage-content {
+    .product_text-image-reviews {
+      @apply max-w-[350px];
+    }
+
+    .btn_container {
+      @apply max-w-[495px];
+    }
   }
 }

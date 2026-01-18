@@ -1,4 +1,10 @@
 @layer base {
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 100%;
+  }
+
   *,
   *::before,
   *::after {
@@ -6,13 +12,22 @@
   }
 
   body {
-    @apply font-nunito m-0 leading-[1.8] tracking-[0.06rem];
+    @apply font-montserrat text-body m-0 tracking-[0.06rem];
   }
 
   ul {
-    @apply my-[1em] block list-disc ps-10;
+    @apply my-[1em] list-disc ps-10;
   }
+
   li {
     @apply list-item;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply break-words;
   }
 }

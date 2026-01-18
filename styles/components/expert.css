@@ -1,8 +1,0 @@
-@layer components {
-  .product_expert-outer {
-    @apply bg-card flex overflow-hidden rounded-2xl;
-    & > div {
-      @apply w-full;
-    }
-  }
-}
