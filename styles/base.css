@@ -1,19 +1,18 @@
 @layer base {
-  html{
-      box-sizing: border-box;
-     font-size:10px;
-      height: 100%;
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 100%;
   }
-  
+
   *,
   *::before,
   *::after {
     box-sizing: inherit;
-    
   }
 
   body {
-    @apply font-montserrat text-body m-0 tracking-[0.06rem] ;
+    @apply font-montserrat text-body m-0 tracking-[0.06rem];
   }
 
   ul {
