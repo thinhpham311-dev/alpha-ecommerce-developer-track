@@ -14,20 +14,4 @@
   body {
     @apply font-montserrat text-body m-0 tracking-[0.06rem];
   }
-
-  ul {
-    @apply my-[1em] list-disc ps-10;
-  }
-
-  li {
-    @apply list-item;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    @apply break-words;
-  }
 }

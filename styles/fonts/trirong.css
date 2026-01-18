@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Nunito';
+  font-family: 'Trirong';
   font-style: normal;
   font-weight: 400;
   src:
-    local('Nunito Regular'),
-    url('../../public/fonts/Nunito/Nunito-Regular.woff2') format('woff2');
+    local('Trirong Regular'),
+    url('../../public/fonts/Trirong/Trirong-Regular.woff2') format('woff2');
   font-display: swap;
 }

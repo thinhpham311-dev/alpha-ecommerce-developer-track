@@ -1,136 +1,83 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
 @layer properties;
-@layer base {
-  html {
-    box-sizing: border-box;
-    font-size: 10px;
-    height: 100%;
-  }
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
-  body {
-    margin: var(--spacing-0);
-    font-family: var(--font-montserrat);
-    font-size: var(--text-body);
-    --tw-tracking: 0.06rem;
-    letter-spacing: 0.06rem;
-  }
-  ul {
-    margin-block: 1em;
-    list-style-type: disc;
-    padding-inline-start: var(--spacing-10);
-  }
-  li {
-    display: list-item;
-  }
-  h1, h2, h3, h4, h5 {
-    overflow-wrap: break-word;
-  }
-}
-:root, :host {
-  --color-primary: #039869;
-  --color-secondary: #6b7280;
-  --color-accent: #dc2626;
-  --color-accent-2nd: #fee2e2;
-  --color-white: #ffffff;
-  --color-white-2nd: #ffffffd9;
-  --color-black: #000000;
-  --color-background-2nd: #f7f2e7;
-  --color-card: #f7f7f7;
-  --color-border-2nd: #d1d5db;
-  --text-primary-2nd: #000000;
-  --text-dark: #1f2937;
-  --font-lora: 'Lora', serif;
-  --font-nunito: 'Nunito', serif;
-  --font-trirong: 'Trirong', serif;
-  --font-montserrat: 'Montserrat', sans-serif;
-  --text-xs: 12px;
-  --text-body: 1.6rem;
-  --text-sm: 0.875rem;
-  --text-base: 16px;
-  --text-lg: 18px;
-  --text-xl: 20px;
-  --text-2xl: 24px;
-  --text-3xl: 28px;
-  --text-4xl: 36px;
-  --leading-snug: 1.3;
-  --spacing-0: 0;
-  --spacing-1: 0.25rem;
-  --spacing-2: 0.5rem;
-  --spacing-3: 12px;
-  --spacing-4: 16px;
-  --spacing-6: 24px;
-  --spacing-8: 2rem;
-  --spacing-10: 2.5rem;
-  --spacing-20: 5rem;
-  --spacing-button: 18px 80px;
-  --gap-medium: 3.5rem;
-  --gap-large: 64px;
-  --gap-big-large: 6.25rem;
-  --radius: 0.25rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 8px;
-  --radius-xl: 12px;
-  --radius-2xl: 1rem;
-  --radius-full: 9999px;
-  --max-w-page: 1340px;
-  --max-w-judge: 1000px;
-  --animate-logo-scroll: logo-scroll 20s linear infinite;
-  --aspect-square: 1 / 1;
-  --opacity-0: 0;
-  --opacity-60: 0.6;
-  --opacity-100: 1;
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
-  --spacing: 0.25rem;
-  --text-xs--line-height: calc(1 / 0.75);
-  --text-sm--line-height: calc(1.25 / 0.875);
-  --text-base--line-height: calc(1.5 / 1);
-  --text-lg--line-height: calc(1.75 / 1.125);
-  --text-xl--line-height: calc(1.75 / 1.25);
-  --text-2xl--line-height: calc(2 / 1.5);
-  --text-3xl--line-height: calc(2.25 / 1.875);
-  --text-4xl--line-height: calc(2.5 / 2.25);
-  --font-weight-normal: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --tracking-normal: 0em;
-  --default-transition-duration: 150ms;
-  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --default-font-family: var(--font-sans);
-  --default-mono-font-family: var(--font-mono);
-}
-@keyframes logo-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-@custom-media --screen-xs (max-width: 475px);
-@custom-media --screen-sm (max-width: 640px);
-@custom-media --screen-md (max-width: 768px);
-@custom-media --screen-lg (max-width: 1024px);
-@custom-media --screen-xl (max-width: 1280px);
-@custom-media --screen-2xl (max-width: 1536px);
-@media (max-width: 750px) {
-  :root {
-    --container-padding-x: 1.25rem;
-    --container-padding-y: 0;
-  }
-}
-@media (min-width: 751px) {
-  :root {
-    --container-padding-x: 1rem;
-    --container-padding-y: 0;
-  }
-}
 @layer theme, base, components, utilities;
-@layer theme;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --spacing: 0.25rem;
+    --text-xs: 12px;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 14px;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 16px;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 18px;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 20px;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 24px;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 28px;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 32px;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --tracking-normal: 0em;
+    --leading-snug: 1.3em;
+    --radius-md: 0.375rem;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-2xl: 1rem;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --radius: 0.25rem;
+    --color-primary: #039869;
+    --color-secondary: #6b7280;
+    --color-accent: #dc2626;
+    --color-accent-2nd: #fee2e2;
+    --color-white-2nd: #ffffffd9;
+    --color-background-2nd: #f7f2e7;
+    --color-card: #f7f7f7;
+    --color-border-2nd: #d1d5db;
+    --text-primary-2nd: #000000;
+    --text-dark: #1f2937;
+    --font-lora: 'Lora', serif;
+    --font-nunito: 'Nunito', serif;
+    --font-trirong: 'Trirong', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --text-body: 1.6rem;
+    --spacing-0: 0;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-6: 24px;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-20: 5rem;
+    --spacing-button: 18px 80px;
+    --gap-medium: 3.5rem;
+    --gap-large: 64px;
+    --gap-big-large: 6.25rem;
+    --radius-full: 9999px;
+    --max-w-page: 1340px;
+    --max-w-judge: 800px;
+    --animate-logo-scroll: logo-scroll 20s linear infinite;
+    --aspect-square: 1 / 1;
+    --opacity-0: 0;
+    --opacity-60: 0.6;
+    --opacity-100: 1;
+  }
+}
 @layer base {
   *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
@@ -302,6 +249,49 @@
     opacity: var(--opacity-100);
   }
 }
+@layer base {
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 100%;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: var(--spacing-0);
+    font-family: var(--font-montserrat);
+    font-size: var(--text-body);
+    --tw-tracking: 0.06rem;
+    letter-spacing: 0.06rem;
+  }
+}
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@custom-media --screen-xs (max-width: 475px);
+@custom-media --screen-sm (max-width: 640px);
+@custom-media --screen-md (max-width: 768px);
+@custom-media --screen-lg (max-width: 1024px);
+@custom-media --screen-xl (max-width: 1280px);
+@custom-media --screen-2xl (max-width: 1536px);
+@media (max-width: 750px) {
+  :root {
+    --container-padding-x: 1.25rem;
+    --container-padding-y: 0;
+  }
+}
+@media (min-width: 751px) {
+  :root {
+    --container-padding-x: 1rem;
+    --container-padding-y: 0;
+  }
+}
 @layer utilities {
   .font-lora {
     font-family: var(--font-lora);
@@ -312,20 +302,6 @@
   .font-trirong {
     font-family: var(--font-trirong);
   }
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), url('../../public/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat Bold'), url('../../public/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2');
-  font-display: swap;
 }
 @font-face {
   font-family: 'Lora';
@@ -356,6 +332,20 @@
   font-style: italic;
   font-weight: 700;
   src: local('Lora'), url('https://fonts.cdnfonts.com/s/13623/Lora-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), url('../../public/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), url('../../public/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Nunito';
@@ -440,6 +430,13 @@
   font-style: italic;
   font-weight: 900;
   src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-BlackItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Trirong';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Trirong Regular'), url('../../public/fonts/Trirong/Trirong-Regular.woff2') format('woff2');
+  font-display: swap;
 }
 @layer components {
   .shopify-section {
@@ -538,6 +535,8 @@
     line-height: var(--tw-leading, var(--text-lg--line-height));
     --tw-leading: var(--leading-snug);
     line-height: var(--leading-snug);
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
     color: var(--color-white);
     text-decoration-line: none;
     transition-property: all;
@@ -603,8 +602,9 @@
     }
     .main_product-images {
       img {
+        aspect-ratio: var(--aspect-square);
         overflow: hidden;
-        border-radius: 4px;
+        border-radius: var(--radius-lg);
         object-fit: cover;
       }
       .main_product-image {
@@ -619,7 +619,7 @@
         }
         .main_product-nutrition-info {
           position: absolute;
-          bottom: var(--spacing-8);
+          bottom: 32px;
           z-index: 2;
           display: flex;
           max-width: 290px;
@@ -631,7 +631,7 @@
           border-width: 1px;
           border-color: var(--color-black);
           background-color: var(--color-white-2nd);
-          padding-inline: var(--spacing-4);
+          padding-inline: var(--spacing-6);
           padding-block: var(--spacing-2);
           font-size: var(--text-sm);
           line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -640,9 +640,11 @@
           span {
             display: flex;
             align-items: center;
+            --tw-font-weight: var(--font-weight-semibold);
+            font-weight: var(--font-weight-semibold);
           }
           img {
-            width: 20px;
+            width: 24px;
           }
         }
         .main-product_badge {
@@ -749,7 +751,7 @@
             width: calc(1/2 * 100%);
             text-align: right;
           }
-          .product-selector_title {
+          .product-selector_title, .product-selector_price {
             font-size: var(--text-base);
             line-height: var(--tw-leading, var(--text-base--line-height));
             --tw-leading: var(--leading-snug);
@@ -760,6 +762,8 @@
           .product-selector_info {
             font-size: var(--text-xs);
             line-height: var(--tw-leading, var(--text-xs--line-height));
+            --tw-leading: var(--leading-snug);
+            line-height: var(--leading-snug);
           }
           .product-selector_bubble {
             display: flex;
@@ -772,8 +776,14 @@
             border-width: 2px;
             border-color: var(--color-primary);
           }
-          .product-selector_price, .product-selector_compare {
+          .product-selector_compare {
             display: block;
+            font-size: var(--text-sm);
+            line-height: var(--tw-leading, var(--text-sm--line-height));
+            --tw-leading: var(--leading-snug);
+            line-height: var(--leading-snug);
+            --tw-font-weight: var(--font-weight-semibold);
+            font-weight: var(--font-weight-semibold);
           }
         }
         .product-selector_perks {
@@ -1448,10 +1458,6 @@
     }
   }
 }
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -1469,6 +1475,10 @@
   inherits: false;
 }
 @property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
@@ -1492,12 +1502,12 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-tracking: initial;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-tracking: initial;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-duration: initial;
