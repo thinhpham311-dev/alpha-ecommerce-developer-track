@@ -246,6 +246,9 @@
   .block {
     display: block;
   }
+  .contents {
+    display: contents;
+  }
   .hidden {
     display: none;
   }
@@ -1469,6 +1472,14 @@
     margin-top: calc(var(--spacing) * 10);
     max-width: 580px;
   }
+  .product-reviews_trust {
+    margin-inline: auto;
+    display: block;
+    max-width: 200px;
+  }
+  .jdgm-rev-widg__header {
+    text-align: center;
+  }
   .benefits {
     background-color: var(--color-background-2nd);
     .product_benefits-grid {
@@ -1688,7 +1699,7 @@
     height: 420px;
     padding: var(--spacing-2);
   }
-  .product_ugc-container .slick-slide>div {
+  .product_ugc-container .slick-slide > div {
     display: flex;
     height: 100%;
     width: 100%;
