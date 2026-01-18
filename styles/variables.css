@@ -51,7 +51,7 @@
 
   --text-body: 1.6rem;
   /* 12px */
-  --text-sm: 0.875rem;
+  --text-sm: 14px;
   /* 14px */
   --text-base: 16px;
   /* 16px */
@@ -63,22 +63,22 @@
   /* 24px */
   --text-3xl: 28px;
   /* 30px */
-  --text-4xl: 36px;
+  --text-4xl: 32px;
   /* 36px */
 
   /* Line heights */
-  --leading-none: 1;
-  --leading-tight: 1.25;
-  --leading-snug: 1.3;
-  --leading-normal: 1.5;
-  --leading-relaxed: 1.625;
-  --leading-loose: 2;
+  --leading-none: 1em;
+  --leading-tight: 1.25em;
+  --leading-snug: 1.3em;
+  --leading-normal: 1.5em;
+  --leading-relaxed: 1.625em;
+  --leading-loose: 2em;
 
   /* Spacing */
   --spacing-0: 0;
-  --spacing-1: 0.25rem;
+  --spacing-1: 4px;
   /* 4px */
-  --spacing-2: 0.5rem;
+  --spacing-2: 8px;
   /* 8px */
   --spacing-3: 12px;
   /* 12px */
@@ -141,7 +141,7 @@
   /* Container widths */
   --max-w-page: 1340px;
   /* Max width cho page-width */
-  --max-w-judge: 1000px;
+  --max-w-judge: 800px;
   /* Max width cho product_judge-container */
 
   /* Z-index */
