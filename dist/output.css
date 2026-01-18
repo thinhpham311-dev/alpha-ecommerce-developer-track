@@ -1,65 +1,135 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
 @layer properties;
-@layer theme, base, components, utilities;
-@layer theme {
-  :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
-    --color-black: #000;
-    --color-white: #fff;
-    --spacing: 0.25rem;
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
-    --text-base: 1rem;
-    --text-base--line-height: calc(1.5 / 1);
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.75rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --font-weight-normal: 400;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --tracking-normal: 0em;
-    --leading-snug: 1.375;
-    --radius-md: 0.375rem;
-    --radius-lg: 0.5rem;
-    --radius-xl: 0.75rem;
-    --radius-2xl: 1rem;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --default-font-family: var(--font-sans);
-    --default-mono-font-family: var(--font-mono);
-    --font-nunito: 'Nunito', system-ui, sans-serif;
-    --font-lora: 'Lora', serif;
-    --font-trirong: 'Trirong', serif;
-    --color-primary: #039869;
-    --color-primary-2nd: #0c7c00;
-    --color-secondary: #737373;
-    --color-accent: #a60003;
-    --color-accent-2nd: #ffe3e3;
-    --color-background-2nd: #f3eee0;
-    --color-background-3rd: #fff7f8;
-    --color-card: #f7f7f7;
-    --color-border-2nd: #d2d2d2;
-    --color-dark: #1c1b1b;
-    --spacing-1: 4px;
-    --spacing-2: 8px;
-    --spacing-3: 12px;
-    --spacing-4: 16px;
-    --spacing-6: 24px;
-    --spacing-8: 32px;
-    --spacing-10: 40px;
-    --animate-logo-scroll: logo_scroll 60s linear infinite;
+@layer base {
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 100%;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: var(--spacing-0);
+    font-family: var(--font-montserrat);
+    font-size: var(--text-body);
+    --tw-tracking: 0.06rem;
+    letter-spacing: 0.06rem;
+  }
+  ul {
+    margin-block: 1em;
+    list-style-type: disc;
+    padding-inline-start: var(--spacing-10);
+  }
+  li {
+    display: list-item;
+  }
+  h1, h2, h3, h4, h5 {
+    overflow-wrap: break-word;
   }
 }
+:root, :host {
+  --color-primary: #039869;
+  --color-secondary: #6b7280;
+  --color-accent: #dc2626;
+  --color-accent-2nd: #fee2e2;
+  --color-white: #ffffff;
+  --color-white-2nd: #ffffffd9;
+  --color-black: #000000;
+  --color-background-2nd: #f7f2e7;
+  --color-card: #f7f7f7;
+  --color-border-2nd: #d1d5db;
+  --text-primary-2nd: #000000;
+  --text-dark: #1f2937;
+  --font-lora: 'Lora', serif;
+  --font-nunito: 'Nunito', serif;
+  --font-trirong: 'Trirong', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --text-xs: 12px;
+  --text-body: 1.6rem;
+  --text-sm: 0.875rem;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
+  --text-4xl: 36px;
+  --leading-snug: 1.3;
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-20: 5rem;
+  --spacing-button: 18px 80px;
+  --gap-medium: 3.5rem;
+  --gap-large: 64px;
+  --gap-big-large: 6.25rem;
+  --radius: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+  --max-w-page: 1340px;
+  --max-w-judge: 1000px;
+  --animate-logo-scroll: logo-scroll 20s linear infinite;
+  --aspect-square: 1 / 1;
+  --opacity-60: 0.6;
+  --opacity-100: 1;
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+  --spacing: 0.25rem;
+  --text-xs--line-height: calc(1 / 0.75);
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-base--line-height: calc(1.5 / 1);
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-3xl--line-height: calc(2.25 / 1.875);
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --tracking-normal: 0em;
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --default-font-family: var(--font-sans);
+  --default-mono-font-family: var(--font-mono);
+}
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@custom-media --screen-xs (max-width: 475px);
+@custom-media --screen-sm (max-width: 640px);
+@custom-media --screen-md (max-width: 768px);
+@custom-media --screen-lg (max-width: 1024px);
+@custom-media --screen-xl (max-width: 1280px);
+@custom-media --screen-2xl (max-width: 1536px);
+@media (max-width: 750px) {
+  :root {
+    --container-padding-x: 1.25rem;
+    --container-padding-y: 0;
+  }
+}
+@media (min-width: 751px) {
+  :root {
+    --container-padding-x: 1rem;
+    --container-padding-y: 0;
+  }
+}
+@layer theme, base, components, utilities;
+@layer theme;
 @layer base {
   *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
@@ -225,148 +295,170 @@
     text-align: left;
   }
 }
-@font-face {
-  font-family: 'Trirong';
-  src: url('../public/fonts/Trirong/woff2/Trirong-Light.woff2') format('woff2'), url('../public/fonts/Trirong/woff/Trirong-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Trirong';
-  src: url('../public/fonts/Trirong/woff2/Trirong-Regular.woff2') format('woff2'), url('../public/fonts/Trirong/woff/Trirong-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Trirong';
-  src: url('../public/fonts/Trirong/woff2/Trirong-Medium.woff2') format('woff2'), url('../public/fonts/Trirong/woff/Trirong-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Trirong';
-  src: url('../public/fonts/Trirong/woff2/Trirong-Bold.woff2') format('woff2'), url('../public/fonts/Trirong/woff/Trirong-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Lora';
-  src: url('../public/fonts/Lora/woff2/Lora-Regular.woff2') format('woff2'), url('../public/fonts/Lora/woff/Lora-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Lora';
-  src: url('../public/fonts/Lora/woff2/Lora-Medium.woff2') format('woff2'), url('../public/fonts/Lora/woff/Lora-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Lora';
-  src: url('../public/fonts/Lora/woff2/Lora-SemiBold.woff2') format('woff2'), url('../public/fonts/Lora/woff/Lora-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Lora';
-  src: url('../public/fonts/Lora/woff2/Lora-Bold.woff2') format('woff2'), url('../public/fonts/Lora/woff/Lora-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url('../public/fonts/Nunito/woff2/Nunito-Light.woff2') format('woff2'), url('../public/fonts/Nunito/woff/Nunito-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url('../public/fonts/Nunito/woff2/Nunito-Regular.woff2') format('woff2'), url('../public/fonts/Nunito/woff/Nunito-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url('../public/fonts/Nunito/woff2/Nunito-Medium.woff2') format('woff2'), url('../public/fonts/Nunito/woff/Nunito-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url('../public/fonts/Nunito/woff2/Nunito-SemiBold.woff2') format('woff2'), url('../public/fonts/Nunito/woff/Nunito-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url('../public/fonts/Nunito/woff2/Nunito-Bold.woff2') format('woff2'), url('../public/fonts/Nunito/woff/Nunito-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@keyframes logo_scroll {
-  from {
-    transform: translateX(0);
+@layer utilities {
+  .font-lora {
+    font-family: var(--font-lora);
   }
-  to {
-    transform: translateX(-100%);
-  }
-}
-@layer base {
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
-  body {
-    margin: calc(var(--spacing) * 0);
+  .font-nunito {
     font-family: var(--font-nunito);
-    --tw-leading: 1.8;
-    line-height: 1.8;
-    --tw-tracking: 0.06rem;
-    letter-spacing: 0.06rem;
   }
-  ul {
-    margin-block: 1em;
-    display: block;
-    list-style-type: disc;
-    padding-inline-start: var(--spacing-10);
+  .font-trirong {
+    font-family: var(--font-trirong);
   }
-  li {
-    display: list-item;
-  }
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), url('../../public/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), url('../../public/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), url('https://fonts.cdnfonts.com/s/13623/Lora.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), url('https://fonts.cdnfonts.com/s/13623/Lora-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lora'), url('https://fonts.cdnfonts.com/s/13623/Lora-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lora'), url('https://fonts.cdnfonts.com/s/13623/Lora-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lora'), url('https://fonts.cdnfonts.com/s/13623/Lora-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 275;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 275;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraLightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-SemiBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraBoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Nunito'), url('https://fonts.cdnfonts.com/s/15604/Nunito-BlackItalic.woff') format('woff');
 }
 @layer components {
   .shopify-section {
     z-index: 50;
     background-color: var(--color-white);
+    p {
+      font-family: var(--font-nunito);
+    }
   }
   .page-width {
     margin-inline: auto;
-    max-width: 1340px;
-    padding-inline: var(--spacing-4);
+    display: block;
+    max-width: var(--max-w-page);
+    padding-inline: var(--spacing-20);
   }
   .hided {
     display: none;
   }
   .product_judge-outer {
-    padding-inline: calc(var(--spacing) * 0);
+    padding-inline: var(--spacing-0);
     padding-block: 56px;
   }
   .product_judge-container {
     margin-inline: auto;
     margin-bottom: var(--spacing-10);
-    max-width: 800px;
+    max-width: var(--max-w-judge);
   }
   .product_expert-content {
     padding: var(--spacing-8);
@@ -430,10 +522,9 @@
   .product_primary-btn {
     display: inline-block;
     cursor: pointer;
-    border-radius: 0.25rem;
+    border-radius: var(--radius);
     background-color: var(--color-black);
-    padding-inline: calc(var(--spacing) * 20);
-    padding-block: var(--spacing-4);
+    padding: var(--spacing-button);
     text-align: center;
     font-family: var(--font-nunito);
     font-size: var(--text-lg);
@@ -455,8 +546,6 @@
     width: 100%;
     max-width: 48px;
   }
-}
-@layer components {
   .secret_header-whole {
     display: flex;
     align-items: center;
@@ -468,12 +557,10 @@
       max-width: 160px;
     }
   }
-}
-@layer components {
   @media screen and (max-width: 750px) {
     .page-width {
-      padding-inline: calc(var(--spacing) * 20);
-      padding-block: calc(var(--spacing) * 0);
+      padding-inline: var(--spacing-20);
+      padding-block: var(--spacing-0);
     }
   }
   @media only screen and (min-width: 678px) {
@@ -484,8 +571,6 @@
       flex-direction: row-reverse;
     }
   }
-}
-@layer components {
   .main_section {
     img {
       width: 100%;
@@ -499,14 +584,14 @@
       display: block;
       height: 16px;
       width: 16px;
-      border-radius: calc(infinity * 1px);
+      border-radius: var(--radius-full);
       background-color: var(--color-primary);
     }
   }
   .main_product-container {
     display: flex;
-    gap: 64px;
-    .main_product-container > div {
+    gap: var(--gap-large);
+    & > div {
       width: 100%;
     }
     .main_product-images {
@@ -520,7 +605,7 @@
         display: flex;
         justify-content: center;
         img {
-          aspect-ratio: 1 / 1;
+          aspect-ratio: var(--aspect-square);
           overflow: hidden;
           border-radius: 4px;
           object-fit: cover;
@@ -538,11 +623,8 @@
           border-style: var(--tw-border-style);
           border-width: 1px;
           border-color: var(--color-black);
-          background-color: color-mix(in srgb, #fff 85%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            background-color: color-mix(in oklab, var(--color-white) 85%, transparent);
-          }
-          padding-inline: var(--spacing-2);
+          background-color: var(--color-white-2nd);
+          padding-inline: var(--spacing-4);
           padding-block: var(--spacing-2);
           font-size: var(--text-sm);
           line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -580,7 +662,7 @@
     }
   }
   .main_product-reviews {
-    margin-top: var(--spacing-4);
+    margin-top: var(--spacing-0);
     display: flex;
     align-items: center;
     gap: var(--spacing-4);
@@ -589,9 +671,14 @@
       width: 100px;
     }
     p {
-      margin-block: var(--spacing-4);
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
+      margin-block: var(--spacing-0);
+      font-family: var(--font-nunito);
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+      --tw-leading: var(--leading-snug);
+      line-height: var(--leading-snug);
+      --tw-font-weight: var(--font-weight-normal);
+      font-weight: var(--font-weight-normal);
     }
   }
   .main_product-title {
@@ -608,6 +695,10 @@
       display: flex;
       align-items: center;
       gap: var(--spacing-3);
+      p {
+        font-size: var(--text-base);
+        line-height: var(--tw-leading, var(--text-base--line-height));
+      }
       & > div:nth-child(1) {
         display: flex;
         width: 10%;
@@ -625,7 +716,7 @@
     background-color: var(--color-background-2nd);
     padding: var(--spacing-3);
     .product-selector_outer {
-      margin-top: calc(var(--spacing) * 0);
+      margin-top: var(--spacing-0);
       .product-selector_block {
         position: relative;
         margin-bottom: var(--spacing-3);
@@ -651,16 +742,31 @@
             width: calc(1/2 * 100%);
             text-align: right;
           }
+          .product-selector_title {
+            font-size: var(--text-base);
+            line-height: var(--tw-leading, var(--text-base--line-height));
+            --tw-leading: var(--leading-snug);
+            line-height: var(--leading-snug);
+            --tw-font-weight: var(--font-weight-semibold);
+            font-weight: var(--font-weight-semibold);
+          }
+          .product-selector_info {
+            font-size: var(--text-xs);
+            line-height: var(--tw-leading, var(--text-xs--line-height));
+          }
           .product-selector_bubble {
             display: flex;
             height: 26px;
             width: 26px;
             align-items: center;
             justify-content: center;
-            border-radius: calc(infinity * 1px);
+            border-radius: var(--radius-full);
             border-style: var(--tw-border-style);
             border-width: 2px;
             border-color: var(--color-primary);
+          }
+          .product-selector_price, .product-selector_compare {
+            display: block;
           }
         }
         .product-selector_perks {
@@ -677,7 +783,7 @@
             background-color: var(--color-primary);
             padding-inline: var(--spacing-2);
             padding-block: var(--spacing-1);
-            opacity: 60%;
+            opacity: var(--opacity-60);
             &:last-child {
               border-bottom-style: var(--tw-border-style);
               border-bottom-width: 0px;
@@ -689,8 +795,8 @@
               width: 100%;
             }
             p {
-              font-size: var(--text-sm);
-              line-height: var(--tw-leading, var(--text-sm--line-height));
+              font-size: var(--text-xs);
+              line-height: var(--tw-leading, var(--text-xs--line-height));
               --tw-leading: 1em;
               line-height: 1em;
               --tw-font-weight: var(--font-weight-bold);
@@ -706,8 +812,10 @@
         right: calc(5px * -1);
       }
       .active {
-        .product-selector_perk_line {
-          opacity: 100%;
+        .product-selector_perks {
+          .product-selector_perk_line {
+            opacity: var(--opacity-100);
+          }
         }
       }
     }
@@ -718,14 +826,14 @@
     align-items: center;
     gap: var(--spacing-2);
     p {
-      margin: calc(var(--spacing) * 0);
+      margin: var(--spacing-0);
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
       --tw-leading: 1.3;
       line-height: 1.3;
     }
     span.col_pp_delivery__Date {
-      border-radius: 0.25rem;
+      border-radius: var(--radius);
       background-color: var(--color-primary);
       padding-inline: var(--spacing-2);
       padding-block: var(--spacing-1);
@@ -750,8 +858,6 @@
     text-align: center;
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
     color: var(--color-white);
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -770,6 +876,10 @@
       align-items: center;
       justify-content: center;
       gap: var(--spacing-2);
+      p {
+        font-size: var(--text-base);
+        line-height: var(--tw-leading, var(--text-base--line-height));
+      }
       svg, img {
         display: block;
         height: 20px;
@@ -784,7 +894,7 @@
     }
   }
   .product_payment-icons {
-    margin-inline: calc(var(--spacing) * 0);
+    margin-inline: var(--spacing-0);
     margin-block: var(--spacing-4);
     display: block;
   }
@@ -803,7 +913,7 @@
         width: 100%;
       }
       p {
-        margin: calc(var(--spacing) * 0);
+        margin: var(--spacing-0);
         font-size: var(--text-base);
         line-height: var(--tw-leading, var(--text-base--line-height));
         --tw-leading: 1.3;
@@ -822,7 +932,7 @@
       align-items: center;
       gap: var(--spacing-4);
       p {
-        margin: calc(var(--spacing) * 0);
+        margin: var(--spacing-0);
         display: flex;
         align-items: center;
         gap: var(--spacing-2);
@@ -852,7 +962,7 @@
     }
     .main_product-review-content {
       p {
-        margin-top: calc(var(--spacing) * 0);
+        margin-top: var(--spacing-0);
         margin-bottom: var(--spacing-2);
         font-size: var(--text-base);
         line-height: var(--tw-leading, var(--text-base--line-height));
@@ -883,7 +993,7 @@
         justify-content: space-between;
         gap: var(--spacing-3);
         p {
-          margin: calc(var(--spacing) * 0);
+          margin: var(--spacing-0);
           font-size: var(--text-base);
           line-height: var(--tw-leading, var(--text-base--line-height));
           --tw-leading: 1.3;
@@ -907,10 +1017,8 @@
       .product_tab-content {
         margin-top: var(--spacing-4);
         p {
-          margin-top: calc(var(--spacing) * 0);
+          margin-top: var(--spacing-0);
           margin-bottom: var(--spacing-3);
-          font-size: var(--text-base);
-          line-height: var(--tw-leading, var(--text-base--line-height));
           --tw-leading: 1.3;
           line-height: 1.3;
           --tw-tracking: var(--tracking-normal);
@@ -919,8 +1027,6 @@
       }
     }
   }
-}
-@layer components {
   .section_press_logos_outer {
     position: relative;
     margin-inline: auto;
@@ -928,7 +1034,7 @@
       position: relative;
       margin-inline: auto;
       max-width: 100vw;
-      background-color: var(--color-background-3rd);
+      background-color: var(--color-background-2nd);
       --tw-leading: var(--spacing-1);
       line-height: var(--spacing-1);
     }
@@ -939,12 +1045,12 @@
       justify-items: center;
       column-gap: 70px;
       row-gap: 20px;
-      padding: calc(var(--spacing) * 0);
+      padding: var(--spacing-0);
       padding-top: calc(var(--spacing) * 5);
       padding-bottom: calc(var(--spacing) * 5);
       text-align: center;
       .title_wrap {
-        margin: calc(var(--spacing) * 0);
+        margin: var(--spacing-0);
         font-family: var(--font-trirong);
         font-size: var(--text-2xl);
         line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -971,10 +1077,8 @@
       }
     }
   }
-}
-@layer components {
   .outer_why-bloating {
-    padding-bottom: calc(var(--spacing) * 0);
+    padding-bottom: var(--spacing-0);
     .product_why-bloating-grid {
       margin-top: var(--spacing-10);
       display: flex;
@@ -992,7 +1096,7 @@
           padding: var(--spacing-4);
           text-align: center;
           p {
-            margin: calc(var(--spacing) * 0);
+            margin: var(--spacing-0);
             font-size: var(--text-base);
             line-height: var(--tw-leading, var(--text-base--line-height));
             --tw-leading: 1.3;
@@ -1007,37 +1111,35 @@
       max-width: 920px;
     }
   }
-}
-@layer components {
   .product_judge-outer.pli_outer {
-    padding-inline: calc(var(--spacing) * 0);
+    padding-inline: var(--spacing-0);
     padding-block: 56px;
   }
   #info {
     .product_judge-outer.pli_outer {
       margin-top: calc(var(--spacing-4) * -1);
-      padding-block: calc(var(--spacing) * 0);
+      padding-block: var(--spacing-0);
     }
   }
   .pli_flex {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: var(--gap-big-large);
     & > div {
       width: 100%;
     }
     .pli_top-text {
       & > * {
         margin-block: var(--spacing-2);
-        padding-inline: calc(var(--spacing) * 0);
+        padding-inline: var(--spacing-0);
         font-size: var(--text-lg);
         line-height: var(--tw-leading, var(--text-lg--line-height));
         --tw-leading: 1.3em;
         line-height: 1.3em;
       }
       ul {
-        margin-left: calc(var(--spacing) * 0);
-        padding-left: calc(var(--spacing) * 0);
+        margin-left: var(--spacing-0);
+        padding-left: var(--spacing-0);
         li {
           list-style-type: none;
           padding-left: var(--spacing-8);
@@ -1054,15 +1156,15 @@
     .pli_bottom-text {
       & > * {
         margin-block: var(--spacing-2);
-        padding-inline: calc(var(--spacing) * 0);
+        padding-inline: var(--spacing-0);
         font-size: var(--text-lg);
         line-height: var(--tw-leading, var(--text-lg--line-height));
         --tw-leading: 1.3em;
         line-height: 1.3em;
       }
       ul {
-        margin-left: calc(var(--spacing) * 0);
-        padding-left: calc(var(--spacing) * 0);
+        margin-left: var(--spacing-0);
+        padding-left: var(--spacing-0);
         li {
           list-style-type: none;
           padding-left: var(--spacing-8);
@@ -1079,7 +1181,7 @@
     .pli_pink-text {
       & > * {
         margin-block: var(--spacing-2);
-        padding-inline: calc(var(--spacing) * 0);
+        padding-inline: var(--spacing-0);
         font-size: var(--text-lg);
         line-height: var(--tw-leading, var(--text-lg--line-height));
         --tw-leading: 1.3em;
@@ -1091,8 +1193,8 @@
       padding-inline: var(--spacing-4);
       padding-block: var(--spacing-2);
       ul {
-        margin-left: calc(var(--spacing) * 0);
-        padding-left: calc(var(--spacing) * 0);
+        margin-left: var(--spacing-0);
+        padding-left: var(--spacing-0);
         li {
           list-style-type: none;
           padding-left: var(--spacing-8);
@@ -1110,20 +1212,18 @@
   .top_padding {
     margin-top: var(--spacing-10);
   }
-}
-@layer components {
   .outer_how-nothing {
     margin-bottom: 35px;
     background-color: var(--color-background-2nd);
     padding-block: 70px;
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
+    font-size: var(--text-dark);
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-    color: var(--color-dark);
   }
   .product_judge-outer.outer_how-nothing {
-    padding-top: calc(var(--spacing) * 0);
+    padding-top: var(--spacing-0);
   }
   .product_why-bloating-grid {
     margin-top: var(--spacing-10);
@@ -1137,7 +1237,7 @@
       padding: var(--spacing-6);
       text-align: center;
       h4 {
-        margin: calc(var(--spacing) * 0);
+        margin: var(--spacing-0);
         font-family: var(--font-trirong);
         font-size: var(--text-xl);
         line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -1155,7 +1255,7 @@
         padding-inline: var(--spacing-4);
         padding-block: var(--spacing-2);
         .product_why-nothing-subtitle {
-          margin: calc(var(--spacing) * 0);
+          margin: var(--spacing-0);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1188,8 +1288,6 @@
     margin-top: var(--spacing-6);
     text-align: center;
   }
-}
-@layer components {
   .product_lymphg-ingr-outer {
     background-color: var(--color-background-2nd);
     img {
@@ -1213,14 +1311,14 @@
       border-color: var(--color-black);
       padding: var(--spacing-6);
       .product_lymph-ingr-subtitle {
-        margin: calc(var(--spacing) * 0);
+        margin: var(--spacing-0);
         display: flex;
         align-items: center;
         justify-content: center;
         gap: var(--spacing-2);
         font-size: var(--text-base);
         line-height: var(--tw-leading, var(--text-base--line-height));
-        color: var(--color-primary-2nd);
+        font-size: var(--text-primary-2nd);
       }
       .product_lymph-main-img {
         margin-inline: auto;
@@ -1236,7 +1334,7 @@
         justify-content: space-between;
         gap: var(--spacing-2);
         h5 {
-          margin: calc(var(--spacing) * 0);
+          margin: var(--spacing-0);
           font-size: var(--text-base);
           line-height: var(--tw-leading, var(--text-base--line-height));
           --tw-leading: 1.3;
@@ -1253,7 +1351,7 @@
       .product_lymph-ingr-content {
         margin-top: var(--spacing-3);
         p {
-          margin: calc(var(--spacing) * 0);
+          margin: var(--spacing-0);
           font-size: var(--text-sm);
           line-height: var(--tw-leading, var(--text-sm--line-height));
           --tw-leading: 1.3em;
@@ -1267,8 +1365,6 @@
     margin-top: var(--spacing-10);
     max-width: 580px;
   }
-}
-@layer components {
   .benefits {
     background-color: var(--color-background-2nd);
     .product_benefits-grid {
@@ -1287,8 +1383,6 @@
       }
     }
   }
-}
-@layer components {
   .product_expert-outer {
     display: flex;
     overflow: hidden;
@@ -1298,8 +1392,6 @@
       width: 100%;
     }
   }
-}
-@layer components {
   .product_stats-outer {
     display: flex;
     align-items: center;
@@ -1310,8 +1402,6 @@
       width: 70%;
     }
   }
-}
-@layer components {
   #footer {
     .product_judge-outer {
       background-color: var(--color-background-2nd);
@@ -1321,8 +1411,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 64px;
-    &>div {
+    gap: var(--gap-medium);
+    & > div {
       width: 100%;
     }
   }
@@ -1335,16 +1425,9 @@
     }
   }
 }
-@layer utilities {
-  .font-lora {
-    font-family: var(--font-lora);
-  }
-  .font-nunito {
-    font-family: var(--font-nunito);
-  }
-  .font-trirong {
-    font-family: var(--font-trirong);
-  }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -1370,10 +1453,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1390,13 +1469,13 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-tracking: initial;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-leading: initial;
-      --tw-tracking: initial;
       --tw-font-weight: initial;
       --tw-duration: initial;
       --tw-border-style: solid;

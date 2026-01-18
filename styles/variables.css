@@ -1,55 +1,226 @@
+/* variables.css */
 @theme {
-  /* FONTS */
-  --font-nunito: 'Nunito', system-ui, sans-serif;
-  --font-lora: 'Lora', serif;
-  --font-trirong: 'Trirong', serif;
-
-  /* COLORS */
+  /* Colors */
   --color-primary: #039869;
-  --color-primary-2nd: #0c7c00;
-  --color-secondary: #737373;
-  --color-accent: #a60003;
-  --color-accent-2nd: #ffe3e3;
-  --color-background: #f9f9f9;
-  --color-background-2nd: #f3eee0;
-  --color-background-3rd: #fff7f8;
+  /* Màu đen cho text-primary, border-primary, color-primary */
+  --color-secondary: #6b7280;
+  /* Màu xám cho text-secondary */
+  --color-accent: #dc2626;
+  /* Màu đỏ cho text-accent */
+  --color-accent-2nd: #fee2e2;
+  /* Màu hồng nhạt cho bg-accent-2nd */
+  --color-white: #ffffff;
+  --color-white-2nd: #ffffffd9;
+  --color-black: #000000;
+
+  /* Background colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-background-2nd: #f7f2e7;
+  /* Màu xám nhạt */
+  --color-background-3rd: #e5e7eb;
+  /* Màu xám trung bình */
   --color-card: #f7f7f7;
-  --color-border: #d1d5db;
-  --color-border-2nd: #d2d2d2;
-  --color-dark: #1c1b1b;
+  /* Màu nền card */
+  /* Nền đen */
 
-  /* FONT SIZES */
-  --text-xs: 0.75rem;
+  /* Border colors */
+  --color-border-primary: #000000;
+  --color-border-2nd: #d1d5db;
+  /* Màu xám nhạt hơn */
+
+  /* Text colors */
+  --text-primary: #dc2626;
+  /* Màu đỏ cho span trong tiêu đề */
+  --text-secondary: #6b7280;
+  --text-accent: #dc2626;
+  --text-primary-2nd: #000000;
+  /* Màu đen cho subtitle */
+  --text-dark: #1f2937;
+  /* Màu xám đậm */
+  --text-white: #ffffff;
+
+  /* Typography */
+  --font-lora: 'Lora', serif;
+  --font-nunito: 'Nunito', serif;
+  --font-trirong: 'Trirong', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  /* Font sizes */
+  --text-xs: 12px;
+
+  --text-body: 1.6rem;
+  /* 12px */
   --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.75rem;
-  --text-4xl: 2rem;
-  --text-5xl: 2.25rem;
-  --text-6xl: 3rem;
+  /* 14px */
+  --text-base: 16px;
+  /* 16px */
+  --text-lg: 18px;
+  /* 18px */
+  --text-xl: 20px;
+  /* 20px */
+  --text-2xl: 24px;
+  /* 24px */
+  --text-3xl: 28px;
+  /* 30px */
+  --text-4xl: 36px;
+  /* 36px */
 
-  /* SPACING */
-  --spacing-1: 4px;
-  --spacing-2: 8px;
+  /* Line heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+
+  /* Spacing */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  /* 4px */
+  --spacing-2: 0.5rem;
+  /* 8px */
   --spacing-3: 12px;
+  /* 12px */
   --spacing-4: 16px;
+  /* 16px */
   --spacing-6: 24px;
-  --spacing-8: 32px;
-  --spacing-10: 40px;
+  /* 24px */
+  --spacing-8: 2rem;
+  /* 32px */
+  --spacing-10: 2.5rem;
+  /* 40px */
+  --spacing-12: 3rem;
+  /* 48px */
+  --spacing-16: 4rem;
+  /* 64px */
+  --spacing-20: 5rem;
+  /* 80px */
+  --spacing-24: 6rem;
+  /* 96px */
+  --spacing-32: 8rem;
+  /* 128px */
+  --spacing-button: 18px 80px;
 
-  --radius-sm: 4px;
 
-  --animate-logo-scroll: logo_scroll 60s linear infinite;
+
+  /* Custom spacing */
+  --gap-small: 0.5rem;
+  /* 8px */
+  --gap-medium: 3.5rem;
+  /* 16px */
+  --gap-large: 64px;
+
+  --gap-big-large: 6.25rem;
+  /* 32px */
+
+  /* Border radius */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  /* 2px */
+  --radius: 0.25rem;
+  /* 4px */
+  --radius-md: 0.375rem;
+  /* 6px */
+  --radius-lg: 8px;
+  /* 8px */
+  --radius-xl: 12px;
+  /* 12px */
+  --radius-2xl: 1rem;
+  /* 16px */
+  --radius-3xl: 1.5rem;
+  /* 24px */
+  --radius-full: 9999px;
+
+  /* Custom border radius */
+  --radius-10: 0.625rem;
+  /* 10px */
+  --radius-24: 1.5rem;
+  /* 24px */
+  --radius-32: 2rem;
+  /* 32px */
+
+  /* Container widths */
+  --max-w-page: 1340px;
+  /* Max width cho page-width */
+  --max-w-judge: 1000px;
+  /* Max width cho product_judge-container */
+
+  /* Z-index */
+  --z-0: 0;
+  --z-10: 10;
+  --z-20: 20;
+  --z-30: 30;
+  --z-40: 40;
+  --z-50: 50;
+
+  /* Transitions */
+  --transition-default: all 200ms ease;
+  --transition-fast: all 100ms ease;
+  --transition-slow: all 300ms ease;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Animation */
+  --animate-logo-scroll: logo-scroll 20s linear infinite;
+
+  /* Aspect ratios */
+  --aspect-square: 1 / 1;
+  --aspect-video: 16 / 9;
+
+  /* Opacity */
+  --opacity-0: 0;
+  --opacity-50: 0.5;
+  --opacity-60: 0.6;
+  --opacity-75: 0.75;
+  --opacity-85: 0.85;
+  --opacity-100: 1;
 }
 
-@keyframes logo_scroll {
-  from {
+/* Animation keyframes */
+@keyframes logo-scroll {
+  0% {
     transform: translateX(0);
   }
 
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Breakpoints */
+@custom-media --screen-xs (max-width: 475px);
+@custom-media --screen-sm (max-width: 640px);
+@custom-media --screen-md (max-width: 768px);
+@custom-media --screen-lg (max-width: 1024px);
+@custom-media --screen-xl (max-width: 1280px);
+@custom-media --screen-2xl (max-width: 1536px);
+
+/* Hoặc sử dụng cách viết truyền thống cho media queries */
+/*
+  Mobile: 0px - 750px
+  Tablet: 751px - 1024px
+  Desktop: 1025px và lớn hơn
+*/
+
+/* Container padding */
+@media (max-width: 750px) {
+  :root {
+    --container-padding-x: 1.25rem;
+    /* 20px */
+    --container-padding-y: 0;
+  }
+}
+
+@media (min-width: 751px) {
+  :root {
+    --container-padding-x: 1rem;
+    /* 16px */
+    --container-padding-y: 0;
   }
 }
