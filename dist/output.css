@@ -78,6 +78,7 @@
   --max-w-judge: 1000px;
   --animate-logo-scroll: logo-scroll 20s linear infinite;
   --aspect-square: 1 / 1;
+  --opacity-0: 0;
   --opacity-60: 0.6;
   --opacity-100: 1;
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -285,6 +286,9 @@
   .inline-block {
     display: inline-block;
   }
+  .rotate-180 {
+    rotate: 180deg;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
@@ -293,6 +297,9 @@
   }
   .text-left {
     text-align: left;
+  }
+  .opacity-100 {
+    opacity: var(--opacity-100);
   }
 }
 @layer utilities {
@@ -1014,8 +1021,24 @@
           transition-duration: 200ms;
         }
       }
+      &.active {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+        border-color: var(--color-primary);
+        .product_tab-content {
+          margin-top: var(--spacing-4);
+          opacity: var(--opacity-100);
+        }
+      }
       .product_tab-content {
-        margin-top: var(--spacing-4);
+        max-height: var(--spacing-0);
+        overflow: hidden;
+        opacity: var(--opacity-0);
+        transition-property: all;
+        transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+        transition-duration: var(--tw-duration, var(--default-transition-duration));
+        --tw-duration: 300ms;
+        transition-duration: 300ms;
         p {
           margin-top: var(--spacing-0);
           margin-bottom: var(--spacing-3);
