@@ -1,5 +1,5 @@
 /* Press logos section */
-.section_press_logos_outer {
+.press_logos_outer {
   @apply relative mx-auto;
 
   .section_holder {
