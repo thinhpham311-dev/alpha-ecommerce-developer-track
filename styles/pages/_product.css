@@ -11,37 +11,9 @@
   }
 }
 /* ===============================
-   Why bloating section
+   Why bloating – shared grid
 ================================ */
-#bloating {
-  .product_why-bloating-grid {
-    @apply mt-10 flex flex-col sm:flex-row gap-4 mb-6 sm:mb-0;
-
-    .product_why-bloating-cell {
-      @apply w-full overflow-hidden rounded-md flex md:flex-col sm:gap-2;
-
-      >div {
-        @apply w-full;
-      }
-
-      img {
-        @apply min-h-[150px];
-      }
-
-      .product_why-bloat-cell-inn {
-        @apply bg-secondary-4th min-h-[150px] p-4 text-center flex items-center sm:items-start;
-
-        p {
-          @apply m-0 text-base leading-[1.3];
-        }
-      }
-    }
-  }
-}
-
-/* ===============================
-   Why bloating – nothing section
-================================ */
+#bloating,
 #nothing {
   .product_why-bloating-grid {
     @apply mt-10 flex flex-col sm:flex-row gap-4 mb-6 sm:mb-0;
@@ -49,28 +21,58 @@
     >div {
       @apply w-auto sm:w-full;
     }
+  }
+}
 
-    .product_why-nothing-cell-inn {
-      @apply bg-secondary-4th p-4 sm:p-6 text-center;
+/* ===============================
+   Bloating cells
+================================ */
+#bloating {
+  .product_why-bloating-cell {
+    @apply w-full overflow-hidden rounded-md flex md:flex-col sm:gap-2;
 
-      h4 {
-        @apply m-0 font-trirong text-xl leading-[1.3em] font-normal;
+    >div {
+      @apply w-full;
+    }
+
+    img {
+      @apply min-h-[150px];
+    }
+
+    .product_why-bloat-cell-inn {
+      @apply bg-secondary-4th min-h-[150px] p-4 text-center flex items-center sm:items-start;
+
+      p {
+        @apply m-0 text-base leading-[1.3];
+      }
+    }
+  }
+}
+
+/* ===============================
+   Nothing cells
+================================ */
+#nothing {
+  .product_why-nothing-cell-inn {
+    @apply bg-secondary-4th p-4 sm:p-6 text-center;
+
+    h4 {
+      @apply m-0 font-trirong text-xl leading-[1.3em] font-normal;
+    }
+
+    .product_why-nothing-pink {
+      @apply bg-accent-2nd mt-6 overflow-hidden rounded-md px-4 py-2 min-h-auto sm:min-h-[180px];
+
+      .product_why-nothing-subtitle {
+        @apply m-0 flex items-center justify-center text-base leading-[1.3em] font-semibold;
+
+        img {
+          @apply max-w-[24px];
+        }
       }
 
-      .product_why-nothing-pink {
-        @apply bg-accent-2nd mt-6 overflow-hidden rounded-md px-4 py-2 min-h-auto sm:min-h-[180px];
-
-        .product_why-nothing-subtitle {
-          @apply m-0 flex items-center justify-center text-base leading-[1.3em] font-semibold;
-
-          img {
-            @apply max-w-[24px];
-          }
-        }
-
-        .product_why-nothing-text {
-          @apply mt-3 text-base leading-[1.3em] font-bold sm:font-normal;
-        }
+      .product_why-nothing-text {
+        @apply mt-3 text-base leading-[1.3em] font-bold sm:font-normal;
       }
     }
   }
@@ -80,8 +82,6 @@
    @apply mx-auto w-full max-w-[920px];
  }
     
-
-
 
 .product_why-note-img {
   @apply mx-auto w-full max-w-[920px];
@@ -109,7 +109,7 @@
 
 
 .product_primary-btn {
-  @apply font-nunito sm:p-button p-4 sm:w-auto w-full inline-block cursor-pointer rounded bg-black text-center text-lg leading-snug sm:font-normal font-bold text-white no-underline transition-all duration-200;
+  @apply font-nunito sm:p-button p-4 sm:w-auto w-full inline-block cursor-pointer rounded bg-black text-center sm:text-lg text-base leading-snug sm:font-normal font-bold text-white no-underline transition-all duration-200;
 }
 
 .product_primary-btn-footer {
