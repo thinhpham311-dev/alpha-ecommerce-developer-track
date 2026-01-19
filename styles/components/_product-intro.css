@@ -14,7 +14,8 @@
     @apply aspect-square overflow-hidden rounded-lg object-cover;
   }
 
-  .main_product-image {
+  .main_product-image,
+  .main_product-image-box {
     @apply relative flex justify-center;
 
     img {
@@ -33,8 +34,9 @@
       }
     }
 
-    .main-product_badge {
-      @apply absolute top-4 right-4 block w-full max-w-[120px];
+    .main-product_badge,
+    .main-producT_bf_badge {
+      @apply absolute top-4 right-4 block w-full max-w-[80px] sm:max-w-[120px];
     }
   }
 
@@ -44,6 +46,28 @@
 
   .main_product-3rd {
     @apply my-4 grid grid-cols-3 gap-4;
+  }
+
+  .main_product-image-carousel {
+    @apply mb-2 sm:mb-0;
+    .slick-arrow {
+      @apply z-50 h-[32px] w-[32px] before:hidden;
+      img {
+        @apply h-full w-full;
+      }
+      &.slick-prev {
+        @apply left-[24px];
+      }
+      &.slick-next {
+        @apply right-[24px];
+      }
+    }
+  }
+
+  .main_product-image-carousel_thumbs {
+    .slick-slide {
+      @apply !px-1;
+    }
   }
 }
 
@@ -55,12 +79,12 @@
   }
 
   p {
-    @apply font-nunito my-0 md:text-base text-xs leading-snug font-normal;
+    @apply font-nunito my-0 text-xs leading-snug font-normal md:text-base;
   }
 }
 
 .main_product-title {
-  @apply font-lora my-4 md:text-3xl text-2xl leading-[1.4em];
+  @apply font-lora my-4 text-2xl leading-[1.4em] md:text-3xl;
 }
 
 .main_product-features {
@@ -85,7 +109,7 @@
   @apply mt-4 flex items-center gap-2;
 
   p {
-    @apply m-0 text-base leading-[1.3];
+    @apply m-0 text-xs leading-[1.3] sm:text-base;
   }
 
   span.col_pp_delivery__Date {
@@ -108,7 +132,7 @@
     @apply flex items-center justify-center gap-2;
 
     p {
-      @apply text-base;
+      @apply text-xs sm:text-base;
     }
 
     svg,
