@@ -108,8 +108,6 @@
   @apply bg-background-2nd;
 }
 
-
-
 /* Ingredients table */
 .product_lymphg-ingr-outer {
   @apply bg-background-2nd;
@@ -169,7 +167,7 @@
 }
 /* Benefits grid */
 .product_benefits-grid {
-  @apply flex flex-wrap gap-[10px] sm:flex-nowrap sm:gap-6 justify-between;
+  @apply flex flex-wrap justify-between gap-[10px] sm:flex-nowrap sm:gap-6;
 
   & > div {
     @apply w-[calc(50%-10px)] py-2 text-center sm:w-full sm:py-0;
@@ -222,7 +220,7 @@
 
 /* Navigation */
 .product_ugc-carousel-nav {
-  @apply mt-[-50px] flex justify-end sm:gap-6 gap-4;
+  @apply mt-[-50px] flex justify-end gap-4 sm:gap-6;
 }
 
 .product_ugc-carousel-nav img {
@@ -271,10 +269,12 @@
 
 .product_ugc-video video {
   @apply block h-full w-full object-cover;
+  pointer-events: none;
+  /* video không click được */
 }
 
 .product_ugc-play {
-  @apply absolute inset-0 z-[2] m-auto h-12 w-12 cursor-pointer;
+  @apply absolute inset-0 z-[2] m-auto h-[32px] w-[32px] cursor-pointer sm:h-12 sm:w-12;
 }
 
 .product_faq_container {
@@ -284,31 +284,28 @@
 .product_faq-box {
   @apply cursor-pointer border-b border-white px-0 py-4 sm:px-8 sm:py-6;
 
- 
   .product_faq-thumb {
     @apply gap-normal flex items-center justify-between;
-    &>div:first-child {
-        @apply w-full;
-      }
-    &>div:last-child{
+    & > div:first-child {
+      @apply w-full;
+    }
+    & > div:last-child {
       @apply w-[10%];
     }
     img {
       @apply h-[16px] w-[16px];
-        &.active-icon {
-            @apply rotate-180 transition-transform duration-200;
-          }
-        
-          &:not(.active-icon) {
-            @apply rotate-0 transition-transform duration-200;
-          }
+      &.active-icon {
+        @apply rotate-180 transition-transform duration-200;
+      }
+
+      &:not(.active-icon) {
+        @apply rotate-0 transition-transform duration-200;
+      }
     }
 
     p {
       @apply text-lg;
     }
-
-
   }
 
   .product_faq-content {
@@ -341,13 +338,13 @@
 
     img {
       @apply w-[24px];
-        &.active-icon {
-            @apply rotate-45 transition-transform duration-200;
-          }
-        
-          &:not(.active-icon) {
-            @apply rotate-0 transition-transform duration-200;
-          }
+      &.active-icon {
+        @apply rotate-45 transition-transform duration-200;
+      }
+
+      &:not(.active-icon) {
+        @apply rotate-0 transition-transform duration-200;
+      }
     }
   }
 
