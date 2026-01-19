@@ -10,7 +10,7 @@
     @apply grid grid-cols-1 content-center justify-items-center gap-x-[70px] gap-y-[20px] p-0 pt-5 pb-5 text-center;
 
     .title_wrap {
-      @apply font-trirong m-0 text-2xl tracking-normal text-black;
+      @apply font-trirong m-0 lg:text-2xl text-lg tracking-normal text-black;
     }
 
     .auto_scrolling_logos {
@@ -20,7 +20,7 @@
         @apply animate-logo-scroll flex w-fit items-center;
 
         img {
-          @apply mx-[50px] block h-[30px] w-auto;
+          @apply sm:mx-[50px] mx-[25px] block sm:h-[30px] h-[20px]  w-auto;
         }
       }
     }
