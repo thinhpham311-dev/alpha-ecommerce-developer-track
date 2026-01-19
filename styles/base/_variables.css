@@ -5,10 +5,13 @@
   /* Màu đen cho text-primary, border-primary, color-primary */
   --color-secondary: #6b7280;
   --color-secondary-2nd: #00000026;
+  --color-secondary-3rd: #E0E0E080;
   /* Màu xám cho text-secondary */
   --color-accent: #dc2626;
   /* Màu đỏ cho text-accent */
   --color-accent-2nd: #fee2e2;
+  --color-accent-3rd: #fa8a8a1a;
+  --color-accent-4th: #fa8a8a;
   /* Màu hồng nhạt cho bg-accent-2nd */
   --color-white: #ffffff;
   --color-white-2nd: #ffffffd9;

@@ -7,3 +7,12 @@
     @apply mt-4 max-w-[495px];
   }
 }
+
+
+.Desktop_only{
+    @apply block;
+}
+
+.Modile_only {
+    @apply hidden;
+}
