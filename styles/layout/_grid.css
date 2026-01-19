@@ -12,13 +12,6 @@
   }
 }
 
-.product_benefits-grid {
-  @apply flex gap-6;
-
-  & > div {
-    @apply w-full text-center;
-  }
-}
 
 .product_text-image {
   @apply gap-large flex items-center justify-center;
@@ -42,10 +35,4 @@
   }
 }
 
-.product_expert-outer {
-  @apply bg-secondary-4th flex overflow-hidden rounded-2xl;
 
-  & > div {
-    @apply w-full;
-  }
-}

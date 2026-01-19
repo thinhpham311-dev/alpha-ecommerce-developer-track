@@ -12,7 +12,7 @@
   }
 
   body {
-    @apply font-montserrat text-body m-0 tracking-[0.06rem];
+    @apply font-montserrat text-body m-0 tracking-[0.06rem] bg-gray-50;
   }
 
   h1,
