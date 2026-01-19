@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
           items.forEach((i) => {
             i.classList.remove('active');
             i.querySelector('[data-accordion-content]').style.maxHeight = null;
-            i.querySelector('[data-accordion-content]').classList.remove('opacity-100');
             i.querySelector('[data-accordion-icon]')?.classList.remove('active-icon');
           });
         }
@@ -23,12 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isActive) {
           item.classList.add('active');
           content.style.maxHeight = content.scrollHeight + 'px';
-          content.classList.add('opacity-100');
           icon?.classList.add('active-icon');
         } else {
           item.classList.remove('active');
           content.style.maxHeight = null;
-          content.classList.remove('opacity-100');
           icon?.classList.remove('active-icon');
         }
       });

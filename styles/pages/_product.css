@@ -4,10 +4,32 @@
     @apply w-full;
   }
 }
+
+.product_judge-outer{
+  @apply sm:py-[56px] py-8;
+}
+
+.product_judge-container {
+  @apply mx-auto mb-10 max-w-[var(--max-w-judge)];
+}
+
 #info {
 
-  .product_judge-outer.pli_outer {
-    @apply -mt-4 py-0;
+  .product_judge-outer {
+    @apply sm:-mt-4 py-0 px-0 ;
+  }
+}
+
+#info2 {
+
+  .product_judge-outer {
+    @apply pt-8 pb-0 px-0 sm:py-[56px];
+  }
+}
+
+#bloating{
+.product_judge-outer {
+    @apply py-0 px-0 sm:py-[56px];
   }
 }
 /* ===============================
@@ -78,10 +100,60 @@
   }
 }
 
- .product_why-note-img {
-   @apply mx-auto w-full max-w-[920px];
- }
-    
+/* Ingredients table */
+.product_lymphg-ingr-outer{
+  @apply bg-background-2nd;
+.product_lymph-ingr-table {
+  @apply mt-10 grid sm:grid-cols-4 grid-cols-1 overflow-hidden rounded-xl border-[0.5px] border-black bg-white;
+
+  .product-lymph-ingredient-box {
+    @apply cursor-pointer border-[0.5px] border-black p-6;
+
+    .product_lymph-ingr-subtitle {
+      @apply text-primary m-0 flex items-center justify-center gap-2 text-base;
+
+      img {
+        @apply block max-w-[16px];
+      }
+    }
+
+    .product_lymph-main-img {
+      @apply mx-auto sm:my-3 my-0  sm:max-h-[80px] max-h-full !w-auto sm:max-w-[120px] max-w-full;
+    }
+
+    .product_lymph-ingr-thumb {
+      @apply flex items-center justify-between sm:gap-2 gap-1;
+      &>div:nth-child(1){
+        @apply sm:w-auto w-[20%];
+      }
+                &>div:nth-child(2) {
+                  @apply sm:w-auto w-[70%];
+                }
+                                &>div:nth-child(3) {
+                                  @apply sm:w-auto w-[10%];
+                                }
+      h5 {
+        @apply m-0 sm:text-base text-sm leading-[1.3] font-semibold;
+      }
+
+      img {
+        @apply ml-auto block w-[24px];
+      }
+    }
+
+    .product_lymph-ingr-content {
+      p {
+        @apply m-0 text-sm leading-[1.3em];
+      }
+    }
+  }
+}
+    }
+
+.product_lymph-ingr-table-small {
+  @apply mx-auto mt-10 max-w-[580px];
+}
+
 
 .product_why-note-img {
   @apply mx-auto w-full max-w-[920px];
@@ -107,6 +179,84 @@
   }
 }
 
+/* Product selector/variant selector */
+.product_selector-content {
+  @apply bg-background-2nd mt-6 mb-4 rounded-lg p-3;
+}
+
+.product-selector_outer {
+  @apply mt-0;
+
+  .product-selector_block {
+    @apply border-primary relative mb-3 cursor-pointer rounded-xl border;
+
+    .product-selector_head {
+      @apply bg-light flex items-center gap-3 rounded-xl p-4;
+
+      &>div:nth-child(1) {
+        @apply w-[32px];
+      }
+
+      &>div:nth-child(2) {
+        @apply w-full;
+      }
+
+      &>div:nth-child(3) {
+        @apply w-1/2 text-right;
+      }
+
+      .product-selector_title,
+      .product-selector_price {
+        @apply text-base leading-snug font-semibold;
+      }
+
+      .product-selector_info {
+        @apply text-xs leading-snug;
+      }
+
+      .product-selector_bubble {
+        @apply border-primary flex h-[26px] w-[26px] items-center justify-center rounded-full border-2;
+      }
+
+      .product-selector_compare {
+        @apply block text-sm leading-snug font-semibold;
+      }
+    }
+
+    .product-selector_perks {
+      @apply overflow-hidden rounded-b-[10px];
+
+      .product-selector_perk_line {
+        @apply bg-primary flex items-center gap-2 border-b border-white px-2 py-1 opacity-60;
+
+        &:last-child {
+          @apply border-b-0;
+        }
+
+        &>div:nth-child(1) {
+          @apply w-[34px];
+        }
+
+        &>div:nth-child(2) {
+          @apply w-full;
+        }
+
+        p {
+          @apply text-xs leading-[1em] font-bold text-white;
+        }
+      }
+    }
+  }
+
+  .product-selector_badge {
+    @apply absolute -top-[20px] -right-[5px];
+  }
+
+}
+
+.active .product-selector_bubble_inn {
+  @apply bg-primary block h-[16px] w-[16px] rounded-full;
+}
 
 .product_primary-btn {
   @apply font-nunito sm:p-button p-4 sm:w-auto w-full inline-block cursor-pointer rounded bg-black text-center sm:text-lg text-base leading-snug sm:font-normal font-bold text-white no-underline transition-all duration-200;
@@ -118,4 +268,12 @@
   img {
     @apply w-[24px];
   }
+}
+
+.product-ugc__stars{
+  @apply max-w-[350px] mx-auto block;
+}
+
+.product_faq_container {
+  @apply to-background-2nd mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-8;
 }
