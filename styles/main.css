@@ -4,13 +4,11 @@
 /* Base styles */
 @import './base/_base.css';
 @import './base/_fonts.css';
-@import './base/_reset.css';
 @import './base/_variables.css';
 @import './base/_typography.css';
 
 /* Layout */
 @import './layout/_container.css';
-@import './layout/_grid.css';
 @import './layout/_sections.css';
 
 /* Components */
@@ -34,14 +32,19 @@
 @import './vendors/_carousel.css';
 @import './vendors/_pagination.css';
 
-@layer components {
   /* Main product introduction section */
   .main_section {
     img {
       @apply w-full;
     }
   }
+  .main_product-container {
+    @apply gap-large flex flex-wrap md:flex-nowrap;
 
+    & > div {
+      @apply w-full;
+    }
+  }
   .main_product-outer {
     @apply py-[32px];
   }
@@ -208,4 +211,3 @@
       }
     }
   }
-}

@@ -1,3 +1,10 @@
+.shopify-section {
+
+  p {
+    @apply font-nunito font-normal;
+  }
+}
+
 /* Common page styles */
 .product_textimage-content {
   .product_text-image-reviews {
