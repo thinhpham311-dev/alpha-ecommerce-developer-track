@@ -69,10 +69,11 @@
 
   /* Line heights */
   --leading-none: 1em;
-  --leading-tight: 1.2em;
+  --leading-tight: 1.25em;
   --leading-snug: 1.3em;
-  --leading-normal: 1.4em;
-  
+  --leading-normal: 1.5em;
+  --leading-relaxed: 1.625em;
+  --leading-loose: 2em;
 
   /* Spacing */
   --spacing-0: 0;

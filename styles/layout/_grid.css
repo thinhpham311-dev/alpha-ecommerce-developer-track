@@ -1,0 +1,70 @@
+/* Grid and flex utilities */
+@media only screen and (min-width: 678px) {
+  .Mobile_only {
+    @apply hidden;
+  }
+
+  .reversed {
+    @apply flex-row-reverse;
+  }
+}
+
+.main_product-container {
+  @apply gap-large flex;
+
+  & > div {
+    @apply w-full;
+  }
+}
+
+.product_why-bloating-grid {
+  @apply mt-10 flex gap-6;
+
+  & > div {
+    @apply w-full;
+  }
+}
+
+.product_benefits-grid {
+  @apply flex gap-6;
+
+  & > div {
+    @apply w-full text-center;
+  }
+}
+
+.product_text-image {
+  @apply gap-large flex items-center justify-center;
+
+  & > div {
+    @apply w-full;
+  }
+}
+
+.pli_flex {
+  @apply gap-big-large flex items-center;
+
+  & > div {
+    @apply w-full;
+  }
+}
+
+.product_stats-outer {
+  @apply flex items-center;
+
+  & > div:nth-child(1) {
+    @apply w-full;
+  }
+
+  & > div:nth-child(2) {
+    @apply w-[70%];
+  }
+}
+
+.product_expert-outer {
+  @apply bg-card flex overflow-hidden rounded-2xl;
+
+  & > div {
+    @apply w-full;
+  }
+}

@@ -1,0 +1,28 @@
+/* Press logos section */
+.section_press_logos_outer {
+  @apply relative mx-auto;
+
+  .section_holder {
+    @apply bg-background-2nd relative mx-auto max-w-[100vw] leading-1;
+  }
+
+  .press_logos_wrapper {
+    @apply grid grid-cols-1 content-center justify-items-center gap-x-[70px] gap-y-[20px] p-0 pt-5 pb-5 text-center;
+
+    .title_wrap {
+      @apply font-trirong m-0 text-2xl tracking-normal text-black;
+    }
+
+    .auto_scrolling_logos {
+      @apply w-full min-w-[1px] overflow-hidden;
+
+      .logos_wrap {
+        @apply animate-logo-scroll flex w-fit items-center;
+
+        img {
+          @apply mx-[50px] block h-[30px] w-auto;
+        }
+      }
+    }
+  }
+}

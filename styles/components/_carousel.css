@@ -1,0 +1,33 @@
+/* UGC Carousel */
+
+.product_carousel-outer {
+  @apply relative;
+}
+
+.product_ugc-container,
+.product_review-container {
+  @apply mb-[40px];
+}
+
+.product_ugc-container .slick-track {
+  @apply flex;
+}
+
+.product_ugc-container .slick-slide {
+  @apply flex h-[420px] p-2;
+}
+
+.product_ugc-container .slick-dots li,
+.product_review-container .slick-dots li {
+  @apply m-0 !mx-0 w-full;
+}
+
+.product_revcar-badge,
+.product_ugc-container .slick-dots li.slick-active button,
+.product_review-container .slick-dots li.slick-active button {
+  @apply !bg-primary;
+}
+
+.product_ugc-carousel-nav {
+  @apply mt-[-50px] flex justify-end gap-6;
+}

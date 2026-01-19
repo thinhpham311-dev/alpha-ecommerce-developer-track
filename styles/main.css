@@ -1,0 +1,41 @@
+/* Tailwind base */
+@import 'tailwindcss';
+
+/* Base styles */
+@import './base/_base.css';
+@import './base/_fonts.css';
+@import './base/_reset.css';
+@import './base/_variables.css';
+@import './base/_typography.css';
+
+/* Layout */
+@import './layout/_container.css';
+@import './layout/_grid.css';
+@import './layout/_sections.css';
+
+/* Components */
+@import './components/_buttons.css';
+@import './components/_header.css';
+@import './components/_product-intro.css';
+@import './components/_product-selector.css';
+@import './components/_tabs.css';
+@import './components/_faq.css';
+@import './components/_carousel.css';
+@import './components/_reviews.css';
+@import './components/_ingredients.css';
+@import './components/_benefits.css';
+@import './components/_press-logos.css';
+@import './components/_ugc-video.css';
+@import './components/_expert.css';
+
+/* Pages */
+@import './pages/_product.css';
+@import './pages/_common.css';
+
+/* Utilities */
+@import './utilities/_utilities.css';
+@import './utilities/_animations.css';
+
+/* Vendors */
+@import './vendors/_slick-custom.css';
+@import './vendors/_judgeme-custom.css';

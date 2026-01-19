@@ -1,0 +1,18 @@
+/* Container classes */
+.page-width {
+  @apply mx-auto block max-w-[var(--max-w-page)] px-20;
+}
+
+.product_judge-container {
+  @apply mx-auto mb-10 max-w-[var(--max-w-judge)];
+}
+
+.product_faq_container {
+  @apply to-background-2nd mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-8;
+}
+
+@media screen and (max-width: 750px) {
+  .page-width {
+    @apply px-20 py-0;
+  }
+}

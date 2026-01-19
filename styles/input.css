@@ -665,14 +665,13 @@
     @apply mx-auto mt-10 max-w-[580px];
   }
 
+  .product-reviews_trust {
+    @apply mx-auto block max-w-[200px];
+  }
 
-    .product-reviews_trust{
-      @apply block mx-auto max-w-[200px];
-    }
-
-    .jdgm-rev-widg__header{
-      @apply text-center;
-    }
+  .jdgm-rev-widg__header {
+    @apply text-center;
+  }
 
   .benefits {
     @apply bg-background-2nd;
@@ -685,7 +684,7 @@
       }
 
       img {
-        @apply mx-auto mb-4 block h-[40px] w-[40px] max-w-10;
+        @apply mx-auto mb-4 block h-[40px] max-w-10 max-w-[40px];
       }
       p {
         @apply leading-snug;

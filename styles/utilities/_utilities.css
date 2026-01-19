@@ -1,0 +1,12 @@
+/* Utility classes */
+.hided {
+  @apply hidden;
+}
+
+.top_padding {
+  @apply mt-10;
+}
+
+.product_arrow-img {
+  @apply mx-auto my-6 block w-full max-w-[48px];
+}

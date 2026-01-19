@@ -1,0 +1,44 @@
+/* Section layouts */
+.product_judge-outer {
+  @apply px-0 py-[56px];
+}
+
+.product_judge-outer.pli_outer {
+  @apply px-0 py-[56px];
+}
+
+#info .product_judge-outer.pli_outer {
+  @apply -mt-4 py-0;
+}
+
+.outer_how-nothing {
+  @apply text-dark bg-background-2nd mb-[35px] py-[70px] text-lg font-bold;
+}
+
+.product_judge-outer.outer_how-nothing {
+  @apply pt-0;
+}
+
+.outer_why-bloating {
+  @apply pb-0;
+}
+
+.product_lymphg-ingr-outer {
+  @apply bg-background-2nd;
+
+  img {
+    @apply w-full;
+  }
+}
+
+.benefits {
+  @apply bg-background-2nd;
+}
+
+#ugc .product_judge-outer {
+  @apply bg-background-2nd;
+}
+
+#footer .product_judge-outer {
+  @apply bg-background-2nd;
+}

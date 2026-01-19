@@ -1,0 +1,8 @@
+/* Judge.me customizations */
+.jdgm-rev-widg__header {
+  @apply text-center;
+}
+
+.jdgm-rev-widg__body{
+    @apply relative;
+}

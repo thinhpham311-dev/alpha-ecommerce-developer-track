@@ -1,0 +1,145 @@
+/* Main product introduction section */
+.main_section {
+  img {
+    @apply w-full;
+  }
+}
+
+.main_product-outer {
+  @apply py-[32px];
+}
+
+.main_product-images {
+  img {
+    @apply aspect-square overflow-hidden rounded-lg object-cover;
+  }
+
+  .main_product-image {
+    @apply relative flex justify-center;
+
+    img {
+      @apply aspect-square overflow-hidden rounded-[8px] object-cover;
+    }
+
+    .main_product-nutrition-info {
+      @apply bg-white-2nd absolute bottom-[32px] z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-6 py-2 text-sm leading-[1.2em];
+
+      span {
+        @apply flex items-center font-semibold;
+      }
+
+      img {
+        @apply w-[24px];
+      }
+    }
+
+    .main-product_badge {
+      @apply absolute top-4 right-4 block w-full max-w-[120px];
+    }
+  }
+
+  .main_product-2nd {
+    @apply my-4 grid grid-cols-2 gap-4;
+  }
+
+  .main_product-3rd {
+    @apply my-4 grid grid-cols-3 gap-4;
+  }
+}
+
+.main_product-reviews {
+  @apply mt-0 flex items-center gap-4;
+
+  img {
+    @apply block !w-[100px];
+  }
+
+  p {
+    @apply font-nunito my-0 text-base leading-snug font-normal;
+  }
+}
+
+.main_product-title {
+  @apply font-lora my-4 text-3xl leading-[1.4em];
+}
+
+.main_product-features {
+  .main_product-feature-line {
+    @apply my-4 flex items-center gap-3;
+
+    p {
+      @apply text-base;
+    }
+
+    & > div:nth-child(1) {
+      @apply flex w-[10%] items-center;
+    }
+
+    & > div:nth-child(2) {
+      @apply w-full;
+    }
+  }
+}
+
+.col_pp_atc_usp_line {
+  @apply mt-4 flex items-center gap-2;
+
+  p {
+    @apply m-0 text-base leading-[1.3];
+  }
+
+  span.col_pp_delivery__Date {
+    @apply bg-primary font-nunito rounded px-2 py-1 text-white;
+  }
+
+  & > div:nth-child(1) {
+    @apply flex w-[5%] items-center;
+  }
+
+  & > div:nth-child(2) {
+    @apply w-full;
+  }
+}
+
+.product_atc-footer-line {
+  @apply mt-4 flex items-center justify-center gap-4;
+
+  .product_atc-footer-inline {
+    @apply flex items-center justify-center gap-2;
+
+    p {
+      @apply text-base;
+    }
+
+    svg,
+    img {
+      @apply block h-[20px] w-[20px];
+    }
+
+    &:nth-child(1) {
+      @apply border-r border-black pr-4;
+    }
+  }
+}
+
+.product_payment-icons {
+  @apply mx-0 my-4 block;
+}
+
+.product_atc-icons {
+  .product_atc-icon-line {
+    @apply my-3 flex items-center gap-2;
+
+    & > div:nth-child(1) {
+      @apply flex w-[5%] items-center;
+    }
+
+    & > div:nth-child(2) {
+      @apply w-full;
+    }
+
+    p {
+      @apply m-0 text-base leading-[1.3];
+    }
+  }
+}
