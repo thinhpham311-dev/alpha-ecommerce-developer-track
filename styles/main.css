@@ -27,6 +27,7 @@
 @import './components/_press-logos.css';
 @import './components/_ugc-video.css';
 @import './components/_expert.css';
+@import './components/_judgeme.css';
 
 /* Pages */
 @import './pages/_product.css';
@@ -36,6 +37,3 @@
 @import './utilities/_utilities.css';
 @import './utilities/_animations.css';
 
-/* Vendors */
-@import './vendors/_slick-custom.css';
-@import './vendors/_judgeme-custom.css';

@@ -1,0 +1,154 @@
+/* ===============================
+   Judge.me customizations
+================================ */
+
+/* ---------- Base ---------- */
+.jdgm-rev-widg__header {
+  @apply text-center;
+}
+
+.jdgm-rev-widg__body {
+  @apply relative;
+}
+
+.jdgm-widget > * {
+  @apply m-0 box-border leading-normal;
+}
+
+/* ---------- Item spacing ---------- */
+.jdgm-quest,
+.jdgm-rev {
+  @apply m-0 px-0 py-4;
+}
+
+/* ---------- Borders ---------- */
+.jdgm-row-media,
+.jdgm-row-search,
+.jdgm-subtab,
+.jdgm-row-actions,
+.jdgm-quest,
+.jdgm-rev,
+.jdgm-paginate {
+  @apply border-accent-3rd border-t;
+}
+
+.jdgm-row-media{
+    @apply flex items-center justify-center;
+}
+
+.jdgm-widget:not(.jdgm-medals-wrapper) .jdgm-medals{
+    @apply max-w-full;
+}
+
+.jdgm-medals-wrapper .jdgm-medals__container{
+    @apply py-4 px-0
+}
+
+/* ---------- Review content ---------- */
+.jdgm-rev__header {
+  @apply mt-2.5;
+}
+
+.jdgm-row-rating {
+  @apply mt-2;
+}
+
+.jdgm-rev__title,
+.jdgm-rev__body > p,
+.jdgm-rev__reply-content > p {
+  @apply mt-2;
+}
+
+.jdgm-rev__title {
+  @apply block text-base;
+}
+
+.jdgm-rev .jdgm-rev__custom-form {
+  @apply mx-0 my-4;
+}
+
+/* ---------- Actions & sort ---------- */
+.jdgm-row-actions {
+  @apply relative flex flex-col py-2;
+}
+
+.jdgm-rev-widg__sort-wrapper{
+    @apply flex justify-start
+}
+
+.jdgm-sort-dropdown-wrapper {
+  @apply  relative float-none inline-flex items-center focus-visible:outline-none focus:outline-none;
+}
+
+.jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown,
+.jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown-arrow {
+  @apply text-accent-4th;
+}
+
+.jdgm-sort-dropdown {
+  @apply relative z-[1] cursor-pointer appearance-none border-0 bg-transparent py-2.5 pr-5 pl-0 text-xs font-normal;
+}
+
+/* ---------- Author ---------- */
+.jdgm-rev__author {
+  @apply text-accent-4th font-normal;
+}
+
+.jdgm-rev-widg__summary-inner{
+    @apply font-normal;
+}
+.jdgm-rev-widg__summary-star{
+    @apply tracking-[-1.1px];
+}
+.jdgm-histogram__row{
+    @apply flex items-center gap-4 hover:opacity-60;
+    .jdgm-histogram__bar{
+        @apply md:w-[140px] md:h-[14px] bg-secondary-2nd;
+    }
+}
+
+/* ===============================
+     Desktop layout (>= lg)
+  ================================ */
+.jdgm-widget:not(.jdgm-review-widget--small, .jdgm-review-widget--medium) .jdgm-row-stars {
+  @apply lg:flex lg:items-stretch lg:justify-center lg:pb-6;
+}
+
+.jdgm-widget:not(.jdgm-review-widget--small, .jdgm-review-widget--medium) .jdgm-rev-widg__summary {
+  @apply lg:w-[30%];
+}
+
+.jdgm-widget:not(.jdgm-review-widget--small, .jdgm-review-widget--medium)
+  :not(.jdgm-histogram-wrapper)
+  > .jdgm-histogram {
+  @apply lg:w-[40%];
+}
+
+.jdgm-widget:not(.jdgm-review-widget--small, .jdgm-review-widget--medium)
+  :not(.jdgm-revs-tab__content-header)
+  > .jdgm-widget-actions-wrapper {
+  @apply lg:w-[30%];
+}
+
+.jdgm-widget:not(.jdgm-review-widget--small, .jdgm-review-widget--medium)
+ .jdgm-row-stars>div{
+@apply flex flex-col items-center justify-center;
+}
+
+.jdgm-all-reviews__summary-text--verified {
+  @apply flex items-center justify-end gap-2;
+}
+
+
+.jdgm-paginate {
+  @apply pb-4 text-center w-full;
+}
+
+
+.jdgm-paginate__first-page,
+.jdgm-paginate__last-page,
+.jdgm-paginate__prev-page,
+.jdgm-paginate__next-page,
+.jdgm-paginate__page {
+  @apply !p-3;
+}

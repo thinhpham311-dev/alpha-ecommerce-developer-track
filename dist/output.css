@@ -33,27 +33,16 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-normal: 0em;
-    --leading-tight: 1.25em;
     --leading-snug: 1.3em;
-    --leading-normal: 1.5em;
-    --leading-relaxed: 1.625em;
-    --leading-loose: 2em;
-    --radius-sm: 2px;
+    --leading-normal: 1.4em;
     --radius-md: 6px;
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-2xl: 16px;
-    --radius-3xl: 24px;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --radius: 4px;
     --color-primary: #039869;
     --color-secondary: #6b7280;
@@ -62,22 +51,14 @@
     --color-accent-2nd: #fee2e2;
     --color-white-2nd: #ffffffd9;
     --color-background-2nd: #f7f2e7;
-    --color-background-3rd: #e5e7eb;
     --color-card: #f7f7f7;
-    --color-border-primary: #000000;
     --color-border-2nd: #d1d5db;
-    --text-primary: #dc2626;
-    --text-secondary: #6b7280;
-    --text-accent: #dc2626;
-    --text-primary-2nd: #000000;
     --text-dark: #1f2937;
-    --text-white: #ffffff;
     --font-lora: 'Lora', serif;
     --font-nunito: 'Nunito', serif;
     --font-trirong: 'Trirong', serif;
     --font-montserrat: 'Montserrat', sans-serif;
     --text-body: 1.6rem;
-    --leading-none: 1em;
     --spacing-0: 0;
     --spacing-1: 4px;
     --spacing-2: 8px;
@@ -87,32 +68,18 @@
     --spacing-6: 24px;
     --spacing-8: 32px;
     --spacing-button: 18px 80px;
-    --gap-small: 8px;
     --gap-normal: 12px;
     --gap-medium: 16px;
     --gap-large: 64px;
     --gap-big-large: 6.25rem;
-    --radius-none: 0;
     --radius-full: 9999px;
     --max-w-page: 1340px;
     --max-w-judge: 800px;
     --max-w-faq: 824px;
-    --z-0: 0;
-    --z-10: 10;
-    --z-20: 20;
-    --z-30: 30;
-    --z-40: 40;
-    --z-50: 50;
-    --transition-default: all 200ms ease;
-    --transition-fast: all 100ms ease;
-    --transition-slow: all 300ms ease;
     --animate-logo-scroll: logo-scroll 20s linear infinite;
     --aspect-square: 1 / 1;
     --opacity-0: 0;
-    --opacity-50: 0.5;
     --opacity-60: 0.6;
-    --opacity-75: 0.75;
-    --opacity-85: 0.85;
     --opacity-100: 1;
   }
 }
@@ -340,86 +307,11 @@
   .static {
     position: static;
   }
-  .inset-0 {
-    inset: var(--spacing-0);
-  }
-  .-top-\[20px\] {
-    top: calc(20px * -1);
-  }
-  .top-4 {
-    top: var(--spacing-4);
-  }
-  .right-4 {
-    right: var(--spacing-4);
-  }
-  .bottom-\[32px\] {
-    bottom: 32px;
-  }
-  .z-2 {
-    z-index: 2;
-  }
-  .z-50 {
-    z-index: 50;
-  }
-  .z-\[2\] {
-    z-index: 2;
-  }
   .m-0 {
     margin: var(--spacing-0);
   }
-  .m-auto {
-    margin: auto;
-  }
-  .mx-0 {
-    margin-inline: var(--spacing-0);
-  }
-  .mx-\[50px\] {
-    margin-inline: 50px;
-  }
-  .mx-auto {
-    margin-inline: auto;
-  }
-  .my-0 {
-    margin-block: var(--spacing-0);
-  }
-  .my-2 {
-    margin-block: var(--spacing-2);
-  }
-  .my-3 {
-    margin-block: var(--spacing-3);
-  }
-  .my-4 {
-    margin-block: var(--spacing-4);
-  }
-  .my-6 {
-    margin-block: var(--spacing-6);
-  }
-  .\!-mt-\[50px\] {
-    margin-top: calc(50px * -1) !important;
-  }
   .\!mt-8 {
     margin-top: var(--spacing-8) !important;
-  }
-  .-mt-4 {
-    margin-top: calc(var(--spacing-4) * -1);
-  }
-  .-mt-\[50px\] {
-    margin-top: calc(50px * -1);
-  }
-  .mt-0 {
-    margin-top: var(--spacing-0);
-  }
-  .mt-1 {
-    margin-top: var(--spacing-1);
-  }
-  .mt-1\.5 {
-    margin-top: calc(var(--spacing) * 1.5);
-  }
-  .mt-3 {
-    margin-top: var(--spacing-3);
-  }
-  .mt-4 {
-    margin-top: var(--spacing-4);
   }
   .mt-6 {
     margin-top: var(--spacing-6);
@@ -427,50 +319,14 @@
   .mt-8 {
     margin-top: var(--spacing-8);
   }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
-  .mt-\[-50px\] {
-    margin-top: -50px;
-  }
-  .mb-2 {
-    margin-bottom: var(--spacing-2);
-  }
-  .mb-3 {
-    margin-bottom: var(--spacing-3);
-  }
-  .mb-4 {
-    margin-bottom: var(--spacing-4);
-  }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
-  }
-  .mb-\[35px\] {
-    margin-bottom: 35px;
-  }
-  .mb-\[40px\] {
-    margin-bottom: 40px;
-  }
-  .ml-0 {
-    margin-left: var(--spacing-0);
-  }
-  .ml-auto {
-    margin-left: auto;
-  }
-  .\!flex {
-    display: flex !important;
+  .box-border {
+    box-sizing: border-box;
   }
   .block {
     display: block;
   }
   .contents {
     display: contents;
-  }
-  .flex {
-    display: flex;
-  }
-  .grid {
-    display: grid;
   }
   .hidden {
     display: none;
@@ -484,352 +340,22 @@
   .table {
     display: table;
   }
-  .aspect-square {
-    aspect-ratio: var(--aspect-square);
-  }
-  .\!h-1 {
-    height: var(--spacing-1) !important;
-  }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
-  }
-  .h-\[16px\] {
-    height: 16px;
-  }
-  .h-\[20px\] {
-    height: 20px;
-  }
-  .h-\[26px\] {
-    height: 26px;
-  }
-  .h-\[30px\] {
-    height: 30px;
-  }
-  .h-\[40px\] {
-    height: 40px;
-  }
-  .h-\[420px\] {
-    height: 420px;
-  }
-  .h-full {
-    height: 100%;
-  }
-  .max-h-0 {
-    max-height: var(--spacing-0);
-  }
-  .max-h-\[80px\] {
-    max-height: 80px;
-  }
-  .min-h-\[150px\] {
-    min-height: 150px;
-  }
-  .min-h-\[180px\] {
-    min-height: 180px;
-  }
-  .\!w-full {
-    width: 100% !important;
-  }
-  .w-1 {
-    width: var(--spacing-1);
-  }
-  .w-1\/2 {
-    width: calc(1 / 2 * 100%);
-  }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
-  }
-  .w-\[5\%\] {
-    width: 5%;
-  }
-  .w-\[10\%\] {
-    width: 10%;
-  }
-  .w-\[16px\] {
-    width: 16px;
-  }
-  .w-\[26px\] {
-    width: 26px;
-  }
-  .w-auto {
-    width: auto;
-  }
-  .w-fit {
-    width: fit-content;
-  }
-  .w-full {
-    width: 100%;
-  }
-  .\!max-w-\[calc\(100\%-200px\)\] {
-    max-width: calc(100% - 200px) !important;
-  }
-  .max-w-\[24px\] {
-    max-width: 24px;
-  }
-  .max-w-\[32px\] {
-    max-width: 32px;
-  }
-  .max-w-\[40px\] {
-    max-width: 40px;
-  }
-  .max-w-\[100vw\] {
-    max-width: 100vw;
-  }
-  .max-w-\[290px\] {
-    max-width: 290px;
-  }
-  .max-w-\[495px\] {
-    max-width: 495px;
-  }
-  .max-w-\[var\(--max-w-faq\)\] {
-    max-width: var(--max-w-faq);
-  }
-  .max-w-\[var\(--max-w-page\)\] {
-    max-width: var(--max-w-page);
-  }
-  .min-w-\[1px\] {
-    min-width: 1px;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .rotate-0 {
-    rotate: 0deg;
-  }
-  .rotate-45 {
-    rotate: 45deg;
-  }
-  .rotate-180 {
-    rotate: 180deg;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,)
       var(--tw-skew-y,);
   }
-  .animate-logo-scroll {
-    animation: var(--animate-logo-scroll);
-  }
-  .cursor-pointer {
-    cursor: pointer;
-  }
   .resize {
     resize: both;
-  }
-  .list-none {
-    list-style-type: none;
-  }
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .content-center {
-    align-content: center;
-  }
-  .items-center {
-    align-items: center;
-  }
-  .justify-between {
-    justify-content: space-between;
-  }
-  .justify-center {
-    justify-content: center;
-  }
-  .justify-end {
-    justify-content: flex-end;
-  }
-  .justify-items-center {
-    justify-items: center;
-  }
-  .gap-2 {
-    gap: var(--spacing-2);
-  }
-  .gap-3 {
-    gap: var(--spacing-3);
-  }
-  .gap-4 {
-    gap: var(--spacing-4);
-  }
-  .gap-big-large {
-    gap: var(--gap-big-large);
-  }
-  .gap-large {
-    gap: var(--gap-large);
-  }
-  .gap-medium {
-    gap: var(--gap-medium);
-  }
-  .gap-x-\[70px\] {
-    column-gap: 70px;
-  }
-  .gap-y-\[20px\] {
-    row-gap: 20px;
-  }
-  .overflow-hidden {
-    overflow: hidden;
-  }
-  .rounded {
-    border-radius: var(--radius);
-  }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
-  .rounded-\[4px\] {
-    border-radius: 4px;
-  }
-  .rounded-\[8px\] {
-    border-radius: 8px;
-  }
-  .rounded-\[24px\] {
-    border-radius: 24px;
-  }
-  .rounded-\[32px\] {
-    border-radius: 32px;
-  }
-  .rounded-full {
-    border-radius: var(--radius-full);
-  }
-  .rounded-lg {
-    border-radius: var(--radius-lg);
-  }
-  .rounded-md {
-    border-radius: var(--radius-md);
-  }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-r {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 1px;
-  }
-  .border-b {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-  }
-  .border-black {
-    border-color: var(--color-black);
-  }
-  .border-border-2nd {
-    border-color: var(--color-border-2nd);
-  }
-  .border-primary {
-    border-color: var(--color-primary);
-  }
-  .border-white {
-    border-color: var(--color-white);
-  }
-  .\!bg-secondary-2nd {
-    background-color: var(--color-secondary-2nd) !important;
-  }
-  .bg-accent-2nd {
-    background-color: var(--color-accent-2nd);
-  }
-  .bg-background-2nd {
-    background-color: var(--color-background-2nd);
-  }
-  .bg-black {
-    background-color: var(--color-black);
-  }
-  .bg-card {
-    background-color: var(--color-card);
-  }
-  .bg-primary {
-    background-color: var(--color-primary);
-  }
-  .bg-white {
-    background-color: var(--color-white);
-  }
-  .bg-white-2nd {
-    background-color: var(--color-white-2nd);
-  }
-  .bg-gradient-to-b {
-    --tw-gradient-position: to bottom in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .from-white {
-    --tw-gradient-from: var(--color-white);
-    --tw-gradient-stops: var(
-      --tw-gradient-via-stops,
-      var(--tw-gradient-position),
-      var(--tw-gradient-from) var(--tw-gradient-from-position),
-      var(--tw-gradient-to) var(--tw-gradient-to-position)
-    );
-  }
-  .to-background-2nd {
-    --tw-gradient-to: var(--color-background-2nd);
-    --tw-gradient-stops: var(
-      --tw-gradient-via-stops,
-      var(--tw-gradient-position),
-      var(--tw-gradient-from) var(--tw-gradient-from-position),
-      var(--tw-gradient-to) var(--tw-gradient-to-position)
-    );
-  }
-  .p-0 {
-    padding: var(--spacing-0);
-  }
-  .p-3 {
-    padding: var(--spacing-3);
-  }
-  .p-4 {
-    padding: var(--spacing-4);
-  }
-  .p-6 {
-    padding: var(--spacing-6);
-  }
-  .p-button {
-    padding: var(--spacing-button);
-  }
   .px-0 {
     padding-inline: var(--spacing-0);
   }
-  .px-2 {
-    padding-inline: var(--spacing-2);
-  }
-  .px-4 {
-    padding-inline: var(--spacing-4);
-  }
-  .px-6 {
-    padding-inline: var(--spacing-6);
-  }
-  .px-8 {
-    padding-inline: var(--spacing-8);
-  }
-  .px-20 {
-    padding-inline: calc(var(--spacing) * 20);
-  }
-  .py-1 {
-    padding-block: var(--spacing-1);
-  }
-  .py-2 {
-    padding-block: var(--spacing-2);
-  }
-  .py-\[1px\] {
-    padding-block: 1px;
-  }
-  .py-\[70px\] {
-    padding-block: 70px;
-  }
-  .pt-5 {
-    padding-top: var(--spacing-5);
-  }
-  .pt-8 {
-    padding-top: var(--spacing-8);
-  }
-  .pb-5 {
-    padding-bottom: var(--spacing-5);
-  }
-  .pl-8 {
-    padding-left: var(--spacing-8);
+  .py-6 {
+    padding-block: var(--spacing-6);
   }
   .text-center {
     text-align: center;
@@ -837,111 +363,8 @@
   .text-left {
     text-align: left;
   }
-  .font-lora {
-    font-family: var(--font-lora);
-  }
-  .font-montserrat {
-    font-family: var(--font-montserrat);
-  }
-  .font-nunito {
-    font-family: var(--font-nunito);
-  }
-  .font-trirong {
-    font-family: var(--font-trirong);
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-base {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .text-xs {
-    font-size: var(--text-xs);
-    line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-  .text-body {
-    font-size: var(--text-body);
-  }
-  .text-dark {
-    font-size: var(--text-dark);
-  }
-  .leading-\[1\.3\] {
-    --tw-leading: 1.3;
-    line-height: 1.3;
-  }
-  .leading-\[1\.3em\] {
-    --tw-leading: 1.3em;
-    line-height: 1.3em;
-  }
-  .leading-\[1em\] {
-    --tw-leading: 1em;
-    line-height: 1em;
-  }
-  .leading-snug {
-    --tw-leading: var(--leading-snug);
-    line-height: var(--leading-snug);
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
-  .font-normal {
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
-  }
-  .tracking-normal {
-    --tw-tracking: var(--tracking-normal);
-    letter-spacing: var(--tracking-normal);
-  }
-  .text-accent {
-    color: var(--color-accent);
-  }
-  .text-primary {
-    color: var(--color-primary);
-  }
-  .text-secondary {
-    color: var(--color-secondary);
-  }
-  .text-white {
-    color: var(--color-white);
-  }
-  .no-underline {
-    text-decoration-line: none;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .opacity-0 {
-    opacity: var(--opacity-0);
-  }
   .opacity-100 {
     opacity: var(--opacity-100);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -979,21 +402,6 @@
       content-visibility,
       overlay,
       pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-all {
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-opacity {
-    transition-property: opacity;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-transform {
-    transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -1060,185 +468,6 @@
   .font-trirong {
     font-family: var(--font-trirong);
   }
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Lora'),
-    url('https://fonts.cdnfonts.com/s/13623/Lora.woff') format('woff');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Lora'),
-    url('https://fonts.cdnfonts.com/s/13623/Lora-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local('Lora'),
-    url('https://fonts.cdnfonts.com/s/13623/Lora-Italic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local('Lora'),
-    url('https://fonts.cdnfonts.com/s/13623/Lora-Bold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 700;
-  src:
-    local('Lora'),
-    url('https://fonts.cdnfonts.com/s/13623/Lora-BoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Montserrat Regular'),
-    url('../../public/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local('Montserrat Bold'),
-    url('../../public/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-Italic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 275;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraLight.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 275;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraLightItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 300;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-Light.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 300;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-LightItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 600;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-SemiBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 600;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-SemiBoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-Bold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 700;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-BoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 800;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraBold.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 800;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-ExtraBoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 900;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-Black.woff') format('woff');
-}
-@font-face {
-  font-family: 'Nunito';
-  font-style: italic;
-  font-weight: 900;
-  src:
-    local('Nunito'),
-    url('https://fonts.cdnfonts.com/s/15604/Nunito-BlackItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Trirong';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Trirong Regular'),
-    url('../../public/fonts/Trirong/Trirong-Regular.woff2') format('woff2');
-  font-display: swap;
 }
 @layer components {
   .shopify-section {
@@ -2496,65 +1725,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-gradient-position {
-  syntax: '*';
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: '*';
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: '*';
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: '<length-percentage>';
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: '<length-percentage>';
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: '<length-percentage>';
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-leading {
-  syntax: '*';
-  inherits: false;
-}
-@property --tw-font-weight {
-  syntax: '*';
-  inherits: false;
-}
-@property --tw-tracking {
-  syntax: '*';
-  inherits: false;
-}
-@property --tw-outline-style {
-  syntax: '*';
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: '*';
   inherits: false;
@@ -2608,6 +1778,60 @@
   syntax: '*';
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-gradient-position {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: '*';
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: '<length-percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: '<length-percentage>';
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: '<length-percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: '*';
+  inherits: false;
+}
 @property --tw-duration {
   syntax: '*';
   inherits: false;
@@ -2625,19 +1849,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-gradient-position: initial;
-      --tw-gradient-from: #0000;
-      --tw-gradient-via: #0000;
-      --tw-gradient-to: #0000;
-      --tw-gradient-stops: initial;
-      --tw-gradient-via-stops: initial;
-      --tw-gradient-from-position: 0%;
-      --tw-gradient-via-position: 50%;
-      --tw-gradient-to-position: 100%;
-      --tw-leading: initial;
-      --tw-font-weight: initial;
-      --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -2651,6 +1862,18 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-tracking: initial;
+      --tw-font-weight: initial;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
       --tw-duration: initial;
     }
   }

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./styles/input.css -o ./dist/output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./styles/input.css -o ./dist/output.css --minify",
+    "dev": "npx @tailwindcss/cli -i ./styles/main.css -o ./dist/output-main.css --watch",
+    "build": "npx @tailwindcss/cli -i ./styles/main.css -o ./dist/output-main.css --minify",
     "format": "prettier --write ."
   },
   "keywords": [],

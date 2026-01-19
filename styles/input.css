@@ -2,7 +2,6 @@
 @import './base.css';
 @import './variables.css';
 @import './utilities.css';
-@import './fonts/fonts.css';
 @layer components {
   .shopify-section {
     @apply z-50 bg-white;

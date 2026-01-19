@@ -31,3 +31,12 @@
 .product_ugc-carousel-nav {
   @apply mt-[-50px] flex justify-end gap-6;
 }
+
+/* Slick carousel custom styles */
+.product_ugc-container .slick-dots {
+    @apply !flex !max-w-[calc(100%-200px)] !text-left;
+}
+
+.product_ugc-container .slick-dots li button {
+    @apply !bg-secondary-2nd !h-1 !w-full !p-0;
+}
