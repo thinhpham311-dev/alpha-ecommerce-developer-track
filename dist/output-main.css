@@ -1229,6 +1229,12 @@
   border-radius: var(--radius-full);
   background-color: var(--color-primary);
 }
+#info {
+  .product_judge-outer.pli_outer {
+    margin-top: calc(var(--spacing-4) * -1);
+    padding-block: var(--spacing-0);
+  }
+}
 .pli_outer {
   margin-top: calc(var(--spacing-4) * -1);
   padding-inline: var(--spacing-0);
@@ -1236,8 +1242,15 @@
 }
 .pli_flex {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  gap: var(--gap-big-large);
+  gap: var(--spacing-4);
+  @media (width >= 40rem) {
+    flex-direction: row;
+  }
+  @media (width >= 40rem) {
+    gap: var(--gap-big-large);
+  }
   &>div {
     width: 100%;
   }
