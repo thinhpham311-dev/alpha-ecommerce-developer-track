@@ -12,14 +12,6 @@
   }
 }
 
-.product_why-bloating-grid {
-  @apply mt-10 flex gap-6;
-
-  & > div {
-    @apply w-full;
-  }
-}
-
 .product_benefits-grid {
   @apply flex gap-6;
 

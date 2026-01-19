@@ -8,32 +8,14 @@
 /* Why bloating section */
 .product_why-bloating-grid {
   @apply mt-10 flex gap-4;
-
-  > div {
-    @apply w-full overflow-hidden rounded-md;
-
-    img {
-      @apply min-h-[150px];
-    }
-
-    .product_why-bloat-cell-inn {
-      @apply bg-secondary-4th min-h-[150px] p-4 text-center;
-
-      p {
-        @apply m-0 text-base leading-[1.3];
-      }
-    }
+  .product_why-bloating-cell {
+    @apply w-full;
   }
-}
-
-.product_why-note-img {
-  @apply mx-auto w-full max-w-[920px];
-}
-
-/* How nothing works */
-.product_why-bloating-grid {
+  img {
+    @apply min-h-[150px];
+  }
   .product_why-nothing-cell-inn {
-    @apply bg-secondary-4th p-6 text-center;
+    @apply bg-secondary-4th min-h-[150px] p-4 text-center;
 
     h4 {
       @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;
@@ -57,6 +39,32 @@
   }
 }
 
+.product_why-note-img {
+  @apply mx-auto w-full max-w-[920px];
+}
+
+/* ---------- Why bloating grid ---------- */
+.product_why-bloating-grid {
+  @apply mt-10 flex sm:flex-row flex-col gap-4 sm:mb-0 mb-6;
+ 
+  .product_why-bloating-cell  {
+    @apply w-full overflow-hidden rounded-md sm:gap-2 gap-0 flex sm:flex-col flex-row;
+&>div {
+    @apply w-full flex items-center sm:items-start;
+  }
+    img {
+      @apply min-h-[150px];
+    }
+
+    .product_why-bloat-cell-inn {
+      @apply bg-secondary-4th min-h-[150px] p-4 text-center;
+
+      p {
+        @apply m-0 text-base leading-[1.3];
+      }
+    }
+  }
+}
 /* PLI (Product Learnings & Insights) */
 .pli_top-text {
   & > * {
@@ -107,6 +115,27 @@
       background-image: url('https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839');
       background-size: 20px;
       background-repeat: no-repeat;
+    }
+  }
+}
+
+/* Benefits grid */
+.product_benefits-grid {
+  @apply flex gap-6;
+
+  & > div {
+    @apply w-full text-center;
+  }
+
+  img {
+    @apply mx-auto mb-4 block h-[40px] max-w-10 max-w-[40px];
+  }
+
+  p {
+    @apply leading-snug;
+
+    &.h4title {
+      @apply my-2 font-semibold;
     }
   }
 }

@@ -3,7 +3,7 @@
 
 /* Typography styles */
 .product-section_title {
-  @apply font-lora my-4 text-4xl leading-[1.3] font-normal;
+  @apply font-lora my-4 text-2xl leading-[1.3] font-normal sm:text-4xl;
 
   span {
     @apply text-primary;
