@@ -142,7 +142,7 @@
         }
 
         .main_product-nutrition-info {
-          @apply bg-white-2nd absolute bottom-[32px] z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-6 py-2 text-sm leading-[1.2em];
+          @apply bg-light-2nd absolute bottom-[32px] z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-6 py-2 text-sm leading-[1.2em];
 
           span {
             @apply flex items-center font-semibold;
@@ -210,7 +210,7 @@
         @apply border-primary relative mb-3 cursor-pointer rounded-xl border;
 
         .product-selector_head {
-          @apply flex items-center gap-3 rounded-xl bg-white p-4;
+          @apply flex items-center gap-3 rounded-xl bg-light p-4;
 
           & > div:nth-child(1) {
             @apply w-[32px];
@@ -475,7 +475,7 @@
         }
 
         .product_why-bloat-cell-inn {
-          @apply bg-card min-h-[150px] p-4 text-center;
+          @apply bg-secondary-4th min-h-[150px] p-4 text-center;
 
           p {
             @apply m-0 text-base leading-[1.3];
@@ -581,7 +581,7 @@
     }
 
     .product_why-nothing-cell-inn {
-      @apply bg-card p-6 text-center;
+      @apply bg-secondary-4th p-6 text-center;
 
       h4 {
         @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;
@@ -695,7 +695,7 @@
   }
 
   .product_expert-outer {
-    @apply bg-card flex overflow-hidden rounded-2xl;
+    @apply bg-secondary-4th flex overflow-hidden rounded-2xl;
 
     & > div {
       @apply w-full;

@@ -4,11 +4,7 @@
 
   .product-lymph-ingredient-box {
     @apply cursor-pointer border border-black p-6;
-    &.active {
-      .product_lymph-ingr-content {
-        @apply mt-4 opacity-100;
-      }
-    }
+ 
     .product_lymph-ingr-subtitle {
       @apply text-primary m-0 flex items-center justify-center gap-2 text-base;
 
@@ -23,13 +19,7 @@
 
     .product_lymph-ingr-thumb {
       @apply flex items-center justify-between gap-2;
-      &.active-icon {
-        @apply rotate-180 transition-transform duration-200;
-      }
-
-      &:not(.active-icon) {
-        @apply rotate-0 transition-transform duration-200;
-      }
+    
       h5 {
         @apply m-0 text-base leading-[1.3] font-semibold;
       }

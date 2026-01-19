@@ -20,12 +20,11 @@
 @import './components/_product-selector.css';
 @import './components/_tabs.css';
 @import './components/_faq.css';
-@import './components/_carousel.css';
 @import './components/_reviews.css';
 @import './components/_ingredients.css';
 @import './components/_benefits.css';
 @import './components/_press-logos.css';
-@import './components/_ugc-video.css';
+@import './components/_product-ugc.css';
 @import './components/_expert.css';
 @import './components/_judgeme.css';
 
@@ -37,3 +36,7 @@
 @import './utilities/_utilities.css';
 @import './utilities/_animations.css';
 
+/* vendors */
+@import './vendors/_accourding.css';
+@import './vendors/_carousel.css';
+@import './vendors/_pagination.css';

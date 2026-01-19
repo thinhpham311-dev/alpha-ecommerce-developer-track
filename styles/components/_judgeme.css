@@ -32,16 +32,16 @@
   @apply border-accent-3rd border-t;
 }
 
-.jdgm-row-media{
-    @apply flex items-center justify-center;
+.jdgm-row-media {
+  @apply flex items-center justify-center;
 }
 
-.jdgm-widget:not(.jdgm-medals-wrapper) .jdgm-medals{
-    @apply max-w-full;
+.jdgm-widget:not(.jdgm-medals-wrapper) .jdgm-medals {
+  @apply max-w-full;
 }
 
-.jdgm-medals-wrapper .jdgm-medals__container{
-    @apply py-4 px-0
+.jdgm-medals-wrapper .jdgm-medals__container {
+  @apply px-0 py-4;
 }
 
 /* ---------- Review content ---------- */
@@ -72,12 +72,12 @@
   @apply relative flex flex-col py-2;
 }
 
-.jdgm-rev-widg__sort-wrapper{
-    @apply flex justify-start
+.jdgm-rev-widg__sort-wrapper {
+  @apply flex justify-start;
 }
 
 .jdgm-sort-dropdown-wrapper {
-  @apply  relative float-none inline-flex items-center focus-visible:outline-none focus:outline-none;
+  @apply relative float-none inline-flex items-center focus:outline-none focus-visible:outline-none;
 }
 
 .jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown,
@@ -94,17 +94,17 @@
   @apply text-accent-4th font-normal;
 }
 
-.jdgm-rev-widg__summary-inner{
-    @apply font-normal;
+.jdgm-rev-widg__summary-inner {
+  @apply font-normal;
 }
-.jdgm-rev-widg__summary-star{
-    @apply tracking-[-1.1px];
+.jdgm-rev-widg__summary-star {
+  @apply tracking-[-1.1px];
 }
-.jdgm-histogram__row{
-    @apply flex items-center gap-4 hover:opacity-60;
-    .jdgm-histogram__bar{
-        @apply md:w-[140px] md:h-[14px] bg-secondary-2nd;
-    }
+.jdgm-histogram__row {
+  @apply flex items-center gap-4 hover:opacity-60;
+  .jdgm-histogram__bar {
+    @apply bg-secondary-2nd md:h-[14px] md:w-[140px];
+  }
 }
 
 /* ===============================
@@ -130,20 +130,17 @@
   @apply lg:w-[30%];
 }
 
-.jdgm-widget:not(.jdgm-review-widget--small, .jdgm-review-widget--medium)
- .jdgm-row-stars>div{
-@apply flex flex-col items-center justify-center;
+.jdgm-widget:not(.jdgm-review-widget--small, .jdgm-review-widget--medium) .jdgm-row-stars > div {
+  @apply flex flex-col items-center justify-center;
 }
 
 .jdgm-all-reviews__summary-text--verified {
   @apply flex items-center justify-end gap-2;
 }
 
-
 .jdgm-paginate {
-  @apply pb-4 text-center w-full;
+  @apply w-full pb-4 text-center;
 }
-
 
 .jdgm-paginate__first-page,
 .jdgm-paginate__last-page,

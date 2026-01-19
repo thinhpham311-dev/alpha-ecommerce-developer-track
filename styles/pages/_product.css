@@ -17,7 +17,7 @@
     }
 
     .product_why-bloat-cell-inn {
-      @apply bg-card min-h-[150px] p-4 text-center;
+      @apply bg-secondary-4th min-h-[150px] p-4 text-center;
 
       p {
         @apply m-0 text-base leading-[1.3];
@@ -33,7 +33,7 @@
 /* How nothing works */
 .product_why-bloating-grid {
   .product_why-nothing-cell-inn {
-    @apply bg-card p-6 text-center;
+    @apply bg-secondary-4th p-6 text-center;
 
     h4 {
       @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;

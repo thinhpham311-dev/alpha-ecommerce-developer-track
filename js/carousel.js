@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const $slider = $('.product_ugc-container');
+  const $slider = $('.product-ugc__container');
   if (!$slider.length || $slider.hasClass('slick-initialized')) return;
 
   $slider.slick({

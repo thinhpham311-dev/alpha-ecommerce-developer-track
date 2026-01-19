@@ -10,12 +10,12 @@
   /* Màu đỏ cho text-accent */
   --color-accent-2nd: #fee2e2;
   /* Màu hồng nhạt cho bg-accent-2nd */
-  --color-white: #ffffff;
-  --color-white-2nd: #ffffffd9;
+  --color-light: #ffffff;
+  --color-light-2nd: #ffffffd9;
   --color-black: #000000;
 
   /* Background colors */
-  --color-white: #ffffff;
+  --color-light: #ffffff;
   --color-black: #000000;
   --color-background-2nd: #f7f2e7;
   /* Màu xám nhạt */

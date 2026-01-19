@@ -10,7 +10,7 @@
 }
 
 .main_product-container {
-  @apply gap-large flex;
+  @apply gap-large flex flex-wrap md:flex-nowrap;
 
   & > div {
     @apply w-full;
@@ -62,7 +62,7 @@
 }
 
 .product_expert-outer {
-  @apply bg-card flex overflow-hidden rounded-2xl;
+  @apply bg-secondary-4th flex overflow-hidden rounded-2xl;
 
   & > div {
     @apply w-full;
