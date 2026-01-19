@@ -859,7 +859,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: var(--spacing-3);
+  padding: var(--spacing-3);
   img {
     margin-inline: auto;
     display: block;
