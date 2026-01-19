@@ -1,6 +1,3 @@
-
-
-
 .outer_how-nothing {
   @apply text-dark bg-background-2nd mb-[35px] py-[70px] text-lg font-bold;
 }
@@ -12,7 +9,6 @@
 .outer_why-bloating {
   @apply pb-0;
 }
-
 
 .benefits {
   @apply bg-background-2nd;

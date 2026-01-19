@@ -790,12 +790,12 @@
   @media (width >= 40rem) {
     gap: var(--gap-big-large);
   }
-  &>div {
+  & > div {
     width: 100%;
   }
 }
 .pli_top-text {
-  &>* {
+  & > * {
     margin-block: var(--spacing-2);
     padding-inline: var(--spacing-0);
     font-size: var(--text-base);
@@ -824,7 +824,7 @@
   }
 }
 .pli_bottom-text {
-  &>* {
+  & > * {
     margin-block: var(--spacing-2);
     padding-inline: var(--spacing-0);
     font-size: var(--text-base);
@@ -853,7 +853,7 @@
   }
 }
 .pli_pink-text {
-  &>* {
+  & > * {
     margin-block: var(--spacing-2);
     padding-inline: var(--spacing-0);
     font-size: var(--text-base);
@@ -1246,7 +1246,7 @@
     @media (width >= 40rem) {
       flex-direction: row;
     }
-    >div {
+    > div {
       width: auto;
       @media (width >= 40rem) {
         width: 100%;
@@ -1266,7 +1266,7 @@
     @media (width >= 48rem) {
       flex-direction: column;
     }
-    >div {
+    > div {
       width: 100%;
     }
     img {
@@ -1411,19 +1411,19 @@
         @media (width >= 40rem) {
           gap: var(--spacing-2);
         }
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           width: 20%;
           @media (width >= 40rem) {
             width: auto;
           }
         }
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           width: 70%;
           @media (width >= 40rem) {
             width: auto;
           }
         }
-        &>div:nth-child(3) {
+        & > div:nth-child(3) {
           width: 10%;
           @media (width >= 40rem) {
             width: auto;
@@ -1521,7 +1521,7 @@
   @media (width >= 40rem) {
     background-color: var(--color-secondary-4th);
   }
-  &>div {
+  & > div {
     width: 100%;
   }
 }
@@ -1747,13 +1747,13 @@
       border-radius: var(--radius-xl);
       background-color: var(--color-light);
       padding: var(--spacing-4);
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         width: 32px;
       }
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         width: 100%;
       }
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         width: calc(1/2 * 100%);
         text-align: right;
       }
@@ -1811,10 +1811,10 @@
           border-bottom-style: var(--tw-border-style);
           border-bottom-width: 0px;
         }
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           width: 34px;
         }
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           width: 100%;
         }
         p {
@@ -1954,12 +1954,12 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-2);
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       display: flex;
       width: 5%;
       align-items: center;
     }
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       width: 100%;
     }
     p {
@@ -2293,12 +2293,12 @@
         font-size: var(--text-base);
         line-height: var(--tw-leading, var(--text-base--line-height));
       }
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         display: flex;
         width: 10%;
         align-items: center;
       }
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         width: 100%;
       }
     }
@@ -2327,12 +2327,12 @@
       font-family: var(--font-nunito);
       color: var(--color-white);
     }
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       display: flex;
       width: 5%;
       align-items: center;
     }
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       width: 100%;
     }
   }
@@ -2363,10 +2363,10 @@
         display: flex;
         align-items: center;
       }
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         width: 15%;
       }
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         width: 100%;
       }
       .main_product-review-stars {

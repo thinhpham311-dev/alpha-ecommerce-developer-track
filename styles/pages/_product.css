@@ -5,8 +5,8 @@
   }
 }
 
-.product_judge-outer{
-  @apply sm:py-[56px] py-8;
+.product_judge-outer {
+  @apply py-8 sm:py-[56px];
 }
 
 .product_judge-container {
@@ -14,22 +14,20 @@
 }
 
 #info {
-
   .product_judge-outer {
-    @apply sm:-mt-4 py-0 px-0 ;
+    @apply px-0 py-0 sm:-mt-4;
   }
 }
 
 #info2 {
-
   .product_judge-outer {
-    @apply pt-8 pb-0 px-0 sm:py-[56px];
+    @apply px-0 pt-8 pb-0 sm:py-[56px];
   }
 }
 
-#bloating{
-.product_judge-outer {
-    @apply py-0 px-0 sm:py-[56px];
+#bloating {
+  .product_judge-outer {
+    @apply px-0 py-0 sm:py-[56px];
   }
 }
 /* ===============================
@@ -38,9 +36,9 @@
 #bloating,
 #nothing {
   .product_why-bloating-grid {
-    @apply mt-10 flex flex-col sm:flex-row gap-4 mb-6 sm:mb-0;
+    @apply mt-10 mb-6 flex flex-col gap-4 sm:mb-0 sm:flex-row;
 
-    >div {
+    > div {
       @apply w-auto sm:w-full;
     }
   }
@@ -51,9 +49,9 @@
 ================================ */
 #bloating {
   .product_why-bloating-cell {
-    @apply w-full overflow-hidden rounded-md flex md:flex-col sm:gap-2;
+    @apply flex w-full overflow-hidden rounded-md sm:gap-2 md:flex-col;
 
-    >div {
+    > div {
       @apply w-full;
     }
 
@@ -62,7 +60,7 @@
     }
 
     .product_why-bloat-cell-inn {
-      @apply bg-secondary-4th min-h-[150px] p-4 text-center flex items-center sm:items-start;
+      @apply bg-secondary-4th flex min-h-[150px] items-center p-4 text-center sm:items-start;
 
       p {
         @apply m-0 text-base leading-[1.3];
@@ -76,14 +74,14 @@
 ================================ */
 #nothing {
   .product_why-nothing-cell-inn {
-    @apply bg-secondary-4th p-4 sm:p-6 text-center;
+    @apply bg-secondary-4th p-4 text-center sm:p-6;
 
     h4 {
-      @apply m-0 font-trirong text-xl leading-[1.3em] font-normal;
+      @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;
     }
 
     .product_why-nothing-pink {
-      @apply bg-accent-2nd mt-6 overflow-hidden rounded-md px-4 py-2 min-h-auto sm:min-h-[180px];
+      @apply bg-accent-2nd mt-6 min-h-auto overflow-hidden rounded-md px-4 py-2 sm:min-h-[180px];
 
       .product_why-nothing-subtitle {
         @apply m-0 flex items-center justify-center text-base leading-[1.3em] font-semibold;
@@ -101,69 +99,68 @@
 }
 
 /* Ingredients table */
-.product_lymphg-ingr-outer{
+.product_lymphg-ingr-outer {
   @apply bg-background-2nd;
-.product_lymph-ingr-table {
-  @apply mt-10 grid sm:grid-cols-4 grid-cols-1 overflow-hidden rounded-xl border-[0.5px] border-black bg-white;
+  .product_lymph-ingr-table {
+    @apply mt-10 grid grid-cols-1 overflow-hidden rounded-xl border-[0.5px] border-black bg-white sm:grid-cols-4;
 
-  .product-lymph-ingredient-box {
-    @apply cursor-pointer border-[0.5px] border-black p-6;
+    .product-lymph-ingredient-box {
+      @apply cursor-pointer border-[0.5px] border-black p-6;
 
-    .product_lymph-ingr-subtitle {
-      @apply text-primary m-0 flex items-center justify-center gap-2 text-base;
+      .product_lymph-ingr-subtitle {
+        @apply text-primary m-0 flex items-center justify-center gap-2 text-base;
 
-      img {
-        @apply block max-w-[16px];
-      }
-    }
-
-    .product_lymph-main-img {
-      @apply mx-auto sm:my-3 my-0  sm:max-h-[80px] max-h-full !w-auto sm:max-w-[120px] max-w-full;
-    }
-
-    .product_lymph-ingr-thumb {
-      @apply flex items-center justify-between sm:gap-2 gap-1;
-      &>div:nth-child(1){
-        @apply sm:w-auto w-[20%];
-      }
-                &>div:nth-child(2) {
-                  @apply sm:w-auto w-[70%];
-                }
-                                &>div:nth-child(3) {
-                                  @apply sm:w-auto w-[10%];
-                                }
-      h5 {
-        @apply m-0 sm:text-base text-sm leading-[1.3] font-semibold;
+        img {
+          @apply block max-w-[16px];
+        }
       }
 
-      img {
-        @apply ml-auto block w-[24px];
+      .product_lymph-main-img {
+        @apply mx-auto my-0 max-h-full !w-auto max-w-full sm:my-3 sm:max-h-[80px] sm:max-w-[120px];
       }
-    }
 
-    .product_lymph-ingr-content {
-      p {
-        @apply m-0 text-sm leading-[1.3em];
+      .product_lymph-ingr-thumb {
+        @apply flex items-center justify-between gap-1 sm:gap-2;
+        & > div:nth-child(1) {
+          @apply w-[20%] sm:w-auto;
+        }
+        & > div:nth-child(2) {
+          @apply w-[70%] sm:w-auto;
+        }
+        & > div:nth-child(3) {
+          @apply w-[10%] sm:w-auto;
+        }
+        h5 {
+          @apply m-0 text-sm leading-[1.3] font-semibold sm:text-base;
+        }
+
+        img {
+          @apply ml-auto block w-[24px];
+        }
+      }
+
+      .product_lymph-ingr-content {
+        p {
+          @apply m-0 text-sm leading-[1.3em];
+        }
       }
     }
   }
 }
-    }
 
 .product_lymph-ingr-table-small {
   @apply mx-auto mt-10 max-w-[580px];
 }
-
 
 .product_why-note-img {
   @apply mx-auto w-full max-w-[920px];
 }
 /* Benefits grid */
 .product_benefits-grid {
-  @apply flex sm:flex-nowrap flex-wrap sm:gap-6 gap-[10px];
+  @apply flex flex-wrap gap-[10px] sm:flex-nowrap sm:gap-6;
 
   & > div {
-    @apply  sm:w-full w-[calc(50%-10px)] text-center sm:py-0 py-2;
+    @apply w-[calc(50%-10px)] py-2 text-center sm:w-full sm:py-0;
   }
 
   img {
@@ -180,15 +177,15 @@
 }
 
 .product_expert-outer {
-  @apply sm:bg-secondary-4th bg-white flex sm:flex-row flex-col-reverse overflow-hidden rounded-2xl;
+  @apply sm:bg-secondary-4th flex flex-col-reverse overflow-hidden rounded-2xl bg-white sm:flex-row;
 
-  &>div {
+  & > div {
     @apply w-full;
   }
 }
 
 .product_expert-content {
-  @apply sm:p-8 p-4;
+  @apply p-4 sm:p-8;
 }
 
 .product_expert-media {
@@ -196,7 +193,6 @@
     @apply h-full w-full overflow-hidden rounded-xl object-cover;
   }
 }
-
 
 /* ================= UGC CAROUSEL ================= */
 
@@ -207,11 +203,10 @@
 .product_ugc-container.slick-dotted.slick-slider {
   @apply mb-[40px];
 
-  .slick-list{
+  .slick-list {
     @apply !-ml-2 !pl-0;
   }
 }
-
 
 /* Navigation */
 .product_ugc-carousel-nav {
@@ -233,7 +228,7 @@
 
 /* Dots */
 .product_ugc-container .slick-dots {
-  @apply !flex sm:!max-w-[calc(100%-200px)] !max-w-[calc(100%-100px)]  gap-0 !text-left;
+  @apply !flex !max-w-[calc(100%-100px)] gap-0 !text-left sm:!max-w-[calc(100%-200px)];
 }
 
 .product_ugc-container .slick-dots li {
@@ -342,15 +337,15 @@
     .product-selector_head {
       @apply bg-light flex items-center gap-3 rounded-xl p-4;
 
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         @apply w-[32px];
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         @apply w-full;
       }
 
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         @apply w-1/2 text-right;
       }
 
@@ -382,11 +377,11 @@
           @apply border-b-0;
         }
 
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           @apply w-[34px];
         }
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           @apply w-full;
         }
 
@@ -400,7 +395,6 @@
   .product-selector_badge {
     @apply absolute -top-[20px] -right-[5px];
   }
-
 }
 
 .active .product-selector_bubble_inn {
@@ -408,7 +402,7 @@
 }
 
 .product_primary-btn {
-  @apply font-nunito sm:p-button p-4 sm:w-auto w-full inline-block cursor-pointer rounded bg-black text-center sm:text-lg text-base leading-snug sm:font-normal font-bold text-white no-underline transition-all duration-200;
+  @apply font-nunito sm:p-button inline-block w-full cursor-pointer rounded bg-black p-4 text-center text-base leading-snug font-bold text-white no-underline transition-all duration-200 sm:w-auto sm:text-lg sm:font-normal;
 }
 
 .product_primary-btn-footer {
@@ -419,10 +413,9 @@
   }
 }
 
-.product_ugc-stars{
-  @apply max-w-[350px] mb-4 mx-auto block;
+.product_ugc-stars {
+  @apply mx-auto mb-4 block max-w-[350px];
 }
-
 
 .product_faq_container {
   @apply to-background-2nd mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-8;
@@ -457,11 +450,11 @@
   .product_atc-icon-line {
     @apply my-3 flex items-center gap-2;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       @apply flex w-[5%] items-center;
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       @apply w-full;
     }
 

@@ -110,7 +110,7 @@
   display: none;
 }
 
-.slick-dots li button:before{
-  display:none !important;
+.slick-dots li button:before {
+  display: none !important;
 }
 /* Slick carousel custom styles */

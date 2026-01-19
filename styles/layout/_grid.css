@@ -12,7 +12,6 @@
   }
 }
 
-
 .product_text-image {
   @apply gap-large flex items-center justify-center;
 
@@ -20,8 +19,6 @@
     @apply w-full;
   }
 }
-
-
 
 .product_stats-outer {
   @apply flex items-center;
@@ -34,5 +31,3 @@
     @apply w-[70%];
   }
 }
-
-
