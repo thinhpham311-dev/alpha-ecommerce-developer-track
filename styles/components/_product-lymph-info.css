@@ -1,10 +1,5 @@
 
-#info{
 
-.product_judge-outer.pli_outer{
-    @apply -mt-4 py-0;
-}
-}
 
 .pli_outer {
     @apply px-0 py-[56px] -mt-4;
@@ -20,7 +15,7 @@
 
 .pli_top-text {
     &>* {
-        @apply my-2 px-0 text-lg leading-[1.3em];
+        @apply my-2 px-0 sm:text-lg text-base leading-[1.3em];
     }
 
     ul {
@@ -37,7 +32,7 @@
 
 .pli_bottom-text {
     &>* {
-        @apply my-2 px-0 text-lg leading-[1.3em];
+        @apply my-2 px-0 sm:text-lg text-base leading-[1.3em];
     }
 
     ul {
