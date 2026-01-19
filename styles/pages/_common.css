@@ -8,11 +8,10 @@
   }
 }
 
-
-.Desktop_only{
-    @apply block;
+.Desktop_only {
+  @apply block;
 }
 
 .Modile_only {
-    @apply hidden;
+  @apply hidden;
 }

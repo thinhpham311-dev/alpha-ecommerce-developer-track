@@ -20,22 +20,12 @@
     img {
       @apply w-[24px];
 
-      &.active-icon {
-        @apply rotate-45 transition-transform duration-200;
-      }
-
-      &:not(.active-icon) {
-        @apply rotate-0 transition-transform duration-200;
-      }
     }
   }
 
   &.active {
     @apply border-primary border;
 
-    .product_tab-content {
-      @apply mt-4 opacity-100;
-    }
   }
 
   .product_tab-content {

@@ -5,7 +5,9 @@
   /* Màu đen cho text-primary, border-primary, color-primary */
   --color-secondary: #6b7280;
   --color-secondary-2nd: #00000026;
-  --color-secondary-3rd: #E0E0E080;
+  --color-secondary-3rd: #e0e0e080;
+  --color-secondary-4th: #f7f7f7;
+  
   /* Màu xám cho text-secondary */
   --color-accent: #dc2626;
   /* Màu đỏ cho text-accent */
@@ -13,18 +15,14 @@
   --color-accent-3rd: #fa8a8a1a;
   --color-accent-4th: #fa8a8a;
   /* Màu hồng nhạt cho bg-accent-2nd */
-  --color-white: #ffffff;
-  --color-white-2nd: #ffffffd9;
-  --color-black: #000000;
+  --color-light: #ffffff;
+  --color-light-2nd: #ffffffd9;
 
   /* Background colors */
-  --color-white: #ffffff;
-  --color-black: #000000;
   --color-background-2nd: #f7f2e7;
   /* Màu xám nhạt */
   --color-background-3rd: #e5e7eb;
   /* Màu xám trung bình */
-  --color-card: #f7f7f7;
   /* Màu nền card */
   /* Nền đen */
 
@@ -36,13 +34,10 @@
   /* Text colors */
   --text-primary: #dc2626;
   /* Màu đỏ cho span trong tiêu đề */
-  --text-secondary: #6b7280;
   --text-accent: #dc2626;
   --text-primary-2nd: #000000;
   /* Màu đen cho subtitle */
   --text-dark: #1f2937;
-  /* Màu xám đậm */
-  --text-white: #ffffff;
 
   /* Typography */
   --font-lora: 'Lora', serif;
