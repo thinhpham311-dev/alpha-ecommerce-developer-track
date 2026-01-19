@@ -1,0 +1,9 @@
+/* Common page styles */
+.product_textimage-content {
+  .product_text-image-reviews {
+    @apply max-w-[350px];
+  }
+  .btn_container {
+    @apply mt-4 max-w-[495px];
+  }
+}

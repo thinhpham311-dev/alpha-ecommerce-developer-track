@@ -5,14 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Alpha Track | e-Commerce Developer</title>
-  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="./dist/output-main.css" />
 
   <script src="./js/jquery-3.6.0.min.js"></script>
 
   <script src="./js/slick.min.js"></script>
   <link rel="stylesheet" href="./styles/slick-theme.min.css" />
   <link rel="stylesheet" href="./styles/slick.min.css" />
-
 </head>
 
 <body>
@@ -1647,7 +1646,7 @@
             <img class="Mobile_only" loading="lazy"
               src="//trysculptique.com/cdn/shop/files/Frame_1000003583_1.png?v=1760694176" />
           </div>
-          <div class="btn_container">
+          <div class="btn_container mt-6 text-center">
             <a href="https://pay.trysculptique.com/lymphatic/checkout" class="product_primary-btn">Try Lymphatic
               Drainage Risk-Free</a>
             <p class="product_primary-btn-footer">
@@ -1676,8 +1675,8 @@
             </p>
           </div>
 
-          <div class="product_lymph-ingr-table">
-            <div class="product-lymph-ingredient">
+          <div data-accordion class="product_lymph-ingr-table">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
                   <img
@@ -1687,8 +1686,7 @@
               </p>
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/Frame_1484580382.png?v=1760698909" />
-              <div data-accordion>
-
+              <div>
                 <div data-accordion-trigger class="product_lymph-ingr-thumb">
                   <div class="Mobile_only">
                     <img class="product_lymph-main-img" loading="lazy"
@@ -1705,15 +1703,15 @@
                 <div data-accordion-content class="product_lymph-ingr-content">
                   <p>
                     Restores rhythmic vessel contractions that move lymph through your system.
-                    Contains iridoids that "wake up" muscle cells in vessel walls. 2024 study showed
-                    enhanced immune cell activity for better waste clearance.
+                    Contains iridoids that "wake up" muscle cells in vessel walls. 2024 study
+                    showed enhanced immune cell activity for better waste clearance.
                   </p>
                   <p>[Study: Enhanced NK cell activity in immunosuppressed models]</p>
                 </div>
               </div>
             </div>
 
-            <div class="product-lymph-ingredient">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
                   <img
@@ -1724,7 +1722,7 @@
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/Frame_1484580382_1.png?v=1760939908" />
 
-              <div class="product_lymph-ingr-thumb">
+              <div data-accordion-trigger class="product_lymph-ingr-thumb">
                 <div class="Mobile_only">
                   <img class="product_lymph-main-img" loading="lazy"
                     src="//trysculptique.com/cdn/shop/files/Frame_1484580382_1.png?v=1760939908" />
@@ -1733,11 +1731,11 @@
                   <h5>Dandelion Extract (250mg)</h5>
                 </div>
                 <div>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626" />
                 </div>
               </div>
-              <div class="product_lymph-ingr-content">
+              <div data-accordion-content class="product_lymph-ingr-content">
                 <p>
                   Proven gentle diuretic that increases fluid excretion without harsh side
                   effects. Human trial showed statistically significant increase in urination
@@ -1747,7 +1745,7 @@
               </div>
             </div>
 
-            <div class="product-lymph-ingredient">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
                   <img
@@ -1758,7 +1756,7 @@
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/image_2.png?v=1760939909" />
 
-              <div class="product_lymph-ingr-thumb">
+              <div data-accordion-trigger class="product_lymph-ingr-thumb">
                 <div class="Mobile_only">
                   <img class="product_lymph-main-img" loading="lazy"
                     src="//trysculptique.com/cdn/shop/files/image_2.png?v=1760939909" />
@@ -1767,11 +1765,11 @@
                   <h5>Bromelain Powder (100mg)</h5>
                 </div>
                 <div>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626" />
                 </div>
               </div>
-              <div class="product_lymph-ingr-content">
+              <div data-accordion-content class="product_lymph-ingr-content">
                 <p>
                   Proteolytic enzyme that clears blockages preventing drainage. Breaks down fibrin
                   proteins creating "sludge" in vessels. 2024 RCT showed significantly greater
@@ -1781,10 +1779,10 @@
               </div>
             </div>
 
-            <div class="product-lymph-ingredient">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" />
                 </span>
                 <span>Strengthen Vessel Walls</span>
@@ -1792,7 +1790,7 @@
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/image_3.png?v=1760939909" />
 
-              <div class="product_lymph-ingr-thumb">
+              <div data-accordion-trigger class="product_lymph-ingr-thumb">
                 <div class="Mobile_only">
                   <img class="product_lymph-main-img" loading="lazy"
                     src="//trysculptique.com/cdn/shop/files/image_3.png?v=1760939909" />
@@ -1801,11 +1799,11 @@
                   <h5>Rutin (100mg)</h5>
                 </div>
                 <div>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626" />
                 </div>
               </div>
-              <div class="product_lymph-ingr-content">
+              <div data-accordion-content class="product_lymph-ingr-content">
                 <p>
                   Reduces vessel permeability so fluid doesn't leak back into tissues. Clinical
                   trials showed average 4.2 cm reduction in limb circumference over 6 months in
@@ -1815,10 +1813,10 @@
               </div>
             </div>
 
-            <div class="product-lymph-ingredient">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" />
                 </span>
                 <span>Reduce Inflammation</span>
@@ -1826,7 +1824,7 @@
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/Frame_1484580382_2.png?v=1760939909" />
 
-              <div class="product_lymph-ingr-thumb">
+              <div data-accordion-trigger class="product_lymph-ingr-thumb">
                 <div class="Mobile_only">
                   <img class="product_lymph-main-img" loading="lazy"
                     src="//trysculptique.com/cdn/shop/files/Frame_1484580382_2.png?v=1760939909" />
@@ -1835,11 +1833,11 @@
                   <h5>Burdock Root Powder (200mg)</h5>
                 </div>
                 <div>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626" />
                 </div>
               </div>
-              <div class="product_lymph-ingr-content">
+              <div data-accordion-content class="product_lymph-ingr-content">
                 <p>
                   &nbsp;Breaks the inflammation-congestion cycle. RCT showed significantly
                   decreased inflammatory markers IL-6 and C-reactive protein (p&lt;0.001). Also
@@ -1849,10 +1847,10 @@
               </div>
             </div>
 
-            <div class="product-lymph-ingredient">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" />
                 </span>
                 <span>Boost Immune Clearance</span>
@@ -1860,7 +1858,7 @@
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/image_4.png?v=1760939909" />
 
-              <div class="product_lymph-ingr-thumb">
+              <div data-accordion-trigger class="product_lymph-ingr-thumb">
                 <div class="Mobile_only">
                   <img class="product_lymph-main-img" loading="lazy"
                     src="//trysculptique.com/cdn/shop/files/image_4.png?v=1760939909" />
@@ -1869,11 +1867,11 @@
                   <h5>Echinacea Purpurea Extract (500mg)</h5>
                 </div>
                 <div>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626" />
                 </div>
               </div>
-              <div class="product_lymph-ingr-content">
+              <div data-accordion-content class="product_lymph-ingr-content">
                 <p>
                   Enhances lymphocyte activity for better waste removal. Meta-analysis of 30
                   trials with 5,600+ participants showed 40% reduction in recurrent infections.
@@ -1882,10 +1880,10 @@
               </div>
             </div>
 
-            <div class="product-lymph-ingredient">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" />
                 </span>
                 <span>Support Metabolism</span>
@@ -1893,7 +1891,7 @@
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/Frame_1484580382_3.png?v=1760939909" />
 
-              <div class="product_lymph-ingr-thumb">
+              <div data-accordion-trigger class="product_lymph-ingr-thumb">
                 <div class="Mobile_only">
                   <img class="product_lymph-main-img" loading="lazy"
                     src="//trysculptique.com/cdn/shop/files/Frame_1484580382_3.png?v=1760939909" />
@@ -1902,11 +1900,11 @@
                   <h5>Kelp Extract (30mg)</h5>
                 </div>
                 <div>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626" />
                 </div>
               </div>
-              <div class="product_lymph-ingr-content">
+              <div data-accordion-content class="product_lymph-ingr-content">
                 <p>
                   Provides iodine for thyroid function and healthy metabolic rate. Sluggish
                   thyroid = sluggish lymphatic drainage. Contains fucoxanthin shown to reduce body
@@ -1916,10 +1914,10 @@
               </div>
             </div>
 
-            <div class="product-lymph-ingredient">
+            <div data-accordion-item class="product-lymph-ingredient-box">
               <p class="product_lymph-ingr-subtitle">
                 <span>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" />
                 </span>
                 <span>Antioxidant Protection</span>
@@ -1927,7 +1925,7 @@
               <img class="Desktop_only product_lymph-main-img" loading="lazy"
                 src="//trysculptique.com/cdn/shop/files/Frame_1484580382_4.png?v=1760939910" />
 
-              <div class="product_lymph-ingr-thumb">
+              <div data-accordion-trigger class="product_lymph-ingr-thumb">
                 <div class="Mobile_only">
                   <img class="product_lymph-main-img" loading="lazy"
                     src="//trysculptique.com/cdn/shop/files/Frame_1484580382_4.png?v=1760939910" />
@@ -1936,11 +1934,11 @@
                   <h5>Lemon Powder (50mg)</h5>
                 </div>
                 <div>
-                  <img
+                  <img data-accordion-icon
                     src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/weui_arrow-outlined.png?v=1760698626" />
                 </div>
               </div>
-              <div class="product_lymph-ingr-content">
+              <div data-accordion-content class="product_lymph-ingr-content">
                 <p>
                   Protects vessels from oxidative damage. RCT showed 145% improvement in vascular
                   function (p&lt;0.001). Supports circulation and metabolic health.
@@ -1959,293 +1957,351 @@
         </div>
       </div>
     </div>
-    </div>
+
     <div id="reviews" class="shopify-section">
       <div class="product_judge-outer">
         <div class="page-width">
           <div class="product_judge-container">
             <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Trustpilot_Score.png?v=1752349211"
-              class="product-reviews_trust">
-            <h2 class="product-section_title text-center">Real Women, Real Results: 93,000+ Transformations</h2>
-            <p class="product-section_text text-center">All reviews verified from actual paying customers</p>
+              class="product-reviews_trust" />
+            <h2 class="product-section_title text-center">
+              Real Women, Real Results: 93,000+ Transformations
+            </h2>
+            <p class="product-section_text text-center">
+              All reviews verified from actual paying customers
+            </p>
           </div>
 
-
-          <div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-id='10087591805271'>
-            <div class='jdgm-rev-widg' data-updated-at='2026-01-18T08:35:22Z' data-average-rating='4.67'
-              data-number-of-reviews='110' data-number-of-questions='0'
-              data-image-url='https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Sculptique_1_Artboard1_d0aa7de4-79fc-4755-a3d9-176d60211678.jpg?v=1749415846'>
-
-              <div class='jdgm-rev-widg__header'>
-                <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>
-                <div class='jdgm-rev-widg__summary'>
-                  <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 4.67 stars' role='img'> <span
-                      class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                      class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                      class='jdgm-star jdgm--half'></span> </div>
-                  <div class='jdgm-rev-widg__summary-text'>Based on 110 reviews</div>
-                </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a>
-                <div class='jdgm-histogram jdgm-temp-hidden'>
-                  <div class='jdgm-histogram__row' data-rating='5' data-frequency='84' data-percentage='76'>
-                    <div class='jdgm-histogram__star' role='button' aria-label="76% (84) reviews with 5 star rating"
-                      tabindex='0'><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                        class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                        class='jdgm-star jdgm--on'></span></div>
-                    <div class='jdgm-histogram__bar'>
-                      <div class='jdgm-histogram__bar-content' style='width: 76%;'> </div>
-                    </div>
-                    <div class='jdgm-histogram__percentage'>76%</div>
-                    <div class='jdgm-histogram__frequency'>(84)</div>
+          <div id="judgeme_product_reviews" class="jdgm-widget jdgm-review-widget" data-id="10087591805271">
+            <div class="jdgm-rev-widg" data-updated-at="2026-01-18T08:35:22Z" data-average-rating="4.67"
+              data-number-of-reviews="110" data-number-of-questions="0"
+              data-image-url="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Sculptique_1_Artboard1_d0aa7de4-79fc-4755-a3d9-176d60211678.jpg?v=1749415846">
+              <div class="jdgm-rev-widg__header">
+                <h2 class="jdgm-rev-widg__title">Customer Reviews</h2>
+                <div class="jdgm-rev-widg__summary">
+                  <div class="jdgm-rev-widg__summary-stars" aria-label="Average rating is 4.67 stars" role="img">
+                    <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                      class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                      class="jdgm-star jdgm--half"></span>
                   </div>
-                  <div class='jdgm-histogram__row' data-rating='4' data-frequency='17' data-percentage='15'>
-                    <div class='jdgm-histogram__star' role='button' aria-label="15% (17) reviews with 4 star rating"
-                      tabindex='0'><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                        class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                        class='jdgm-star jdgm--off'></span></div>
-                    <div class='jdgm-histogram__bar'>
-                      <div class='jdgm-histogram__bar-content' style='width: 15%;'> </div>
-                    </div>
-                    <div class='jdgm-histogram__percentage'>15%</div>
-                    <div class='jdgm-histogram__frequency'>(17)</div>
-                  </div>
-                  <div class='jdgm-histogram__row' data-rating='3' data-frequency='8' data-percentage='7'>
-                    <div class='jdgm-histogram__star' role='button' aria-label="7% (8) reviews with 3 star rating"
-                      tabindex='0'><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                        class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span
-                        class='jdgm-star jdgm--off'></span></div>
-                    <div class='jdgm-histogram__bar'>
-                      <div class='jdgm-histogram__bar-content' style='width: 7%;'> </div>
-                    </div>
-                    <div class='jdgm-histogram__percentage'>7%</div>
-                    <div class='jdgm-histogram__frequency'>(8)</div>
-                  </div>
-                  <div class='jdgm-histogram__row' data-rating='2' data-frequency='1' data-percentage='1'>
-                    <div class='jdgm-histogram__star' role='button' aria-label="1% (1) reviews with 2 star rating"
-                      tabindex='0'><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                        class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span
-                        class='jdgm-star jdgm--off'></span></div>
-                    <div class='jdgm-histogram__bar'>
-                      <div class='jdgm-histogram__bar-content' style='width: 1%;'> </div>
-                    </div>
-                    <div class='jdgm-histogram__percentage'>1%</div>
-                    <div class='jdgm-histogram__frequency'>(1)</div>
-                  </div>
-                  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>
-                    <div class='jdgm-histogram__star' role='button' aria-label="0% (0) reviews with 1 star rating"
-                      tabindex='0'><span class='jdgm-star jdgm--on'></span><span
-                        class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span
-                        class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div>
-                    <div class='jdgm-histogram__bar'>
-                      <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div>
-                    </div>
-                    <div class='jdgm-histogram__percentage'>0%</div>
-                    <div class='jdgm-histogram__frequency'>(0)</div>
-                  </div>
-                  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div>
+                  <div class="jdgm-rev-widg__summary-text">Based on 110 reviews</div>
                 </div>
-                <div class="jdgm-medals-wrapper jdgm-hidden" data-updated-at='2026-01-18T08:35:22Z'>
+                <a style="display: none" href="#" class="jdgm-write-rev-link" role="button">Write a review</a>
+                <div class="jdgm-histogram jdgm-temp-hidden">
+                  <div class="jdgm-histogram__row" data-rating="5" data-frequency="84" data-percentage="76">
+                    <div class="jdgm-histogram__star" role="button" aria-label="76% (84) reviews with 5 star rating"
+                      tabindex="0">
+                      <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                        class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                        class="jdgm-star jdgm--on"></span>
+                    </div>
+                    <div class="jdgm-histogram__bar">
+                      <div class="jdgm-histogram__bar-content" style="width: 76%"></div>
+                    </div>
+                    <div class="jdgm-histogram__percentage">76%</div>
+                    <div class="jdgm-histogram__frequency">(84)</div>
+                  </div>
+                  <div class="jdgm-histogram__row" data-rating="4" data-frequency="17" data-percentage="15">
+                    <div class="jdgm-histogram__star" role="button" aria-label="15% (17) reviews with 4 star rating"
+                      tabindex="0">
+                      <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                        class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                        class="jdgm-star jdgm--off"></span>
+                    </div>
+                    <div class="jdgm-histogram__bar">
+                      <div class="jdgm-histogram__bar-content" style="width: 15%"></div>
+                    </div>
+                    <div class="jdgm-histogram__percentage">15%</div>
+                    <div class="jdgm-histogram__frequency">(17)</div>
+                  </div>
+                  <div class="jdgm-histogram__row" data-rating="3" data-frequency="8" data-percentage="7">
+                    <div class="jdgm-histogram__star" role="button" aria-label="7% (8) reviews with 3 star rating"
+                      tabindex="0">
+                      <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                        class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--off"></span><span
+                        class="jdgm-star jdgm--off"></span>
+                    </div>
+                    <div class="jdgm-histogram__bar">
+                      <div class="jdgm-histogram__bar-content" style="width: 7%"></div>
+                    </div>
+                    <div class="jdgm-histogram__percentage">7%</div>
+                    <div class="jdgm-histogram__frequency">(8)</div>
+                  </div>
+                  <div class="jdgm-histogram__row" data-rating="2" data-frequency="1" data-percentage="1">
+                    <div class="jdgm-histogram__star" role="button" aria-label="1% (1) reviews with 2 star rating"
+                      tabindex="0">
+                      <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                        class="jdgm-star jdgm--off"></span><span class="jdgm-star jdgm--off"></span><span
+                        class="jdgm-star jdgm--off"></span>
+                    </div>
+                    <div class="jdgm-histogram__bar">
+                      <div class="jdgm-histogram__bar-content" style="width: 1%"></div>
+                    </div>
+                    <div class="jdgm-histogram__percentage">1%</div>
+                    <div class="jdgm-histogram__frequency">(1)</div>
+                  </div>
+                  <div class="jdgm-histogram__row" data-rating="1" data-frequency="0" data-percentage="0">
+                    <div class="jdgm-histogram__star" role="button" aria-label="0% (0) reviews with 1 star rating"
+                      tabindex="0">
+                      <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--off"></span><span
+                        class="jdgm-star jdgm--off"></span><span class="jdgm-star jdgm--off"></span><span
+                        class="jdgm-star jdgm--off"></span>
+                    </div>
+                    <div class="jdgm-histogram__bar">
+                      <div class="jdgm-histogram__bar-content" style="width: 0%"></div>
+                    </div>
+                    <div class="jdgm-histogram__percentage">0%</div>
+                    <div class="jdgm-histogram__frequency">(0)</div>
+                  </div>
+                  <div class="jdgm-histogram__row jdgm-histogram__clear-filter" data-rating="null" tabindex="0"></div>
+                </div>
+                <div class="jdgm-medals-wrapper jdgm-hidden" data-updated-at="2026-01-18T08:35:22Z">
                   <style type="text/css"></style>
                   <div class="jdgm-medals" data-link="https://app.judge.me/reviews/medals">
                     <div class="jdgm-medals__container">
                       <div class="jdgm-medal-wrapper"
-                        title="Diamond Authentic Shop. 100% of published reviews are verified reviews"> <a
-                          class="jdgm-medal jdgm--loading" data-value="100.0" data-type="auth" data-tier="diamond">
+                        title="Diamond Authentic Shop. 100% of published reviews are verified reviews">
+                        <a class="jdgm-medal jdgm--loading" data-value="100.0" data-type="auth" data-tier="diamond">
                           <div class="jdgm-medal__image" data-url="auth/diamond.svg"
                             data-alt="Judge.me Diamond Authentic Shop medal"></div>
-                          <div class="jdgm-medal__value ">100.0</div>
-                        </a> </div>
+                          <div class="jdgm-medal__value">100.0</div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class='jdgm-rev-widg__sort-wrapper'></div>
+                <div class="jdgm-rev-widg__sort-wrapper"></div>
               </div>
-              <div class='jdgm-rev-widg__body'>
-                <div class='jdgm-rev-widg__reviews'>
-                  <div class='jdgm-rev jdgm-divider-top' data-verified-buyer='true'
-                    data-review-id='a20d8e7c-fc29-4928-b652-7117fff22450' data-review-language=''
-                    data-product-title='Maximum Potency Anti-Cellulite &amp; Lipedema Capsules | Smooth Skin by Sculptique™'
-                    data-product-url='/products/anti-cellulite-lipedema-capsules-smooth-skin-sub'
-                    data-thumb-up-count='0' data-thumb-down-count='0'>
-                    <div class='jdgm-rev__header'>
-                      <div class='jdgm-rev__icon'> A </div> <span class='jdgm-rev__rating' data-score='5' tabindex='0'
-                        aria-label='5 star review' role='img'> <span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span> </span> <span
-                        class='jdgm-rev__timestamp jdgm-spinner' data-content='2025-12-08 19:16:48 UTC'></span>
-                      <div class='jdgm-rev__br'></div> <span class='jdgm-rev__buyer-badge-wrapper'> <span
-                          class='jdgm-rev__buyer-badge'></span> </span> <span class='jdgm-rev__author-wrapper'> <span
-                          class='jdgm-rev__author'>Anonymous</span> <span class='jdgm-rev__location'> </span> </span>
-                    </div>
-                    <div class='jdgm-rev__content'>
-                      <div class='jdgm-rev__custom-form'> </div> <b class='jdgm-rev__title'></b>
-                      <div class='jdgm-rev__body'>
-                        <p>Pretty sure I’m seeing improvement in the smoothness of my skin after 30 days. Will continue
-                          with
-                          confidence it’s working.</p>
-                      </div>
-                      <div class='jdgm-rev__pics'> </div>
-                      <div class='jdgm-rev__vids'> </div>
-                      <div class='jdgm-rev__transparency-badge-wrapper'>
-                        <div class='jdgm-rev__transparency-badge' data-badge-type=review_collected_via_store_invitation>
-                        </div>
-                      </div>
-                    </div>
-                    <div class='jdgm-rev__actions'>
-                      <div class='jdgm-rev__social'></div>
-                      <div class='jdgm-rev__votes'></div>
-                    </div>
-                    <div class='jdgm-rev__reply'> </div>
-                  </div>
-                  <div class='jdgm-rev jdgm-divider-top' data-verified-buyer='true'
-                    data-review-id='98c49d5f-5248-4a39-9f88-82ed6f9241c1' data-review-language=''
-                    data-product-title='New Maximum Potency Anti-Lipedema Capsules | Smooth Skin by Sculptique™'
-                    data-product-url='/products/anti-cellulite-lipedema-capsules-sculptique' data-thumb-up-count='0'
-                    data-thumb-down-count='0'>
-                    <div class='jdgm-rev__header'>
-                      <div class='jdgm-rev__icon'> A </div> <span class='jdgm-rev__rating' data-score='5' tabindex='0'
-                        aria-label='5 star review' role='img'> <span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span> </span> <span
-                        class='jdgm-rev__timestamp jdgm-spinner' data-content='2025-12-01 15:41:07 UTC'></span>
-                      <div class='jdgm-rev__br'></div> <span class='jdgm-rev__buyer-badge-wrapper'> <span
-                          class='jdgm-rev__buyer-badge'></span> </span> <span class='jdgm-rev__author-wrapper'> <span
-                          class='jdgm-rev__author'>Anonymous</span> <span class='jdgm-rev__location'> </span> </span>
-                    </div>
-                    <div class='jdgm-rev__content'>
-                      <div class='jdgm-rev__custom-form'> </div> <b class='jdgm-rev__title'></b>
-                      <div class='jdgm-rev__body'>
-                        <p>One month and I’ve already seen a difference!</p>
-                      </div>
-                      <div class='jdgm-rev__pics'> </div>
-                      <div class='jdgm-rev__vids'> </div>
-                      <div class='jdgm-rev__transparency-badge-wrapper'>
-                        <div class='jdgm-rev__transparency-badge' data-badge-type=review_collected_via_store_invitation>
-                        </div>
-                      </div>
-                    </div>
-                    <div class='jdgm-rev__actions'>
-                      <div class='jdgm-rev__social'></div>
-                      <div class='jdgm-rev__votes'></div>
-                    </div>
-                    <div class='jdgm-rev__reply'> </div>
-                  </div>
-                  <div class='jdgm-rev jdgm-divider-top' data-verified-buyer='true'
-                    data-review-id='d41a5e95-e8df-4c87-98b2-72ba3403da13' data-review-language=''
-                    data-product-title='New Maximum Potency Anti-Lipedema Capsules | Smooth Skin by Sculptique™'
-                    data-product-url='/products/anti-cellulite-lipedema-capsules-sculptique' data-thumb-up-count='0'
-                    data-thumb-down-count='0'>
-                    <div class='jdgm-rev__header'>
-                      <div class='jdgm-rev__icon'> D </div> <span class='jdgm-rev__rating' data-score='5' tabindex='0'
-                        aria-label='5 star review' role='img'> <span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span> </span> <span
-                        class='jdgm-rev__timestamp jdgm-spinner' data-content='2025-11-23 19:49:57 UTC'></span>
-                      <div class='jdgm-rev__br'></div> <span class='jdgm-rev__buyer-badge-wrapper'> <span
-                          class='jdgm-rev__buyer-badge'></span> </span> <span class='jdgm-rev__author-wrapper'> <span
-                          class='jdgm-rev__author'>Donabeth Houx</span> <span class='jdgm-rev__location'> </span>
+              <div class="jdgm-rev-widg__body">
+                <div class="jdgm-rev-widg__reviews">
+                  <div class="jdgm-rev jdgm-divider-top" data-verified-buyer="true"
+                    data-review-id="a20d8e7c-fc29-4928-b652-7117fff22450" data-review-language=""
+                    data-product-title="Maximum Potency Anti-Cellulite &amp; Lipedema Capsules | Smooth Skin by Sculptique™"
+                    data-product-url="/products/anti-cellulite-lipedema-capsules-smooth-skin-sub"
+                    data-thumb-up-count="0" data-thumb-down-count="0">
+                    <div class="jdgm-rev__header">
+                      <div class="jdgm-rev__icon">A</div>
+                      <span class="jdgm-rev__rating" data-score="5" tabindex="0" aria-label="5 star review" role="img">
+                        <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span>
+                      </span>
+                      <span class="jdgm-rev__timestamp jdgm-spinner" data-content="2025-12-08 19:16:48 UTC"></span>
+                      <div class="jdgm-rev__br"></div>
+                      <span class="jdgm-rev__buyer-badge-wrapper">
+                        <span class="jdgm-rev__buyer-badge"></span>
+                      </span>
+                      <span class="jdgm-rev__author-wrapper">
+                        <span class="jdgm-rev__author">Anonymous</span>
+                        <span class="jdgm-rev__location"> </span>
                       </span>
                     </div>
-                    <div class='jdgm-rev__content'>
-                      <div class='jdgm-rev__custom-form'> </div> <b class='jdgm-rev__title'></b>
-                      <div class='jdgm-rev__body'>
-                        <p>I LOVE THEM! My legs have gone from late stage 2 to late one!!! Oh my gosh! It’s a miracle! I
-                          no
-                          longer have to worry about elephantitus in my future! Thank you so much!!!!!!</p>
+                    <div class="jdgm-rev__content">
+                      <div class="jdgm-rev__custom-form"></div>
+                      <b class="jdgm-rev__title"></b>
+                      <div class="jdgm-rev__body">
+                        <p>
+                          Pretty sure I’m seeing improvement in the smoothness of my skin after 30
+                          days. Will continue with confidence it’s working.
+                        </p>
                       </div>
-                      <div class='jdgm-rev__pics'> </div>
-                      <div class='jdgm-rev__vids'> </div>
-                      <div class='jdgm-rev__transparency-badge-wrapper'>
-                        <div class='jdgm-rev__transparency-badge' data-badge-type=review_collected_via_store_invitation>
-                        </div>
+                      <div class="jdgm-rev__pics"></div>
+                      <div class="jdgm-rev__vids"></div>
+                      <div class="jdgm-rev__transparency-badge-wrapper">
+                        <div class="jdgm-rev__transparency-badge"
+                          data-badge-type="review_collected_via_store_invitation"></div>
                       </div>
                     </div>
-                    <div class='jdgm-rev__actions'>
-                      <div class='jdgm-rev__social'></div>
-                      <div class='jdgm-rev__votes'></div>
+                    <div class="jdgm-rev__actions">
+                      <div class="jdgm-rev__social"></div>
+                      <div class="jdgm-rev__votes"></div>
                     </div>
-                    <div class='jdgm-rev__reply'> </div>
+                    <div class="jdgm-rev__reply"></div>
                   </div>
-                  <div class='jdgm-rev jdgm-divider-top' data-verified-buyer='true'
-                    data-review-id='3f91d923-67b1-417b-abc4-965ba4402255' data-review-language=''
-                    data-product-title='Anti-Lipedema Capsules | Sculptique™ Smooth Skin'
-                    data-product-url='/products/anti-lipedema-capsules-sculptique' data-thumb-up-count='0'
-                    data-thumb-down-count='0'>
-                    <div class='jdgm-rev__header'>
-                      <div class='jdgm-rev__icon'> D </div> <span class='jdgm-rev__rating' data-score='5' tabindex='0'
-                        aria-label='5 star review' role='img'> <span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span> </span> <span
-                        class='jdgm-rev__timestamp jdgm-spinner' data-content='2025-11-17 15:15:04 UTC'></span>
-                      <div class='jdgm-rev__br'></div> <span class='jdgm-rev__buyer-badge-wrapper'> <span
-                          class='jdgm-rev__buyer-badge'></span> </span> <span class='jdgm-rev__author-wrapper'> <span
-                          class='jdgm-rev__author'>Dawn Camacho</span> <span class='jdgm-rev__location'> </span> </span>
+                  <div class="jdgm-rev jdgm-divider-top" data-verified-buyer="true"
+                    data-review-id="98c49d5f-5248-4a39-9f88-82ed6f9241c1" data-review-language=""
+                    data-product-title="New Maximum Potency Anti-Lipedema Capsules | Smooth Skin by Sculptique™"
+                    data-product-url="/products/anti-cellulite-lipedema-capsules-sculptique" data-thumb-up-count="0"
+                    data-thumb-down-count="0">
+                    <div class="jdgm-rev__header">
+                      <div class="jdgm-rev__icon">A</div>
+                      <span class="jdgm-rev__rating" data-score="5" tabindex="0" aria-label="5 star review" role="img">
+                        <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span>
+                      </span>
+                      <span class="jdgm-rev__timestamp jdgm-spinner" data-content="2025-12-01 15:41:07 UTC"></span>
+                      <div class="jdgm-rev__br"></div>
+                      <span class="jdgm-rev__buyer-badge-wrapper">
+                        <span class="jdgm-rev__buyer-badge"></span>
+                      </span>
+                      <span class="jdgm-rev__author-wrapper">
+                        <span class="jdgm-rev__author">Anonymous</span>
+                        <span class="jdgm-rev__location"> </span>
+                      </span>
                     </div>
-                    <div class='jdgm-rev__content'>
-                      <div class='jdgm-rev__custom-form'> </div> <b class='jdgm-rev__title'></b>
-                      <div class='jdgm-rev__body'>
-                        <p>It took me about 60 days to notice a difference in smoothness. My husband noticed which is
-                          why I
-                          purchased another round. I'm happy.</p>
+                    <div class="jdgm-rev__content">
+                      <div class="jdgm-rev__custom-form"></div>
+                      <b class="jdgm-rev__title"></b>
+                      <div class="jdgm-rev__body">
+                        <p>One month and I’ve already seen a difference!</p>
                       </div>
-                      <div class='jdgm-rev__pics'> </div>
-                      <div class='jdgm-rev__vids'> </div>
-                      <div class='jdgm-rev__transparency-badge-wrapper'>
-                        <div class='jdgm-rev__transparency-badge' data-badge-type=review_collected_via_store_invitation>
-                        </div>
+                      <div class="jdgm-rev__pics"></div>
+                      <div class="jdgm-rev__vids"></div>
+                      <div class="jdgm-rev__transparency-badge-wrapper">
+                        <div class="jdgm-rev__transparency-badge"
+                          data-badge-type="review_collected_via_store_invitation"></div>
                       </div>
                     </div>
-                    <div class='jdgm-rev__actions'>
-                      <div class='jdgm-rev__social'></div>
-                      <div class='jdgm-rev__votes'></div>
+                    <div class="jdgm-rev__actions">
+                      <div class="jdgm-rev__social"></div>
+                      <div class="jdgm-rev__votes"></div>
                     </div>
-                    <div class='jdgm-rev__reply'> </div>
+                    <div class="jdgm-rev__reply"></div>
                   </div>
-                  <div class='jdgm-rev jdgm-divider-top' data-verified-buyer='true'
-                    data-review-id='ddf23e55-9c7b-45d5-97cd-2bbb0d6de33f' data-review-language=''
-                    data-product-title='New Maximum Potency Anti-Lipedema Capsules | Smooth Skin by Sculptique™'
-                    data-product-url='/products/anti-cellulite-lipedema-capsules-sculptique' data-thumb-up-count='0'
-                    data-thumb-down-count='0'>
-                    <div class='jdgm-rev__header'>
-                      <div class='jdgm-rev__icon'> A </div> <span class='jdgm-rev__rating' data-score='5' tabindex='0'
-                        aria-label='5 star review' role='img'> <span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span
-                          class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span> </span> <span
-                        class='jdgm-rev__timestamp jdgm-spinner' data-content='2025-11-13 13:50:33 UTC'></span>
-                      <div class='jdgm-rev__br'></div> <span class='jdgm-rev__buyer-badge-wrapper'> <span
-                          class='jdgm-rev__buyer-badge'></span> </span> <span class='jdgm-rev__author-wrapper'> <span
-                          class='jdgm-rev__author'>Anonymous</span> <span class='jdgm-rev__location'> </span> </span>
+                  <div class="jdgm-rev jdgm-divider-top" data-verified-buyer="true"
+                    data-review-id="d41a5e95-e8df-4c87-98b2-72ba3403da13" data-review-language=""
+                    data-product-title="New Maximum Potency Anti-Lipedema Capsules | Smooth Skin by Sculptique™"
+                    data-product-url="/products/anti-cellulite-lipedema-capsules-sculptique" data-thumb-up-count="0"
+                    data-thumb-down-count="0">
+                    <div class="jdgm-rev__header">
+                      <div class="jdgm-rev__icon">D</div>
+                      <span class="jdgm-rev__rating" data-score="5" tabindex="0" aria-label="5 star review" role="img">
+                        <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span>
+                      </span>
+                      <span class="jdgm-rev__timestamp jdgm-spinner" data-content="2025-11-23 19:49:57 UTC"></span>
+                      <div class="jdgm-rev__br"></div>
+                      <span class="jdgm-rev__buyer-badge-wrapper">
+                        <span class="jdgm-rev__buyer-badge"></span>
+                      </span>
+                      <span class="jdgm-rev__author-wrapper">
+                        <span class="jdgm-rev__author">Donabeth Houx</span>
+                        <span class="jdgm-rev__location"> </span>
+                      </span>
                     </div>
-                    <div class='jdgm-rev__content'>
-                      <div class='jdgm-rev__custom-form'> </div> <b class='jdgm-rev__title'></b>
-                      <div class='jdgm-rev__body'>
+                    <div class="jdgm-rev__content">
+                      <div class="jdgm-rev__custom-form"></div>
+                      <b class="jdgm-rev__title"></b>
+                      <div class="jdgm-rev__body">
+                        <p>
+                          I LOVE THEM! My legs have gone from late stage 2 to late one!!! Oh my
+                          gosh! It’s a miracle! I no longer have to worry about elephantitus in my
+                          future! Thank you so much!!!!!!
+                        </p>
+                      </div>
+                      <div class="jdgm-rev__pics"></div>
+                      <div class="jdgm-rev__vids"></div>
+                      <div class="jdgm-rev__transparency-badge-wrapper">
+                        <div class="jdgm-rev__transparency-badge"
+                          data-badge-type="review_collected_via_store_invitation"></div>
+                      </div>
+                    </div>
+                    <div class="jdgm-rev__actions">
+                      <div class="jdgm-rev__social"></div>
+                      <div class="jdgm-rev__votes"></div>
+                    </div>
+                    <div class="jdgm-rev__reply"></div>
+                  </div>
+                  <div class="jdgm-rev jdgm-divider-top" data-verified-buyer="true"
+                    data-review-id="3f91d923-67b1-417b-abc4-965ba4402255" data-review-language=""
+                    data-product-title="Anti-Lipedema Capsules | Sculptique™ Smooth Skin"
+                    data-product-url="/products/anti-lipedema-capsules-sculptique" data-thumb-up-count="0"
+                    data-thumb-down-count="0">
+                    <div class="jdgm-rev__header">
+                      <div class="jdgm-rev__icon">D</div>
+                      <span class="jdgm-rev__rating" data-score="5" tabindex="0" aria-label="5 star review" role="img">
+                        <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span>
+                      </span>
+                      <span class="jdgm-rev__timestamp jdgm-spinner" data-content="2025-11-17 15:15:04 UTC"></span>
+                      <div class="jdgm-rev__br"></div>
+                      <span class="jdgm-rev__buyer-badge-wrapper">
+                        <span class="jdgm-rev__buyer-badge"></span>
+                      </span>
+                      <span class="jdgm-rev__author-wrapper">
+                        <span class="jdgm-rev__author">Dawn Camacho</span>
+                        <span class="jdgm-rev__location"> </span>
+                      </span>
+                    </div>
+                    <div class="jdgm-rev__content">
+                      <div class="jdgm-rev__custom-form"></div>
+                      <b class="jdgm-rev__title"></b>
+                      <div class="jdgm-rev__body">
+                        <p>
+                          It took me about 60 days to notice a difference in smoothness. My
+                          husband noticed which is why I purchased another round. I'm happy.
+                        </p>
+                      </div>
+                      <div class="jdgm-rev__pics"></div>
+                      <div class="jdgm-rev__vids"></div>
+                      <div class="jdgm-rev__transparency-badge-wrapper">
+                        <div class="jdgm-rev__transparency-badge"
+                          data-badge-type="review_collected_via_store_invitation"></div>
+                      </div>
+                    </div>
+                    <div class="jdgm-rev__actions">
+                      <div class="jdgm-rev__social"></div>
+                      <div class="jdgm-rev__votes"></div>
+                    </div>
+                    <div class="jdgm-rev__reply"></div>
+                  </div>
+                  <div class="jdgm-rev jdgm-divider-top" data-verified-buyer="true"
+                    data-review-id="ddf23e55-9c7b-45d5-97cd-2bbb0d6de33f" data-review-language=""
+                    data-product-title="New Maximum Potency Anti-Lipedema Capsules | Smooth Skin by Sculptique™"
+                    data-product-url="/products/anti-cellulite-lipedema-capsules-sculptique" data-thumb-up-count="0"
+                    data-thumb-down-count="0">
+                    <div class="jdgm-rev__header">
+                      <div class="jdgm-rev__icon">A</div>
+                      <span class="jdgm-rev__rating" data-score="5" tabindex="0" aria-label="5 star review" role="img">
+                        <span class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span><span class="jdgm-star jdgm--on"></span><span
+                          class="jdgm-star jdgm--on"></span>
+                      </span>
+                      <span class="jdgm-rev__timestamp jdgm-spinner" data-content="2025-11-13 13:50:33 UTC"></span>
+                      <div class="jdgm-rev__br"></div>
+                      <span class="jdgm-rev__buyer-badge-wrapper">
+                        <span class="jdgm-rev__buyer-badge"></span>
+                      </span>
+                      <span class="jdgm-rev__author-wrapper">
+                        <span class="jdgm-rev__author">Anonymous</span>
+                        <span class="jdgm-rev__location"> </span>
+                      </span>
+                    </div>
+                    <div class="jdgm-rev__content">
+                      <div class="jdgm-rev__custom-form"></div>
+                      <b class="jdgm-rev__title"></b>
+                      <div class="jdgm-rev__body">
                         <p>I have noticed a difference on my swelling.</p>
                       </div>
-                      <div class='jdgm-rev__pics'> </div>
-                      <div class='jdgm-rev__vids'> </div>
-                      <div class='jdgm-rev__transparency-badge-wrapper'>
-                        <div class='jdgm-rev__transparency-badge' data-badge-type=review_collected_via_store_invitation>
-                        </div>
+                      <div class="jdgm-rev__pics"></div>
+                      <div class="jdgm-rev__vids"></div>
+                      <div class="jdgm-rev__transparency-badge-wrapper">
+                        <div class="jdgm-rev__transparency-badge"
+                          data-badge-type="review_collected_via_store_invitation"></div>
                       </div>
                     </div>
-                    <div class='jdgm-rev__actions'>
-                      <div class='jdgm-rev__social'></div>
-                      <div class='jdgm-rev__votes'></div>
+                    <div class="jdgm-rev__actions">
+                      <div class="jdgm-rev__social"></div>
+                      <div class="jdgm-rev__votes"></div>
                     </div>
-                    <div class='jdgm-rev__reply'> </div>
+                    <div class="jdgm-rev__reply"></div>
                   </div>
                 </div>
-                <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget'>
-                  <a class='jdgm-paginate__page jdgm-curt' data-page='1' aria-label='Page 1' tabindex='0'
-                    role='button'>1</a><a class='jdgm-paginate__page ' data-page='2' aria-label='Page 2' tabindex='0'
-                    role='button'>2</a><a class='jdgm-paginate__page ' data-page='3' aria-label='Page 3' tabindex='0'
-                    role='button'>3</a><a class='jdgm-paginate__page jdgm-paginate__next-page' data-page='2'
-                    aria-label='Page 2' tabindex='0' rel='next' role='button'></a><a
-                    class='jdgm-paginate__page jdgm-paginate__last-page' data-page='22' aria-label='Page 22'
-                    tabindex='0' role='button'></a>
+                <div class="jdgm-paginate" data-per-page="5" data-url="https://api.judge.me/reviews/reviews_for_widget">
+                  <a class="jdgm-paginate__page jdgm-curt" data-page="1" aria-label="Page 1" tabindex="0"
+                    role="button">1</a><a class="jdgm-paginate__page" data-page="2" aria-label="Page 2" tabindex="0"
+                    role="button">2</a><a class="jdgm-paginate__page" data-page="3" aria-label="Page 3" tabindex="0"
+                    role="button">3</a><a class="jdgm-paginate__page jdgm-paginate__next-page" data-page="2"
+                    aria-label="Page 2" tabindex="0" rel="next" role="button"></a><a
+                    class="jdgm-paginate__page jdgm-paginate__last-page" data-page="22" aria-label="Page 22"
+                    tabindex="0" role="button"></a>
                 </div>
               </div>
-              <div class='jdgm-rev-widg__paginate-spinner-wrapper'>
-                <div class='jdgm-spinner'></div>
+              <div class="jdgm-rev-widg__paginate-spinner-wrapper">
+                <div class="jdgm-spinner"></div>
               </div>
             </div>
           </div>
@@ -2307,7 +2363,7 @@
                     skin.”
                   </p>
                 </div>
-                <div class="btn_container text-left">
+                <div class="btn_container mt-6 text-left">
                   <a href="https://pay.trysculptique.com/lymphatic/checkout" class="product_primary-btn">Try Lymphatic
                     Drainage Risk-Free</a>
                   <p class="product_primary-btn-footer">
@@ -2331,26 +2387,26 @@
       <div class="product_judge-outer">
         <div class="page-width">
           <div class="product_judge-container">
-
             <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Trustpilot_review_2.png?v=1752485383"
-              class="Product-ugc-stars">
-            <h2 class="product-section_title centered">See The Stories of Sculptique™ Women Firsthand</h2>
+              class="Product-ugc-stars" />
+            <h2 class="product-section_title centered">
+              See The Stories of Sculptique™ Women Firsthand
+            </h2>
             <p class="product-section_text centered"></p>
           </div>
 
           <div class="product_carousel-outer">
             <div class="product_ugc-container">
               <div>
-
                 <div>
                   <div class="product_ugc-video">
                     <img
                       src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                      class="product_ugc-play">
+                      class="product_ugc-play" />
                     <video playsinline
                       poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_12.40.11.png?v=1752486039">
                       <source src="https://cdn.shopify.com/videos/c/o/v/014b7db24d12443791bd22d345637ccc.mp4"
-                        type="video/mp4">
+                        type="video/mp4" />
                     </video>
                   </div>
                 </div>
@@ -2358,15 +2414,14 @@
 
               <div>
                 <div>
-
                   <div class="product_ugc-video">
                     <img
                       src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                      class="product_ugc-play">
+                      class="product_ugc-play" />
                     <video playsinline
                       poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.12.02.png?v=1752498744">
                       <source src="https://cdn.shopify.com/videos/c/o/v/4eecdc1058f349628e1c50ba81112b54.mov"
-                        type="video/mp4">
+                        type="video/mp4" />
                     </video>
                   </div>
                 </div>
@@ -2374,15 +2429,14 @@
 
               <div>
                 <div>
-
                   <div class="product_ugc-video">
                     <img
                       src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                      class="product_ugc-play">
+                      class="product_ugc-play" />
                     <video playsinline
                       poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.04.png?v=1752497038">
                       <source src="https://cdn.shopify.com/videos/c/o/v/2967808b09114feb9616d295fd2f3557.mp4"
-                        type="video/mp4">
+                        type="video/mp4" />
                     </video>
                   </div>
                 </div>
@@ -2391,11 +2445,11 @@
               <div>
                 <div class="product_ugc-video">
                   <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                    class="product_ugc-play">
+                    class="product_ugc-play" />
                   <video playsinline
                     poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.34.png?v=1752497063">
                     <source src="https://cdn.shopify.com/videos/c/o/v/88efaa94523742bdb8f980d66600cde2.mp4"
-                      type="video/mp4">
+                      type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -2403,11 +2457,11 @@
               <div>
                 <div class="product_ugc-video">
                   <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                    class="product_ugc-play">
+                    class="product_ugc-play" />
                   <video playsinline
                     poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.11.50.png?v=1752498777">
                     <source src="https://cdn.shopify.com/videos/c/o/v/a7bce8da322747e08ef1ce7c87317c30.mp4"
-                      type="video/mp4">
+                      type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -2415,11 +2469,11 @@
               <div>
                 <div class="product_ugc-video">
                   <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                    class="product_ugc-play">
+                    class="product_ugc-play" />
                   <video playsinline
                     poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.10.png?v=1752497092">
                     <source src="https://cdn.shopify.com/videos/c/o/v/3a117937ae264508b440a6972ebcb6a1.mp4"
-                      type="video/mp4">
+                      type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -2427,11 +2481,11 @@
               <div>
                 <div class="product_ugc-video">
                   <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                    class="product_ugc-play">
+                    class="product_ugc-play" />
                   <video playsinline
                     poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.44.54.png?v=1752497118">
                     <source src="https://cdn.shopify.com/videos/c/o/v/27085ed5be5c4c38ad579f0fdae8aefa.mp4"
-                      type="video/mp4">
+                      type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -2439,11 +2493,11 @@
               <div>
                 <div class="product_ugc-video">
                   <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                    class="product_ugc-play">
+                    class="product_ugc-play" />
                   <video playsinline
                     poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.46.37.png?v=1752497216">
                     <source src="https://cdn.shopify.com/videos/c/o/v/a4ab9e815f3446ea8b84292627ec2a10.mp4"
-                      type="video/mp4">
+                      type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -2451,11 +2505,11 @@
               <div>
                 <div class="product_ugc-video">
                   <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                    class="product_ugc-play">
+                    class="product_ugc-play" />
                   <video playsinline
                     poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.45.36.png?v=1752497166">
                     <source src="https://cdn.shopify.com/videos/c/o/v/68b2aa06fab44d968723e052a14d87d5.mp4"
-                      type="video/mp4">
+                      type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -2463,42 +2517,35 @@
               <div>
                 <div class="product_ugc-video">
                   <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/mingcute_play-fill.png?v=1752485519"
-                    class="product_ugc-play">
+                    class="product_ugc-play" />
                   <video playsinline
                     poster="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.47.12.png?v=1752497252">
                     <source src="https://cdn.shopify.com/videos/c/o/v/0ec8de99a9c3459da6c53e18c0eeab3c.mp4"
-                      type="video/mp4">
+                      type="video/mp4" />
                   </video>
                 </div>
               </div>
-
             </div>
             <div class="product_ugc-carousel-nav">
               <div class="product_carousel-prev">
-
                 <img
-                  src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/iconamoon_arrow-up-2-thin_55aa38bb-cb5e-4608-9097-927814968771.png?v=1758716845">
-
+                  src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/iconamoon_arrow-up-2-thin_55aa38bb-cb5e-4608-9097-927814968771.png?v=1758716845" />
               </div>
               <div class="product_carousel-next">
-
-                <img style="transform: rotate(180deg); position: relative; top: 1px;"
-                  src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/iconamoon_arrow-up-2-thin_55aa38bb-cb5e-4608-9097-927814968771.png?v=1758716845">
-
+                <img style="transform: rotate(180deg); position: relative; top: 1px"
+                  src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/iconamoon_arrow-up-2-thin_55aa38bb-cb5e-4608-9097-927814968771.png?v=1758716845" />
               </div>
             </div>
           </div>
-          <div class="btn_container">
-            <a href="https://pay.trysculptique.com/lymphatic/checkout" class="product_primary-btn ">Try Lymphatic
-              Drainage
-              Risk-Free</a>
+          <div class="btn_container mt-6 text-center">
+            <a href="https://pay.trysculptique.com/lymphatic/checkout" class="product_primary-btn text-center">Try
+              Lymphatic Drainage Risk-Free</a>
             <p class="product_primary-btn-footer">
               <span>
-                <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395" />
               </span>
-              <span>
-                60-Day Money-Back Guarantee
-              </span>
+              <span> 60-Day Money-Back Guarantee </span>
             </p>
           </div>
         </div>
@@ -2696,10 +2743,10 @@
               </div>
             </div>
           </div>
-          <div class="centered btn_container">
-            <a href="https://pay.trysculptique.com/lymphatic/checkout" class="product_primary-btn">Try Lymphatic
-              Drainage Risk-Free</a>
-            <p class="product_primary-btn-footer">
+          <div class="btn_container mt-8 text-center">
+            <a href="https://pay.trysculptique.com/lymphatic/checkout" class="product_primary-btn text-center">Try
+              Lymphatic Drainage Risk-Free</a>
+            <p class="product_primary-btn-footer text-center">
               <span>
                 <img
                   src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395" />
@@ -2765,7 +2812,7 @@
 
                 <img loading="lazy" class="Mobile_only product_section-text-main-img"
                   src="//trysculptique.com/cdn/shop/files/before-min_png.png?v=1760688928" />
-                <div class="btn_container text-left">
+                <div class="btn_container !mt-8 text-left">
                   <a href="https://pay.trysculptique.com/lymphatic/checkout" class="product_primary-btn">Try Lymphatic
                     Drainage Risk-Free</a>
                   <p class="product_primary-btn-footer">

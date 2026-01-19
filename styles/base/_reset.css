@@ -1,0 +1,8 @@
+/* Base reset and shopify section styles */
+.shopify-section {
+  @apply z-50 bg-white;
+
+  p {
+    @apply font-nunito font-normal;
+  }
+}

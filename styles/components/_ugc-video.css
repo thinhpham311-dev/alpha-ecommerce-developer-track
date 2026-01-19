@@ -1,0 +1,26 @@
+/* UGC Video components */
+.product_ugc-video {
+  @apply relative flex aspect-[9/16] h-full w-full overflow-hidden rounded;
+}
+
+.product_ugc-video video {
+  @apply block h-full w-full object-cover;
+  aspect-ratio: 9 / 16;
+}
+
+.product_ugc-play {
+  @apply absolute inset-0 z-[2] m-auto h-12 w-12 cursor-pointer;
+}
+
+/* Carousel navigation */
+.product_ugc-carousel-nav {
+  @apply mt-[-50px] flex justify-end gap-6;
+}
+
+.product_ugc-carousel-nav img {
+  @apply max-w-[32px] cursor-pointer transition-opacity transition-transform duration-200;
+}
+
+.product_ugc-carousel-nav img:hover {
+  @apply scale-[1.15];
+}

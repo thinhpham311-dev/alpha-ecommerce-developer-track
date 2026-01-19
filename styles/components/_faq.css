@@ -1,0 +1,35 @@
+.product_faq_container {
+  @apply to-background-2nd mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-8;
+}
+
+.product_faq-box {
+  @apply cursor-pointer border-b border-white px-8 py-6;
+
+  &.active {
+    .product_faq-content {
+      @apply mt-4 opacity-100;
+    }
+  }
+
+  .product_faq-thumb {
+    @apply gap-normal flex items-center justify-between;
+    img {
+      @apply h-[16px] w-[16px];
+
+      &.active-icon {
+        @apply rotate-180 transition-transform duration-200;
+      }
+
+      &:not(.active-icon) {
+        @apply rotate-0 transition-transform duration-200;
+      }
+    }
+  }
+  .product_faq-content {
+    @apply max-h-0 overflow-hidden opacity-0 transition-all duration-300;
+
+    p {
+      @apply mt-0 mb-3 leading-[1.3] tracking-normal;
+    }
+  }
+}

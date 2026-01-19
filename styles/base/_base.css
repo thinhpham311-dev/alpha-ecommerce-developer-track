@@ -1,0 +1,25 @@
+@layer base {
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+    height: 100%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    @apply font-montserrat text-body m-0 tracking-[0.06rem];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-trirong;
+  }
+}
