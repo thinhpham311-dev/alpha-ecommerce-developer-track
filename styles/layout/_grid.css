@@ -1,12 +1,7 @@
 /* Grid and flex utilities */
-@media only screen and (min-width: 678px) {
-  .Mobile_only {
-    @apply hidden;
-  }
 
-  .reversed {
-    @apply flex-row-reverse;
-  }
+.reversed {
+  @apply flex-row-reverse;
 }
 
 .main_product-container {

@@ -14,7 +14,7 @@
 }
 
 .product-ugc__carousel-nav img {
-  @apply max-w-[32px] cursor-pointer transition-transform transition-opacity duration-200;
+  @apply max-w-[32px] cursor-pointer transition-opacity transition-transform duration-200;
 }
 
 .product-ugc__carousel-nav img:hover {
@@ -28,7 +28,7 @@
 
 /* Dots */
 .product-ugc__container .slick-dots {
-  @apply !flex !max-w-[calc(100%-200px)] !text-left gap-0;
+  @apply !flex !max-w-[calc(100%-200px)] gap-0 !text-left;
 }
 
 .product-ugc__container .slick-dots li {
@@ -36,7 +36,7 @@
 }
 
 .product-ugc__container .slick-dots li button {
-  @apply !h-1 !w-full !p-0 !bg-secondary-2nd;
+  @apply !bg-secondary-2nd !h-1 !w-full !p-0;
 }
 
 .product-ugc__container .slick-dots li.slick-active button {
@@ -49,8 +49,8 @@
 }
 
 /* ================= UGC VIDEO ================= */
-.product-ugc__video-inner{
-  @apply inline-block w-full mb-[20px];
+.product-ugc__video-inner {
+  @apply mb-[20px] inline-block w-full;
 }
 .product-ugc__video {
   @apply relative flex aspect-[9/16] h-full w-full overflow-hidden rounded;

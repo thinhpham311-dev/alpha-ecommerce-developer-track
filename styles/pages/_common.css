@@ -9,9 +9,9 @@
 }
 
 .Desktop_only {
-  @apply block;
+  @apply hidden md:block;
 }
 
-.Modile_only {
-  @apply hidden;
+.Mobile_only {
+  @apply block md:hidden;
 }

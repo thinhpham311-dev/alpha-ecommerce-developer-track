@@ -1,18 +1,17 @@
 [data-accordion] {
+  [data-accordion-content] {
+    @apply max-h-0 overflow-hidden transition-all duration-300;
+  }
   &.active {
-    [data-accordion-content] {
-      @apply mt-4 opacity-100;
-    }
-    
     [data-accordion-trigger] {
-        @apply flex items-center justify-between gap-2;
+      @apply flex items-center justify-between gap-2;
     }
     [data-accordion-icon].active-icon {
-        @apply rotate-180 transition-transform duration-200;
+      @apply rotate-180 transition-transform duration-200;
     }
-    
+
     [data-accordion-icon]:not(.active-icon) {
-        @apply rotate-0 transition-transform duration-200;
+      @apply rotate-0 transition-transform duration-200;
     }
   }
 }
