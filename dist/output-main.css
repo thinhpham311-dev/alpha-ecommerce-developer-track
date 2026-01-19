@@ -30,27 +30,15 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-normal: 0em;
-    --leading-tight: 1.25em;
     --leading-snug: 1.3em;
-    --leading-normal: 1.5em;
-    --leading-relaxed: 1.625em;
-    --leading-loose: 2em;
-    --radius-sm: 2px;
     --radius-md: 6px;
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-2xl: 16px;
-    --radius-3xl: 24px;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --radius: 4px;
     --color-primary: #039869;
     --color-secondary: #6b7280;
@@ -59,22 +47,14 @@
     --color-accent-2nd: #fee2e2;
     --color-white-2nd: #ffffffd9;
     --color-background-2nd: #f7f2e7;
-    --color-background-3rd: #e5e7eb;
     --color-card: #f7f7f7;
-    --color-border-primary: #000000;
     --color-border-2nd: #d1d5db;
-    --text-primary: #dc2626;
-    --text-secondary: #6b7280;
-    --text-accent: #dc2626;
-    --text-primary-2nd: #000000;
     --text-dark: #1f2937;
-    --text-white: #ffffff;
     --font-lora: 'Lora', serif;
     --font-nunito: 'Nunito', serif;
     --font-trirong: 'Trirong', serif;
     --font-montserrat: 'Montserrat', sans-serif;
     --text-body: 1.6rem;
-    --leading-none: 1em;
     --spacing-0: 0;
     --spacing-1: 4px;
     --spacing-2: 8px;
@@ -84,32 +64,18 @@
     --spacing-6: 24px;
     --spacing-8: 32px;
     --spacing-button: 18px 80px;
-    --gap-small: 8px;
     --gap-normal: 12px;
     --gap-medium: 16px;
     --gap-large: 64px;
     --gap-big-large: 6.25rem;
-    --radius-none: 0;
     --radius-full: 9999px;
     --max-w-page: 1340px;
     --max-w-judge: 800px;
     --max-w-faq: 824px;
-    --z-0: 0;
-    --z-10: 10;
-    --z-20: 20;
-    --z-30: 30;
-    --z-40: 40;
-    --z-50: 50;
-    --transition-default: all 200ms ease;
-    --transition-fast: all 100ms ease;
-    --transition-slow: all 300ms ease;
     --animate-logo-scroll: logo-scroll 20s linear infinite;
     --aspect-square: 1 / 1;
     --opacity-0: 0;
-    --opacity-50: 0.5;
     --opacity-60: 0.6;
-    --opacity-75: 0.75;
-    --opacity-85: 0.85;
     --opacity-100: 1;
   }
 }
@@ -292,6 +258,9 @@
   .contents {
     display: contents;
   }
+  .flex {
+    display: flex;
+  }
   .hidden {
     display: none;
   }
@@ -304,8 +273,14 @@
   .table {
     display: table;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-logo-scroll {
+    animation: var(--animate-logo-scroll);
   }
   .resize {
     resize: both;
@@ -314,23 +289,21 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-accent-2nd {
-    background-color: var(--color-accent-2nd);
-  }
   .text-center {
     text-align: center;
   }
   .text-left {
     text-align: left;
   }
-  .text-accent {
-    color: var(--color-accent);
-  }
-  .text-secondary {
-    color: var(--color-secondary);
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-100 {
     opacity: var(--opacity-100);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -1956,6 +1929,11 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -2076,6 +2054,7 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
