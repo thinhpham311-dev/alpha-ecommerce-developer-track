@@ -3,13 +3,7 @@
   @apply px-0 py-[56px];
 }
 
-.product_judge-outer.pli_outer {
-  @apply px-0 py-[56px];
-}
 
-#info .product_judge-outer.pli_outer {
-  @apply -mt-4 py-0;
-}
 
 .outer_how-nothing {
   @apply text-dark bg-background-2nd mb-[35px] py-[70px] text-lg font-bold;

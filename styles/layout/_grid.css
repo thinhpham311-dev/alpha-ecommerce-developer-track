@@ -28,13 +28,7 @@
   }
 }
 
-.pli_flex {
-  @apply gap-big-large flex items-center;
 
-  & > div {
-    @apply w-full;
-  }
-}
 
 .product_stats-outer {
   @apply flex items-center;
