@@ -160,10 +160,10 @@
 }
 /* Benefits grid */
 .product_benefits-grid {
-  @apply flex gap-6;
+  @apply flex sm:flex-nowrap flex-wrap sm:gap-6 gap-[10px];
 
   & > div {
-    @apply w-full text-center;
+    @apply  sm:w-full w-[calc(50%-10px)] text-center sm:py-0 py-2;
   }
 
   img {
@@ -176,6 +176,24 @@
     &.h4title {
       @apply my-2 font-semibold;
     }
+  }
+}
+
+.product_expert-outer {
+  @apply sm:bg-secondary-4th bg-white flex sm:flex-row flex-col-reverse overflow-hidden rounded-2xl;
+
+  &>div {
+    @apply w-full;
+  }
+}
+
+.product_expert-content {
+  @apply sm:p-8 p-4;
+}
+
+.product_expert-media {
+  img {
+    @apply h-full w-full overflow-hidden rounded-xl object-cover;
   }
 }
 

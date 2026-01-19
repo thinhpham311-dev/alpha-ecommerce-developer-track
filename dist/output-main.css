@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -315,6 +316,7 @@
   }
   body {
     margin: var(--spacing-0);
+    background-color: var(--color-gray-50);
     font-family: var(--font-montserrat);
     font-size: var(--text-body);
     --tw-tracking: 0.06rem;
@@ -706,14 +708,6 @@
     width: 100%;
   }
 }
-.product_benefits-grid {
-  display: flex;
-  gap: var(--spacing-6);
-  & > div {
-    width: 100%;
-    text-align: center;
-  }
-}
 .product_text-image {
   display: flex;
   align-items: center;
@@ -731,15 +725,6 @@
   }
   & > div:nth-child(2) {
     width: 70%;
-  }
-}
-.product_expert-outer {
-  display: flex;
-  overflow: hidden;
-  border-radius: var(--radius-2xl);
-  background-color: var(--color-secondary-4th);
-  & > div {
-    width: 100%;
   }
 }
 .outer_how-nothing {
@@ -1322,31 +1307,6 @@
   display: block;
   max-width: 300px;
 }
-.product_benefits-grid {
-  display: flex;
-  gap: var(--spacing-6);
-  & > div {
-    width: 100%;
-    text-align: center;
-  }
-  img {
-    margin-inline: auto;
-    margin-bottom: var(--spacing-4);
-    display: block;
-    height: 40px;
-    max-width: calc(var(--spacing) * 10);
-    max-width: 40px;
-  }
-  p {
-    --tw-leading: var(--leading-snug);
-    line-height: var(--leading-snug);
-    &.h4title {
-      margin-block: var(--spacing-2);
-      --tw-font-weight: var(--font-weight-semibold);
-      font-weight: var(--font-weight-semibold);
-    }
-  }
-}
 .section_press_logos_outer {
   position: relative;
   margin-inline: auto;
@@ -1487,18 +1447,6 @@
   height: calc(var(--spacing) * 12);
   width: calc(var(--spacing) * 12);
   cursor: pointer;
-}
-.product_expert-content {
-  padding: var(--spacing-8);
-}
-.product_expert-media {
-  img {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    border-radius: var(--radius-xl);
-    object-fit: cover;
-  }
 }
 .jdgm-rev-widg__header {
   text-align: center;
@@ -1959,10 +1907,24 @@
 }
 .product_benefits-grid {
   display: flex;
-  gap: var(--spacing-6);
+  flex-wrap: wrap;
+  gap: 10px;
+  @media (width >= 40rem) {
+    flex-wrap: nowrap;
+  }
+  @media (width >= 40rem) {
+    gap: var(--spacing-6);
+  }
   & > div {
-    width: 100%;
+    width: calc(50% - 10px);
+    padding-block: var(--spacing-2);
     text-align: center;
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+    @media (width >= 40rem) {
+      padding-block: var(--spacing-0);
+    }
   }
   img {
     margin-inline: auto;
@@ -1980,6 +1942,37 @@
       --tw-font-weight: var(--font-weight-semibold);
       font-weight: var(--font-weight-semibold);
     }
+  }
+}
+.product_expert-outer {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+  background-color: var(--color-white);
+  @media (width >= 40rem) {
+    flex-direction: row;
+  }
+  @media (width >= 40rem) {
+    background-color: var(--color-secondary-4th);
+  }
+  &>div {
+    width: 100%;
+  }
+}
+.product_expert-content {
+  padding: var(--spacing-4);
+  @media (width >= 40rem) {
+    padding: var(--spacing-8);
+  }
+}
+.product_expert-media {
+  img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+    object-fit: cover;
   }
 }
 .product_selector-content {
