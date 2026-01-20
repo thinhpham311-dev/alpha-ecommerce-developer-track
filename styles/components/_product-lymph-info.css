@@ -1,5 +1,5 @@
 .pli_flex {
-  @apply sm:gap-big-large flex flex-col-reverse items-center gap-4 sm:flex-row;
+  @apply sm:gap-lg flex flex-col-reverse items-center gap-4 sm:flex-row;
 
   & > div {
     @apply w-full;
@@ -45,7 +45,7 @@
     @apply my-2 px-0 text-base leading-[1.3em] sm:text-lg;
   }
 
-  @apply bg-accent-2nd my-6 rounded-lg px-4 py-2;
+  @apply bg-accent-soft my-6 rounded-lg px-4 py-2;
 
   ul {
     @apply ml-0 pl-0;

@@ -29,7 +29,7 @@
 .jdgm-quest,
 .jdgm-rev,
 .jdgm-paginate {
-  @apply border-accent-3rd border-t;
+  @apply border-border-light border-t;
 }
 
 .jdgm-row-media {
@@ -82,7 +82,7 @@
 
 .jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown,
 .jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown-arrow {
-  @apply text-accent-4th;
+  @apply text-primary;
 }
 
 .jdgm-sort-dropdown {
@@ -91,7 +91,7 @@
 
 /* ---------- Author ---------- */
 .jdgm-rev__author {
-  @apply text-accent-4th font-normal;
+  @apply text-primary font-normal;
 }
 
 .jdgm-rev-widg__summary-inner {
@@ -103,7 +103,7 @@
 .jdgm-histogram__row {
   @apply flex items-center gap-4 hover:opacity-60;
   .jdgm-histogram__bar {
-    @apply bg-secondary-2nd md:h-[14px] md:w-[140px];
+    @apply bg-border-muted md:h-[14px] md:w-[140px];
   }
 }
 

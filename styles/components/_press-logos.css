@@ -3,7 +3,7 @@
   @apply relative mx-auto;
 
   .section_holder {
-    @apply bg-background-2nd relative mx-auto max-w-[100vw] leading-1;
+    @apply bg-bg-secondary relative mx-auto max-w-[100vw] leading-1;
   }
 
   .press_logos_wrapper {

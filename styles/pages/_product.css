@@ -25,63 +25,54 @@
   }
 }
 
-#bloating {
-  .product_judge-outer {
-    @apply px-0 py-0;
-  }
-}
+
 /* ===============================
    Why bloating – shared grid
 ================================ */
-#bloating,
-#nothing {
-  .product_why-bloating-grid {
-    @apply mt-10 mb-6 flex flex-col gap-4 sm:mb-0 sm:flex-row;
+.outer_why-bloating {
+    @apply sm:px-0 sm:py-0 sm:pt-[56px];
+    .product_why-bloating-cell {
+      @apply flex w-full overflow-hidden rounded-md sm:gap-2 md:flex-col;
 
-    > div {
-      @apply w-auto sm:w-full;
-    }
-  }
-}
+      > div {
+        @apply w-full;
+      }
 
-/* ===============================
-   Bloating cells
-================================ */
-#bloating {
-  .product_why-bloating-cell {
-    @apply flex w-full overflow-hidden rounded-md sm:gap-2 md:flex-col;
+      img {
+        @apply min-h-[150px];
+      }
 
-    > div {
-      @apply w-full;
-    }
+      .product_why-bloat-cell-inn {
+        @apply bg-bg-muted flex min-h-[150px] items-center p-4 text-center sm:items-start;
 
-    img {
-      @apply min-h-[150px];
-    }
-
-    .product_why-bloat-cell-inn {
-      @apply bg-secondary-4th flex min-h-[150px] items-center p-4 text-center sm:items-start;
-
-      p {
-        @apply m-0 text-base leading-[1.3];
+        p {
+          @apply m-0 text-base leading-[1.3];
+        }
       }
     }
   }
-}
+ .product_why-bloating-grid {
+   @apply mt-10 mb-6 flex flex-col gap-4 sm:mb-0 sm:flex-row;
+
+   >div {
+     @apply w-auto sm:w-full;
+   }
+  }
 
 /* ===============================
-   Nothing cells
+   How Nothing 
 ================================ */
-#nothing {
+.outer_how-nothing {
+  @apply bg-bg-secondary mb-[35px] pt-0;
   .product_why-nothing-cell-inn {
-    @apply bg-secondary-4th p-4 text-center sm:p-6;
+    @apply bg-bg-muted p-4 text-center sm:p-6;
 
     h4 {
       @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;
     }
 
     .product_why-nothing-pink {
-      @apply bg-accent-2nd mt-6 min-h-auto overflow-hidden rounded-md px-4 py-2 sm:min-h-[180px];
+      @apply bg-accent-soft mt-6 min-h-auto overflow-hidden rounded-md px-4 py-2 sm:min-h-[180px];
 
       .product_why-nothing-subtitle {
         @apply m-0 flex items-center justify-center text-base leading-[1.3em] font-semibold;
@@ -97,20 +88,48 @@
     }
   }
 }
-#benefits .product_judge-outer {
-  @apply bg-background-2nd;
+
+
+
+/* ===============================
+     Benefits
+================================ */
+
+.benefits  {
+  @apply bg-bg-secondary;
 }
+
+.product_benefits-grid {
+  @apply flex flex-wrap justify-between gap-[10px] sm:flex-nowrap sm:gap-6;
+
+  &>div {
+    @apply w-[calc(50%-10px)] py-2 text-center sm:w-full sm:py-0;
+  }
+
+  img {
+    @apply mx-auto mb-4 block h-[40px] max-w-10 max-w-[40px];
+  }
+
+  p {
+    @apply leading-snug;
+
+    &.h4title {
+      @apply my-2 font-semibold;
+    }
+  }
+}
+
 #ugc .product_judge-outer {
-  @apply bg-background-2nd;
+  @apply bg-bg-secondary;
 }
 
 #footer .product_judge-outer {
-  @apply bg-background-2nd;
+  @apply bg-bg-secondary;
 }
 
 /* Ingredients table */
 .product_lymphg-ingr-outer {
-  @apply bg-background-2nd;
+  @apply bg-bg-secondary;
   .product_lymph-ingr-table {
     @apply mt-10 grid grid-cols-1 overflow-hidden rounded-xl border-[0.5px] border-black bg-white sm:grid-cols-4;
 
@@ -165,29 +184,13 @@
 .product_why-note-img {
   @apply mx-auto w-full max-w-[920px];
 }
-/* Benefits grid */
-.product_benefits-grid {
-  @apply flex flex-wrap justify-between gap-[10px] sm:flex-nowrap sm:gap-6;
 
-  & > div {
-    @apply w-[calc(50%-10px)] py-2 text-center sm:w-full sm:py-0;
-  }
-
-  img {
-    @apply mx-auto mb-4 block h-[40px] max-w-10 max-w-[40px];
-  }
-
-  p {
-    @apply leading-snug;
-
-    &.h4title {
-      @apply my-2 font-semibold;
-    }
-  }
-}
+/* ===============================
+     Expert Outer
+================================ */
 
 .product_expert-outer {
-  @apply sm:bg-secondary-4th flex flex-col-reverse overflow-hidden rounded-2xl bg-white sm:flex-row;
+  @apply sm:bg-bg-muted flex flex-col-reverse overflow-hidden rounded-2xl bg-white sm:flex-row;
 
   & > div {
     @apply w-full;
@@ -246,7 +249,7 @@
 }
 
 .product_ugc-container .slick-dots li button {
-  @apply !bg-secondary-2nd !h-1 !w-full !p-0;
+  @apply !bg-border-muted !h-1 !w-full !p-0;
 }
 
 .product_ugc-container .slick-dots li.slick-active button {
@@ -278,14 +281,14 @@
 }
 
 .product_faq_container {
-  @apply to-background-2nd mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-4 sm:p-8;
+  @apply bg-bg-secondary mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-4 sm:p-8;
 }
 
 .product_faq-box {
   @apply cursor-pointer border-b border-white px-0 py-4 sm:px-8 sm:py-6;
 
   .product_faq-thumb {
-    @apply gap-normal flex items-center justify-between;
+    @apply gap-sm flex items-center justify-between;
     & > div:first-child {
       @apply w-full;
     }
@@ -323,7 +326,7 @@
 }
 
 .product_tab-block {
-  @apply border-border-2nd mb-4 cursor-pointer rounded-[32px] border p-4;
+  @apply border-border-secondary mb-4 cursor-pointer rounded-[32px] border p-4;
 
   .product_tab-thumb {
     @apply flex items-center justify-between gap-3;
@@ -360,7 +363,7 @@
 }
 /* Product selector/variant selector */
 .product_selector-content {
-  @apply bg-background-2nd mt-6 mb-4 rounded-lg p-3;
+  @apply bg-bg-secondary mt-6 mb-4 rounded-lg p-3;
 }
 
 .product-selector_outer {
@@ -432,7 +435,7 @@
   }
 }
 .product-selector_atc {
-  @apply mt-3 cursor-pointer rounded-lg bg-black p-3 text-center text-lg text-white transition-all duration-200;
+  @apply mt-3 cursor-pointer rounded-lg bg-black p-3 text-center text-lg font-bold text-white transition-all duration-200;
 }
 
 .active .product-selector_bubble_inn {
@@ -440,7 +443,7 @@
 }
 
 .product_primary-btn {
-  @apply font-nunito sm:p-button inline-block w-full cursor-pointer rounded bg-black p-4 text-center text-base leading-snug font-bold text-white no-underline transition-all duration-200 sm:w-auto sm:text-lg sm:font-normal;
+  @apply font-nunito inline-block w-full cursor-pointer rounded bg-black p-4 text-center text-base leading-snug font-bold text-white no-underline transition-all duration-200 sm:w-auto sm:px-[80px] sm:py-[18px] sm:text-lg sm:font-normal;
 }
 
 .product_primary-btn-footer {
@@ -499,7 +502,7 @@
 }
 
 .product_text-image {
-  @apply gap-large flex items-center justify-center;
+  @apply gap-lg flex items-center justify-center;
 
   & > div {
     @apply w-full;

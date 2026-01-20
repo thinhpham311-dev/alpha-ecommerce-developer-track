@@ -9,7 +9,7 @@
   --color-accent: #dc2626;
   /* Màu đỏ cho text-accent */
   --color-accent-2nd: #fee2e2;
-  /* Màu hồng nhạt cho bg-accent-2nd */
+  /* Màu hồng nhạt cho bg-accent-soft */
   --color-light: #ffffff;
   --color-light-2nd: #ffffffd9;
   --color-black: #000000;
@@ -95,7 +95,7 @@
   /* Custom spacing */
   --gap-small: 8px;
 
-  --gap-normal: 12px;
+  --gap-sm: 12px;
   /* 8px */
   --gap-medium: 16px;
 
