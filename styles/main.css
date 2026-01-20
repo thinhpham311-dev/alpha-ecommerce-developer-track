@@ -9,7 +9,7 @@
 
 /* Components */
 @import './components/_common.css';
-@import './components/_header.css';
+@import './components/_secret.css';
 @import './components/_product-lymph-info.css';
 @import './components/_press-logos.css';
 @import './components/_judgeme.css';
