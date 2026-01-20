@@ -37,7 +37,7 @@
   }
 
   .product_faq_container {
-    @apply to-background-2nd mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-8;
+    @apply bg-bg-secondary mx-auto max-w-[var(--max-w-faq)] overflow-hidden rounded-2xl bg-gradient-to-b from-white p-8;
   }
 
   .product-section_title {
@@ -107,7 +107,7 @@
   }
 
   .main_product-container {
-    @apply gap-large flex;
+    @apply gap-lg flex;
 
     & > div {
       @apply w-full;
@@ -126,7 +126,7 @@
         }
 
         .main_product-nutrition-info {
-          @apply bg-light-2nd absolute bottom-[32px] z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-6 py-2 text-sm leading-[1.2em];
+          @apply bg-light-muted absolute bottom-[32px] z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-6 py-2 text-sm leading-[1.2em];
 
           span {
             @apply flex items-center font-semibold;
@@ -185,7 +185,7 @@
   }
 
   .product_selector-content {
-    @apply bg-background-2nd mt-6 mb-4 rounded-lg p-3;
+    @apply bg-bg-secondary mt-6 mb-4 rounded-lg p-3;
 
     .product-selector_outer {
       @apply mt-0;
@@ -330,7 +330,7 @@
   }
 
   .main_product-review {
-    @apply bg-background-2nd mt-6 rounded-xl p-3;
+    @apply bg-bg-secondary mt-6 rounded-xl p-3;
 
     .main_product-review-meta {
       @apply mb-2 flex items-center gap-4;
@@ -375,7 +375,7 @@
     @apply mt-4;
 
     .product_tab-block {
-      @apply border-border-2nd mb-4 cursor-pointer rounded-[32px] border p-4;
+      @apply border-border-secondary mb-4 cursor-pointer rounded-[32px] border p-4;
 
       .product_tab-thumb {
         @apply flex items-center justify-between gap-3;
@@ -420,7 +420,7 @@
     @apply relative mx-auto;
 
     .section_holder {
-      @apply bg-background-2nd relative mx-auto max-w-[100vw] leading-1;
+      @apply bg-bg-secondary relative mx-auto max-w-[100vw] leading-1;
     }
 
     .press_logos_wrapper {
@@ -459,7 +459,7 @@
         }
 
         .product_why-bloat-cell-inn {
-          @apply bg-secondary-4th min-h-[150px] p-4 text-center;
+          @apply bg-bg-muted min-h-[150px] p-4 text-center;
 
           p {
             @apply m-0 text-base leading-[1.3];
@@ -530,7 +530,7 @@
         @apply my-2 px-0 text-lg leading-[1.3em];
       }
 
-      @apply bg-accent-2nd my-6 rounded-lg px-4 py-2;
+      @apply bg-accent-soft my-6 rounded-lg px-4 py-2;
 
       ul {
         @apply ml-0 pl-0;
@@ -550,7 +550,7 @@
   }
 
   .outer_how-nothing {
-    @apply text-dark bg-background-2nd mb-[35px] py-[70px] text-lg font-bold;
+    @apply text-dark bg-bg-secondary mb-[35px] py-[70px] text-lg font-bold;
   }
 
   .product_judge-outer.outer_how-nothing {
@@ -565,14 +565,14 @@
     }
 
     .product_why-nothing-cell-inn {
-      @apply bg-secondary-4th p-6 text-center;
+      @apply bg-bg-muted p-6 text-center;
 
       h4 {
         @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;
       }
 
       .product_why-nothing-pink {
-        @apply bg-accent-2nd mt-6 min-h-[180px] overflow-hidden rounded-md px-4 py-2;
+        @apply bg-accent-soft mt-6 min-h-[180px] overflow-hidden rounded-md px-4 py-2;
 
         .product_why-nothing-subtitle {
           @apply m-0 flex items-center justify-center text-base leading-[1.3em] font-semibold;
@@ -598,7 +598,7 @@
   }
 
   .product_lymphg-ingr-outer {
-    @apply bg-background-2nd;
+    @apply bg-bg-secondary;
 
     img {
       @apply w-full;
@@ -657,7 +657,7 @@
   }
 
   .benefits {
-    @apply bg-background-2nd;
+    @apply bg-bg-secondary;
 
     .product_benefits-grid {
       @apply flex gap-6;
@@ -679,7 +679,7 @@
   }
 
   .product_expert-outer {
-    @apply bg-secondary-4th flex overflow-hidden rounded-2xl;
+    @apply bg-bg-muted flex overflow-hidden rounded-2xl;
 
     & > div {
       @apply w-full;
@@ -687,13 +687,13 @@
   }
   #ugc {
     .product_judge-outer {
-      @apply bg-background-2nd;
+      @apply bg-bg-secondary;
     }
   }
   .product_faq-box {
     @apply cursor-pointer border-b border-white px-8 py-6;
     .product_faq-thumb {
-      @apply gap-normal flex items-center justify-between;
+      @apply gap-sm flex items-center justify-between;
       p {
         @apply m-0 text-lg leading-snug;
       }
@@ -737,7 +737,7 @@
 
   #footer {
     .product_judge-outer {
-      @apply bg-background-2nd;
+      @apply bg-bg-secondary;
     }
   }
 
@@ -801,7 +801,7 @@
   }
 
   .product_ugc-container .slick-dots li button {
-    @apply !bg-secondary-2nd !h-1 !w-full !p-0;
+    @apply !bg-border-muted !h-1 !w-full !p-0;
   }
 
   .product_ugc-container .slick-dots li button::before {

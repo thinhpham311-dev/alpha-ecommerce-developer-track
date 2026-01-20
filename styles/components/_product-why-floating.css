@@ -1,0 +1,36 @@
+/* How nothing works */
+.product-why-bloating_grid {
+  @apply mt-10 flex flex-col gap-6 sm:flex-row;
+  .product-why-bloating_cell {
+    @apply flex flex-row overflow-hidden sm:flex-col;
+    & > div {
+      @apply w-full;
+      img {
+        @apply min-h-[150px];
+      }
+    }
+    .product_why-nothing-cell-inn {
+      @apply bg-bg-muted flex min-h-[150px] items-center p-6 text-center;
+
+      h4 {
+        @apply font-trirong m-0 text-xl leading-[1.3em] font-normal;
+      }
+
+      .product_why-nothing-pink {
+        @apply bg-accent-soft mt-6 min-h-[180px] overflow-hidden rounded-md px-4 py-2;
+
+        .product_why-nothing-subtitle {
+          @apply m-0 flex items-center justify-center text-base leading-[1.3em] font-semibold;
+
+          img {
+            @apply min-h-auto max-w-[24px];
+          }
+        }
+
+        .product_why-nothing-text {
+          @apply mt-3 text-base leading-[1.3em];
+        }
+      }
+    }
+  }
+}

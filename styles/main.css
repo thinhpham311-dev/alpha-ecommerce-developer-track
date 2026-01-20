@@ -39,7 +39,7 @@
   }
 }
 .main_product-container {
-  @apply gap-large flex flex-wrap md:flex-nowrap;
+  @apply sm:gap-lg gap-md flex flex-wrap md:flex-nowrap;
 
   & > div {
     @apply w-full;
@@ -63,7 +63,7 @@
     }
 
     .main_product-nutrition-info {
-      @apply bg-light-2nd absolute bottom-[32px] z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-6 py-2 text-sm leading-[1.2em];
+      @apply bg-light-muted absolute bottom-[32px] z-2 flex max-w-[290px] cursor-pointer justify-center gap-2 rounded-[24px] border border-black px-6 py-2 text-sm leading-[1.2em];
 
       span {
         @apply flex items-center font-semibold;
@@ -171,7 +171,7 @@
 
 /* Review components */
 .main_product-review {
-  @apply bg-background-2nd mt-6 rounded-xl p-3;
+  @apply bg-bg-secondary mt-6 rounded-xl p-3;
 
   .main_product-review-meta {
     @apply mb-2 flex items-center gap-4;
