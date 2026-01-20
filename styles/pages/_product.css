@@ -25,39 +25,40 @@
   }
 }
 
-
 /* ===============================
    Why bloating – shared grid
 ================================ */
-.outer_why-bloating {
-    @apply sm:px-0 sm:py-0 sm:pt-[56px];
-    .product_why-bloating-cell {
-      @apply flex w-full overflow-hidden rounded-md sm:gap-2 md:flex-col;
+.product_judge-outer.outer_why-bloating {
+  @apply sm:px-0 sm:py-0 sm:pt-[56px] pb-0;
 
-      > div {
-        @apply w-full;
-      }
+.product_why-bloating-cell {
+  @apply flex w-full overflow-hidden rounded-md sm:gap-2 md:flex-col;
 
-      img {
-        @apply min-h-[150px];
-      }
+  > div {
+    @apply w-full;
+  }
 
-      .product_why-bloat-cell-inn {
-        @apply bg-bg-muted flex min-h-[150px] items-center p-4 text-center sm:items-start;
+  img {
+    @apply min-h-[150px];
+  }
 
-        p {
-          @apply m-0 text-base leading-[1.3];
-        }
-      }
+  .product_why-bloat-cell-inn {
+    @apply bg-bg-muted flex min-h-[150px] items-center p-4 text-center sm:items-start;
+
+    p {
+      @apply m-0 text-base leading-[1.3];
     }
   }
- .product_why-bloating-grid {
-   @apply mt-10 mb-6 flex flex-col gap-4 sm:mb-0 sm:flex-row;
+}
+}
 
-   >div {
-     @apply w-auto sm:w-full;
-   }
+.product_why-bloating-grid {
+  @apply mt-10 mb-6 flex flex-col gap-4 sm:mb-0 sm:flex-row;
+
+  > div {
+    @apply w-auto sm:w-full;
   }
+}
 
 /* ===============================
    How Nothing 
@@ -89,20 +90,18 @@
   }
 }
 
-
-
 /* ===============================
      Benefits
 ================================ */
 
-.benefits  {
+.benefits {
   @apply bg-bg-secondary;
 }
 
 .product_benefits-grid {
   @apply flex flex-wrap justify-between gap-[10px] sm:flex-nowrap sm:gap-6;
 
-  &>div {
+  & > div {
     @apply w-[calc(50%-10px)] py-2 text-center sm:w-full sm:py-0;
   }
 

@@ -287,10 +287,6 @@
   .text-left {
     text-align: left;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .blur {
     --tw-blur: blur(8px);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -1066,7 +1062,8 @@
     }
   }
 }
-.outer_why-bloating {
+.product_judge-outer.outer_why-bloating {
+  padding-bottom: var(--spacing-0);
   @media (width >= 40rem) {
     padding-inline: var(--spacing-0);
   }
@@ -1125,7 +1122,7 @@
   @media (width >= 40rem) {
     flex-direction: row;
   }
-  >div {
+  > div {
     width: auto;
     @media (width >= 40rem) {
       width: 100%;
@@ -1209,7 +1206,7 @@
   @media (width >= 40rem) {
     gap: var(--spacing-6);
   }
-  &>div {
+  & > div {
     width: calc(50% - 10px);
     padding-block: var(--spacing-2);
     text-align: center;
@@ -2378,11 +2375,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -2508,7 +2500,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
