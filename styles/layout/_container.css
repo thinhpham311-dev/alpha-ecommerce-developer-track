@@ -1,4 +1,0 @@
-/* Container classes */
-.page-width {
-  @apply mx-auto block max-w-[var(--max-w-page)] px-[1.5rem] sm:px-[5rem];
-}

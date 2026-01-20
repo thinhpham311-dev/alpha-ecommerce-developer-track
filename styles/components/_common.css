@@ -4,6 +4,11 @@
   }
 }
 
+/* Container classes */
+.page-width {
+  @apply mx-auto block max-w-[var(--max-w-page)] px-[1.5rem] sm:px-[5rem];
+}
+
 /* Common page styles */
 .product_textimage-content {
   .product_text-image-reviews {
@@ -21,3 +26,4 @@
 .Mobile_only {
   @apply block md:hidden;
 }
+

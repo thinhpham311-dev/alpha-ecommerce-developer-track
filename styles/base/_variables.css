@@ -67,6 +67,7 @@
   --text-4xl: 32px;
 
   --text-body: 1.6rem;
+  --text-body-mobile: 1.5rem;
 
   /* =======================
      LINE HEIGHT
@@ -75,7 +76,7 @@
   --leading-tight: 1.25;
   --leading-snug: 1.3;
   --leading-normal: 1.5;
-  --leading-relaxed: 1.625;
+  --leading-relaxed: 1.8;
   --leading-loose: 2;
 
   /* =======================
@@ -188,19 +189,3 @@
 @custom-media --screen-xl (max-width: 1280px);
 @custom-media --screen-2xl (max-width: 1536px);
 
-/* =========================================================
-   CONTAINER PADDING
-   ========================================================= */
-@media (max-width: 750px) {
-  :root {
-    --container-padding-x: 1.25rem;
-    --container-padding-y: 0;
-  }
-}
-
-@media (min-width: 751px) {
-  :root {
-    --container-padding-x: 1rem;
-    --container-padding-y: 0;
-  }
-}

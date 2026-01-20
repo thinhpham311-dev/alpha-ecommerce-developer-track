@@ -245,6 +245,9 @@
 
 .product_ugc-container .slick-dots li {
   @apply m-0 !mx-0 w-full;
+  &::before{
+    @apply !hidden;
+  }
 }
 
 .product_ugc-container .slick-dots li button {
@@ -508,6 +511,10 @@
   }
 }
 
+.product_text-image-points {
+  @apply px-0 py-[1px];
+}
+
 .product_stats-outer {
   @apply flex items-center;
 
@@ -519,3 +526,5 @@
     @apply w-[70%];
   }
 }
+
+
