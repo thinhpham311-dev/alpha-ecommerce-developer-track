@@ -105,33 +105,19 @@ npx serve .
 
 ---
 
-### Vite
-
-```bash
-npm run dev
-```
-
----
-
-### Next.js
-
-```bash
-npm run dev
-```
-
 Visit: [http://localhost:3000](http://localhost:3000)
-
+Demo: https://alpha-ecommerce-developer-track-tes.vercel.app
 ---
 
 ## 📂 Example Folder Structure
 
 ```
 project-root/
-├─ src/
+├─ styles/
 │  ├─ input.css
-│  └─ js/
+│  js/
 ├─ dist/
-│  └─ output.css
+│  └─ output-main.css
 ├─ index.html
 ├─ tailwind.config.js
 ├─ postcss.config.js
@@ -145,8 +131,8 @@ project-root/
 ```json
 {
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "dev": "tailwindcss -i ./src/main.css -o ./dist/output-main.css --watch",
+    "build": "tailwindcss -i ./src/main.css -o ./dist/output-main.css --minify"
   }
 }
 ```
@@ -161,8 +147,7 @@ npm run dev
 
 ## 🚀 Deployment (Optional)
 
-* **Vercel** – HTML / Next.js
-* **Netlify** – HTML / Vite
+* **Vercel** – HTML / CSS
 
 ---
 
