@@ -29,27 +29,27 @@
    Why bloating – shared grid
 ================================ */
 .product_judge-outer.outer_why-bloating {
-  @apply sm:px-0 sm:py-0 sm:pt-[56px] pb-0;
+  @apply pb-0 sm:px-0 sm:py-0 sm:pt-[56px];
 
-.product_why-bloating-cell {
-  @apply flex w-full overflow-hidden rounded-md sm:gap-2 md:flex-col;
+  .product_why-bloating-cell {
+    @apply flex w-full overflow-hidden rounded-md sm:gap-2 md:flex-col;
 
-  > div {
-    @apply w-full;
-  }
+    > div {
+      @apply w-full;
+    }
 
-  img {
-    @apply min-h-[150px];
-  }
+    img {
+      @apply min-h-[150px];
+    }
 
-  .product_why-bloat-cell-inn {
-    @apply bg-bg-muted flex min-h-[150px] items-center p-4 text-center sm:items-start;
+    .product_why-bloat-cell-inn {
+      @apply bg-bg-muted flex min-h-[150px] items-center p-4 text-center sm:items-start;
 
-    p {
-      @apply m-0 text-base leading-[1.3];
+      p {
+        @apply m-0 text-base leading-[1.3];
+      }
     }
   }
-}
 }
 
 .product_why-bloating-grid {
@@ -245,7 +245,7 @@
 
 .product_ugc-container .slick-dots li {
   @apply m-0 !mx-0 w-full;
-  &::before{
+  &::before {
     @apply !hidden;
   }
 }
@@ -274,7 +274,6 @@
 
 .product_ugc-video video {
   @apply block h-full w-full object-cover;
-  pointer-events: none;
   /* video không click được */
 }
 
@@ -526,5 +525,3 @@
     @apply w-[70%];
   }
 }
-
-

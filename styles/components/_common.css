@@ -26,4 +26,3 @@
 .Mobile_only {
   @apply block md:hidden;
 }
-
