@@ -19,6 +19,10 @@
   }
 }
 
+.reversed {
+  @apply flex flex-col-reverse sm:flex-row-reverse;
+}
+
 .Desktop_only {
   @apply hidden md:block;
 }

@@ -45,9 +45,7 @@
 
 .main_product-images {
   img {
-    @apply block aspect-square rounded-lg object-cover;
-    vertical-align: middle;
-    line-height: 0;
+    @apply  aspect-square rounded-lg object-cover;
   }
 
   .main_product-image,
@@ -78,6 +76,9 @@
 
   .main_product-2nd {
     @apply my-4 grid grid-cols-2 gap-4;
+    img{
+      @apply aspect-auto;
+    }
   }
 
   .main_product-3rd {

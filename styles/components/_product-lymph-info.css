@@ -1,5 +1,5 @@
 .pli_flex {
-  @apply sm:gap-lg flex flex-col-reverse items-center gap-4 sm:flex-row;
+  @apply sm:gap-lg flex  items-center gap-4;
 
   & > div {
     @apply w-full;

@@ -1,7 +1,7 @@
 @layer base {
   html {
     box-sizing: border-box;
-    font-size: calc(1 * 62.5%);
+    font-size: 10px;
     height: 100%;
   }
 
@@ -14,13 +14,12 @@
   }
 
   body {
-    @apply font-montserrat bg-white tracking-[0.06rem];
-    line-height: calc(1 + 0.8 / 1.0);
-    font-size: 1.6rem;
-    /* QUAN TRỌNG: unitless */
+    @apply font-montserrat bg-white text-body tracking-[0.06rem];
+ 
+
   }
 
-  /* Ensure text elements inherit line-height */
+  /* Text elements only */
   p,
   li,
   span,
@@ -34,14 +33,36 @@
   h4,
   h5 {
     @apply font-trirong;
-    line-height: 1.3;
+    line-height: 1.2;
   }
 
   ul {
-    @apply list-none pl-0;
+    list-style: none;
+    padding-left: 0;
   }
 
   ul li {
-    @apply relative mb-[0.8rem] pl-8 before:absolute before:top-[0.2em] before:left-0 before:text-[2rem] before:leading-none before:content-['•'];
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
   }
+
+  ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    font-size: 2rem;
+  }
+
+  /* 🔥 QUAN TRỌNG NHẤT */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: inline;
+    vertical-align: baseline;
+  }
+  
 }

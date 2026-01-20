@@ -1,9 +1,4 @@
 /* Product page specific styles */
-.main_section {
-  img {
-    @apply w-full;
-  }
-}
 
 .product_judge-outer {
   @apply py-8 sm:py-[56px];
@@ -53,7 +48,7 @@
 }
 
 .product_why-bloating-grid {
-  @apply mt-10 mb-6 flex flex-col gap-4 sm:mb-0 sm:flex-row;
+  @apply mt-[40px] mb-6 flex flex-col gap-4 sm:mb-0 sm:flex-row;
 
   > div {
     @apply w-auto sm:w-full;
@@ -411,6 +406,10 @@
 
       .product-selector_perk_line {
         @apply bg-primary flex items-center gap-2 border-b border-white px-2 py-1 opacity-60;
+
+        img{
+          @apply block;
+        }
 
         &:last-child {
           @apply border-b-0;
